@@ -15,24 +15,16 @@
     <input type="text" id="searchInput" placeholder="책 제목 검색" class="w-full p-2 border rounded" onkeyup="filterBooks()">
   </div>
 
-  <div id="bookGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+  <div id="bookGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
     <!-- 샘플 도서 카드 -->
-    <div class="book border rounded shadow p-4">
-        <img src="스크린샷 2023-11-24 231342.png" alt="책 표지" class="mb-2 mx-auto w-40 h-auto">
-        <h2 class="book-title text-lg font-semibold text-center mb-2">Sample Book Title</h2>
-        <iframe class="w-full h-60 mb-2" src="https://www.youtube.com/embed/6V7S4bYCC18" frameborder="0" allowfullscreen></iframe>
-        <p class="text-center text-sm text-gray-500">AR Level: 1.x</p>
+    <div class="book border rounded shadow p-3 bg-white hover:shadow-lg transition duration-200">
+        <img src="images/book1.jpg" alt="책 표지" class="mb-2 mx-auto w-full h-auto">
+        <h2 class="book-title text-sm font-semibold text-center leading-tight">책 제목</h2>
+        <p class="text-center text-xs text-gray-500 mb-1">AR 1.8</p>
+        <div class="text-center">
+          <a href="https://youtube.com/embed/영상ID" target="_blank" class="text-blue-600 hover:underline text-xs">음원 보기 ▶</a>
+        </div>
       </div>
-
-    <div class="book border rounded shadow p-4">
-      <img src="https://via.placeholder.com/150" alt="Book Cover" class="mb-2 mx-auto">
-      <h2 class="book-title text-lg font-semibold text-center">Book Title 2</h2>
-      <p class="text-center text-sm text-gray-500">AR Level: 1.9</p>
-      <div class="text-center mt-2">
-        <a href="https://www.youtube.com/watch?v=영상ID" target="_blank" class="text-blue-600 hover:underline">음원 듣기 ▶</a>
-      </div>
-    </div>
-  </div>
 
   <script>
     function filterBooks() {
