@@ -7,6 +7,13 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="font-sans">
+    <script>
+        const pw = prompt("🔒 원서 음원 페이지는 학원생 전용입니다.\n비밀번호를 입력해주세요:");
+        if (pw !== "genius123") {
+          alert("비밀번호가 틀렸습니다.\n메인 화면으로 이동합니다.");
+          window.location.href = "index.html";  // 또는 홈페이지 전체 주소
+        }
+      </script>
     <!-- 헤더 -->
     <header class="bg-blue-700 text-white p-4 text-center">
         <h1 class="text-2xl font-bold mb-2">

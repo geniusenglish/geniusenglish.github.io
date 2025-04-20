@@ -7,6 +7,13 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="font-sans">
+    <script>
+        const pw = prompt("🔒 원서 음원 페이지는 학원생 전용입니다.\n비밀번호를 입력해주세요:");
+        if (pw !== "genius123") {
+          alert("비밀번호가 틀렸습니다.\n메인 화면으로 이동합니다.");
+          window.location.href = "index.html";  // 또는 홈페이지 전체 주소
+        }
+      </script>
     <!-- 헤더 -->
     <header class="bg-blue-700 text-white p-4 text-center">
         <h1 class="text-2xl font-bold mb-2">
@@ -32,8 +39,8 @@
 
     <!-- 1 -->
     <div class="book border rounded shadow p-3 bg-white hover:shadow-lg transition duration-200">
-      <img src="images/ar1_ibrokemytrunk.png" alt="I Broke My Trunk" class="mb-2 mx-auto w-full h-auto">
-      <h2 class="book-title text-sm font-semibold text-center leading-tight">I Broke My Trunk!</h2>
+        <a href="https://www.youtube.com/embed/6V7S4bYCC18" target="_blank"><img src="images/ar1_ibrokemytrunk.png" alt="I Broke My Trunk" class="mb-2 mx-auto w-full h-auto"></a>
+        <a href="https://www.youtube.com/embed/6V7S4bYCC18" target="_blank"><h2 class="book-title text-sm font-semibold text-center leading-tight">I Broke My Trunk!</h2></a>
       <p class="text-center text-xs text-gray-500 mb-1">AR 1.2</p>
       <div class="text-center">
         <a href="https://www.youtube.com/embed/6V7S4bYCC18" target="_blank" class="text-blue-600 hover:underline text-xs">음원 보기 ▶</a>
