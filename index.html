@@ -15,13 +15,17 @@
       <a href="#curriculum" class="hover:underline">커리큘럼</a>
       <a href="#audio" class="hover:underline">원서 음원</a>
       <a href="#contact" class="hover:underline">문의</a>
+      <a href="ar1.html" class="hover:underline">📚 1점대</a>
+      <a href="ar2.html" class="hover:underline">📗 2점대</a>
+      <a href="ar3.html" class="hover:underline">📘 3점대</a>
+      <a href="ar4.html" class="hover:underline">📙 4점대</a>
     </nav>
   </header>
 
   <!-- 메인 배너 -->
   <section class="bg-gray-100 text-center py-12">
     <h2 class="text-3xl font-bold">원서를 듣고 읽는 영어학습</h2>
-    <p class="mt-4 text-gray-600">영어 원서 음원과 함께하는 1:1 맞춤 영어수업</p>
+    <p class="mt-4 text-gray-600">AR 레벨별 영어 원서 음원을 클릭 한 번으로!</p>
   </section>
 
   <!-- 학원 소개 -->
@@ -61,6 +65,16 @@
     </div>
   </section>
 
+  <!-- 검색창 -->
+  <section class="p-6 max-w-screen-md mx-auto">
+    <h3 class="text-2xl font-semibold mb-4">🔍 책 제목 검색</h3>
+    <input type="text" id="searchInput" placeholder="책 제목을 입력하세요" class="w-full p-2 border rounded" onkeyup="filterBooks()">
+    <ul id="bookList" class="mt-4 space-y-2">
+      <li><a href="https://www.youtube.com/watch?v=mvN9e1Sxyy4" target="_blank" class="text-blue-600 hover:underline">The Very Hungry Caterpillar</a></li>
+      <li><a href="https://www.youtube.com/watch?v=HbA0IYWuFcY" target="_blank" class="text-blue-600 hover:underline">Peppa Pig Fairy Tale</a></li>
+    </ul>
+  </section>
+
   <!-- 문의하기 -->
   <section id="contact" class="bg-gray-100 p-6 text-center">
     <h3 class="text-2xl font-semibold mb-4">문의하기</h3>
@@ -71,5 +85,20 @@
   <footer class="bg-blue-700 text-white text-center p-4">
     &copy; 2025 지니어스영어학원. All rights reserved.
   </footer>
+
+  <script>
+    function filterBooks() {
+      const input = document.getElementById("searchInput");
+      const filter = input.value.toLowerCase();
+      const ul = document.getElementById("bookList");
+      const li = ul.getElementsByTagName("li");
+
+      for (let i = 0; i < li.length; i++) {
+        const a = li[i].getElementsByTagName("a")[0];
+        const text = a.textContent || a.innerText;
+        li[i].style.display = text.toLowerCase().includes(filter) ? "" : "none";
+      }
+    }
+  </script>
 </body>
 </html>
