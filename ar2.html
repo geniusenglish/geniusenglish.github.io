@@ -9,6 +9,11 @@
 <body class="p-6 font-sans">
   <h1 class="text-2xl font-bold mb-6">📗 AR 2점대 원서 음원</h1>
 
+  <!-- 검색창 -->
+<div class="mb-6 max-w-md mx-auto">
+    <input type="text" id="searchInput" placeholder="책 제목 검색" class="w-full p-2 border rounded" onkeyup="filterBooks()">
+  </div>
+
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
     <div class="border rounded shadow p-4">
       <img src="https://via.placeholder.com/150" alt="Book Cover" class="mb-2 mx-auto">
@@ -28,5 +33,16 @@
       </div>
     </div>
   </div>
+
+  <script>
+    function filterBooks() {
+      const input = document.getElementById("searchInput").value.toLowerCase();
+      const books = document.querySelectorAll(".book");
+      books.forEach(book => {
+        const title = book.querySelector(".book-title").textContent.toLowerCase();
+        book.style.display = title.includes(input) ? "block" : "none";
+      });
+    }
+  </script>
 </body>
 </html>
