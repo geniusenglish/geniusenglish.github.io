@@ -25,9 +25,11 @@
 
 <!-- 검색창 -->
 <div class="mb-6 max-w-md mx-auto flex items-center space-x-2">
-    <span class="text-xl">🔍</span>
-    <input type="text" id="searchInput" placeholder="책 제목 검색" class="w-full p-2 border rounded" onkeyup="filterBooks()">
-  </div>
+  <input type="text" id="searchInput" placeholder="책 제목 검색" class="w-full p-2 border rounded" />
+  <button onclick="filterBooks()" class="bg-blue-600 text-white px-3 py-2 rounded hover:bg-blue-700 text-sm">
+    🔍 검색
+  </button>
+</div>
 
   <div id="bookGrid" class="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
 
@@ -345,14 +347,14 @@
   </footer>
 
   <script>
-    function filterBooks() {
-      const input = document.getElementById("searchInput").value.toLowerCase();
-      const books = document.querySelectorAll(".book");
-      books.forEach(book => {
-        const title = book.querySelector(".book-title").textContent.toLowerCase();
-        book.style.display = title.includes(input) ? "block" : "none";
-      });
-    }
-  </script>
+  function filterBooks() {
+    const input = document.getElementById("searchInput").value.toLowerCase();
+    const books = document.querySelectorAll(".book");
+    books.forEach(book => {
+      const title = book.querySelector(".book-title").textContent.toLowerCase();
+      book.style.display = title.includes(input) ? "block" : "none";
+    });
+  }
+</script>
 </body>
 </html>
