@@ -7,26 +7,21 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="font-sans">
-    <script>
-        const pw = prompt("🔒 원서 음원 페이지는 학원생 전용입니다.\n비밀번호를 입력해주세요:");
-        if (pw !== "genius123") {
-          alert("비밀번호가 틀렸습니다.\n메인 화면으로 이동합니다.");
-          window.location.href = "index.html";  // 또는 홈페이지 전체 주소
-        }
-      </script>
+    
     <!-- 헤더 -->
-    <header class="bg-blue-700 text-white p-4 text-center">
-        <h1 class="text-2xl font-bold mb-2">
-            <a href="index.html" class="hover:underline">지니어스영어학원</a>
-          </h1>
-       <nav class="flex flex-wrap justify-center gap-4 text-sm">
-         <a href="ar1.html" class="hover:underline">📚 1점대</a>
-         <a href="ar2.html" class="hover:underline">📗 2점대</a>
-         <a href="ar3.html" class="hover:underline">📘 3점대</a>
-         <a href="ar4.html" class="hover:underline">📙 4점대</a>
-         <a href="ar5.html" class="hover:underline">📕 5점대</a>
-       </nav>
-     </header>
+  <header class="bg-blue-700 text-white p-4 text-center">
+    <h1 class="text-2xl font-bold mb-2">
+      <a href="index.html" class="hover:underline">지니어스영어학원</a>
+    </h1>
+    <nav class="flex flex-wrap justify-center gap-4 text-sm">
+      <a href="ar0.html" class="hover:underline">📘 0점대</a>
+      <a href="ar1.html" class="hover:underline">📚 1점대</a>
+      <a href="ar2.html" class="hover:underline">📗 2점대</a>
+      <a href="ar3.html" class="hover:underline">📘 3점대</a>
+      <a href="ar4.html" class="hover:underline">📙 4점대</a>
+      <a href="ar5.html" class="hover:underline">📕 5점대</a>
+    </nav>
+  </header>
   <h1 class="text-2xl font-bold mb-6">📗 AR 2점대 원서 음원</h1>
 
 <!-- 검색창 -->
@@ -38,55 +33,25 @@
   </button>
 </div>
 
+<!-- 책 목록 -->
   <div id="bookGrid" class="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
 
-    <!-- 1 -->
+    <!-- 16 -->
     <div class="book border rounded shadow p-3 bg-white hover:shadow-lg transition duration-200">
-      <img src="images/ar1_ibrokemytrunk.png" alt="I Broke My Trunk" class="mb-2 mx-auto w-full h-auto">
-      <h2 class="book-title text-sm font-semibold text-center leading-tight">I Broke My Trunk!</h2>
-      <p class="text-center text-xs text-gray-500 mb-1">AR 1.2</p>
+        <a href="https://www.youtube.com/embed/cKeszkwc8hI?rel=0" target="_blank"><img src="images/ar1_biscuitwinsaprize.jpg" alt="Ar0.9 Biscuit Wins a Prize" class="mb-2 mx-auto w-full h-auto"></a>
+        <a href="https://www.youtube.com/embed/cKeszkwc8hI?rel=0" target="_blank"><h2 class="book-title text-sm font-semibold text-center leading-tight">Ar0.9 Biscuit Wins a Prize</h2></a>
+      <p class="text-center text-xs text-gray-500 mb-1">AR 0.9</p>
       <div class="text-center">
-        <a href="https://www.youtube.com/embed/6V7S4bYCC18" target="_blank" class="text-blue-600 hover:underline text-xs">음원 보기 ▶</a>
+        <a href="https://www.youtube.com/embed/cKeszkwc8hI?rel=0" target="_blank" class="text-blue-600 hover:underline text-xs">음원 듣기 ▶</a>
       </div>
     </div>
-  
-    <!-- 2 -->
+    <!-- 15 -->
     <div class="book border rounded shadow p-3 bg-white hover:shadow-lg transition duration-200">
-      <img src="images/ar1_ibrokemytrunk.png" alt="I Broke My Trunk" class="mb-2 mx-auto w-full h-auto">
-      <h2 class="book-title text-sm font-semibold text-center leading-tight">Can I Play Too?</h2>
-      <p class="text-center text-xs text-gray-500 mb-1">AR 1.3</p>
+        <a href="https://www.youtube.com/embed/iqlnO5r7KOc?rel=0" target="_blank"><img src="images/ar1_biscuitandthebaby.jpg" alt="Ar0.9 Biscuit and the Baby" class="mb-2 mx-auto w-full h-auto"></a>
+        <a href="https://www.youtube.com/embed/iqlnO5r7KOc?rel=0" target="_blank"><h2 class="book-title text-sm font-semibold text-center leading-tight">Ar0.9 Biscuit and the Baby</h2></a>
+      <p class="text-center text-xs text-gray-500 mb-1">AR 0.9</p>
       <div class="text-center">
-        <a href="https://www.youtube.com/embed/6V7S4bYCC18" target="_blank" class="text-blue-600 hover:underline text-xs">음원 보기 ▶</a>
-      </div>
-    </div>
-  
-    <!-- 3 -->
-    <div class="book border rounded shadow p-3 bg-white hover:shadow-lg transition duration-200">
-      <img src="images/ar1_ibrokemytrunk.png" alt="I Broke My Trunk" class="mb-2 mx-auto w-full h-auto">
-      <h2 class="book-title text-sm font-semibold text-center leading-tight">We Are in a Book!</h2>
-      <p class="text-center text-xs text-gray-500 mb-1">AR 1.4</p>
-      <div class="text-center">
-        <a href="https://www.youtube.com/embed/6V7S4bYCC18" target="_blank" class="text-blue-600 hover:underline text-xs">음원 보기 ▶</a>
-      </div>
-    </div>
-  
-    <!-- 4 -->
-    <div class="book border rounded shadow p-3 bg-white hover:shadow-lg transition duration-200">
-      <img src="images/ar1_ibrokemytrunk.png" alt="I Broke My Trunk" class="mb-2 mx-auto w-full h-auto">
-      <h2 class="book-title text-sm font-semibold text-center leading-tight">There Is a Bird on Your Head!</h2>
-      <p class="text-center text-xs text-gray-500 mb-1">AR 1.5</p>
-      <div class="text-center">
-        <a href="https://www.youtube.com/embed/6V7S4bYCC18" target="_blank" class="text-blue-600 hover:underline text-xs">음원 보기 ▶</a>
-      </div>
-    </div>
-  
-    <!-- 5 -->
-    <div class="book border rounded shadow p-3 bg-white hover:shadow-lg transition duration-200">
-      <img src="images/ar1_ibrokemytrunk.png" alt="I Broke My Trunk" class="mb-2 mx-auto w-full h-auto">
-      <h2 class="book-title text-sm font-semibold text-center leading-tight">I Am Going!</h2>
-      <p class="text-center text-xs text-gray-500 mb-1">AR 1.6</p>
-      <div class="text-center">
-        <a href="https://www.youtube.com/embed/6V7S4bYCC18" target="_blank" class="text-blue-600 hover:underline text-xs">음원 보기 ▶</a>
+        <a href="https://www.youtube.com/embed/iqlnO5r7KOc?rel=0" target="_blank" class="text-blue-600 hover:underline text-xs">음원 듣기 ▶</a>
       </div>
     </div>
   
