@@ -15,7 +15,7 @@
       <a href="index.html" class="hover:underline">지니어스영어학원</a>
     </h1>
     <nav class="flex flex-wrap justify-center gap-4 text-sm">
-      <a href="ar0.html" class="hover:underline">📘 0점대</a>
+      <a href="ar0.html" class="hover:underline">📒 0점대</a>
       <a href="ar1.html" class="hover:underline">📚 1점대</a>
       <a href="ar2.html" class="hover:underline">📗 2점대</a>
       <a href="ar3.html" class="hover:underline">📘 3점대</a>
@@ -24,7 +24,9 @@
     </nav>
   </header>
 
-  <h1 class="text-2xl font-bold mb-6">📚 AR 0점대 원서 음원</h1>
+  <h1 class="text-2xl font-bold mb-6">
+  📒 AR 0점대 원서 음원 <span id="bookCount" class="text-sm text-gray-500 ml-2"></span>
+</h1>
 
   <!-- 검색창 -->
   <div class="mb-6 max-w-md mx-auto flex items-center space-x-2 mt-4">
@@ -618,5 +620,14 @@
       });
     }
   </script>
+
+<!-- 책 갯수 세기 -->
+  <script>
+  window.addEventListener("DOMContentLoaded", () => {
+    const bookCount = document.querySelectorAll(".book").length;
+    const counter = document.getElementById("bookCount");
+    if (counter) counter.textContent = `총 ${bookCount}권`;
+  });
+</script>
 </body>
 </html>
