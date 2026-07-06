@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700;800&display=swap');
+
+body{
+    font-family:'Pretendard',sans-serif;
+    background:#f8fafc;
+    color:#111827;
+}
+
+.hero-gradient{
+    background:linear-gradient(135deg,#2563eb,#1d4ed8);
+}
+
+.card{
+    background:#fff;
+    border-radius:24px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 20px 40px rgba(0,0,0,.12);
+}
+
+.section-title{
+    font-size:2rem;
+    font-weight:800;
+    margin-bottom:1rem;
+}
+
+.btn-main{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:14px 24px;
+
+    border-radius:999px;
+
+    font-weight:700;
+
+    transition:.25s;
+}
+
+.btn-blue{
+
+    background:#2563eb;
+
+    color:white;
+}
+
+.btn-blue:hover{
+
+    background:#1d4ed8;
+}
+
+.btn-green{
+
+    background:#10b981;
+
+    color:white;
+}
+
+.btn-green:hover{
+
+    background:#059669;
+}
+
+.btn-yellow{
+
+    background:#f59e0b;
+
+    color:white;
+}
+
+.btn-yellow:hover{
+
+    background:#d97706;
+}
+
+.quick-card{
+
+    padding:30px;
+
+    text-align:center;
+}
+
+.quick-card .icon{
+
+    font-size:48px;
+
+    margin-bottom:16px;
+}
+
+.quick-card h3{
+
+    font-size:24px;
+
+    font-weight:700;
+
+    margin-bottom:8px;
+}
+
+.quick-card p{
+
+    color:#6b7280;
+}
