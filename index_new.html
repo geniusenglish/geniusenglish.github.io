@@ -3,406 +3,87 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>GENIUS ENGLISH ACADEMY</title>
-
+<title>GENIUS English Academy</title>
 <script src="https://cdn.tailwindcss.com"></script>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;800&display=swap" rel="stylesheet">
-
-<script>
-tailwind.config = {
-theme:{
-extend:{
-fontFamily:{
-sans:['Noto Sans KR','sans-serif']
-}
-}
-}
-}
-</script>
-
-<style>
-
-body{
-
-background:#f8fafc;
-
-}
-
-.card{
-
-transition:.3s;
-
-}
-
-.card:hover{
-
-transform:translateY(-8px);
-
-}
-
-</style>
-
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
+<body class="bg-slate-50">
 
-<body class="font-sans">
-
-<!-- Header -->
-
-<header class="bg-white shadow-sm sticky top-0 z-50">
-
-<div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-
-<a href="index.html">
-
-<img src="images/logo.png"
-
-class="w-40">
-
-</a>
-
-<nav class="hidden md:flex gap-8 font-semibold text-gray-700">
-
-<a href="ar0.html" class="hover:text-blue-600">0점대</a>
-
-<a href="ar1.html" class="hover:text-blue-600">1점대</a>
-
-<a href="ar2.html" class="hover:text-blue-600">2점대</a>
-
-<a href="ar3.html" class="hover:text-blue-600">3점대</a>
-
-<a href="ar4.html" class="hover:text-blue-600">4점대</a>
-
-<a href="ar5.html" class="hover:text-blue-600">5점대</a>
-
-</nav>
-
-</div>
-
+<header class="bg-white shadow sticky top-0 z-50">
+  <div class="max-w-6xl mx-auto px-5 py-4 flex justify-between items-center">
+    <a href="index.html">
+      <img src="images/logo.png" class="h-12" alt="logo">
+    </a>
+    <nav class="hidden md:flex gap-6 font-semibold text-slate-700">
+      <a href="ar0.html">0점대</a>
+      <a href="ar1.html">1점대</a>
+      <a href="ar2.html">2점대</a>
+      <a href="ar3.html">3점대</a>
+      <a href="ar4.html">4점대</a>
+      <a href="ar5.html">5점대</a>
+    </nav>
+  </div>
 </header>
 
+<section class="hero text-white">
+<div class="max-w-6xl mx-auto px-5 py-20">
+<h1 class="text-5xl font-extrabold leading-tight">원서와 단어를 함께 듣는<br>영어학습</h1>
+<p class="mt-6 text-xl opacity-90">원서 리딩 · 매일단어 · 원어민 북토킹</p>
 
+<div class="grid md:grid-cols-4 gap-6 mt-14">
 
-
-
-<!-- Hero -->
-
-<section class="bg-gradient-to-r from-blue-700 to-blue-500 text-white">
-
-<div class="max-w-7xl mx-auto px-6 py-20">
-
-<div class="grid md:grid-cols-2 gap-10 items-center">
-
-<div>
-
-<h1 class="text-5xl font-extrabold leading-tight">
-
-원서와 단어를 함께 듣는<br>
-
-영어학습
-
-</h1>
-
-<p class="mt-6 text-blue-100 text-xl">
-
-영어 원서 · 매일단어 · 원어민 북토킹
-
-<br>
-
-학생 맞춤 영어학습 플랫폼
-
-</p>
-
-<div class="mt-10 flex gap-4 flex-wrap">
-
-<a href="#"
-
-class="bg-white text-blue-700 px-7 py-4 rounded-full font-bold hover:bg-blue-100">
-
-원서 듣기
-
+<a href="#" class="card">
+<div class="icon">📚</div>
+<h2>원서 듣기</h2>
+<p>레벨별 원서 음원</p>
 </a>
 
-<a href="#"
+<a href="#" class="card">
+<div class="icon">🎧</div>
+<h2>매일 단어 듣기</h2>
+<p>능률보카 발음</p>
+</a>
 
-class="bg-green-500 px-7 py-4 rounded-full font-bold hover:bg-green-600">
+<a href="#recommend" class="card">
+<div class="icon">⭐</div>
+<h2>추천도서</h2>
+<p>이번 달 추천</p>
+</a>
 
-단어 듣기
-
+<a href="#" class="card">
+<div class="icon">📈</div>
+<h2>SR 리딩</h2>
+<p>성장 관리</p>
 </a>
 
 </div>
-
 </div>
-
-<div>
-
-<img src="images/logo.png"
-
-class="w-96 mx-auto">
-
-</div>
-
-</div>
-
-</div>
-
 </section>
 
+<section class="max-w-6xl mx-auto px-5 py-20">
+<h2 class="title">5단계 원서 리딩</h2>
 
-
-
-
-<!-- Quick Menu -->
-
-<section class="max-w-7xl mx-auto px-6 py-16">
-
-<div class="grid md:grid-cols-4 gap-8">
-
-<div class="card bg-white rounded-3xl shadow-lg p-8 text-center">
-
-<div class="text-6xl">
-
-📚
-
+<div class="grid md:grid-cols-5 gap-6 mt-10">
+<div class="step"><span>1</span><h3>집중 듣기</h3></div>
+<div class="step"><span>2</span><h3>소리내어 읽기</h3></div>
+<div class="step"><span>3</span><h3>Book Report</h3></div>
+<div class="step"><span>4</span><h3>Book Talk</h3></div>
+<div class="step"><span>5</span><h3>AR Quiz</h3></div>
 </div>
-
-<h2 class="text-2xl font-bold mt-5">
-
-원서 듣기
-
-</h2>
-
-<p class="text-gray-500 mt-3">
-
-레벨별 원서 음원
-
-</p>
-
-<a href="#"
-
-class="inline-block mt-6 bg-blue-600 text-white px-5 py-3 rounded-full">
-
-바로가기 →
-
-</a>
-
-</div>
-
-
-
-
-
-<div class="card bg-white rounded-3xl shadow-lg p-8 text-center">
-
-<div class="text-6xl">
-
-🎧
-
-</div>
-
-<h2 class="text-2xl font-bold mt-5 text-green-600">
-
-매일 단어 듣기
-
-</h2>
-
-<p class="text-gray-500 mt-3">
-
-능률보카 발음
-
-</p>
-
-<a href="#"
-
-class="inline-block mt-6 bg-green-500 text-white px-5 py-3 rounded-full">
-
-바로가기 →
-
-</a>
-
-</div>
-
-
-
-
-
-<div class="card bg-white rounded-3xl shadow-lg p-8 text-center">
-
-<div class="text-6xl">
-
-⭐
-
-</div>
-
-<h2 class="text-2xl font-bold mt-5 text-yellow-500">
-
-추천도서
-
-</h2>
-
-<p class="text-gray-500 mt-3">
-
-이번 달 추천도서
-
-</p>
-
-<a href="#"
-
-class="inline-block mt-6 bg-yellow-500 text-white px-5 py-3 rounded-full">
-
-바로가기 →
-
-</a>
-
-</div>
-
-
-
-
-
-<div class="card bg-white rounded-3xl shadow-lg p-8 text-center">
-
-<div class="text-6xl">
-
-📈
-
-</div>
-
-<h2 class="text-2xl font-bold mt-5 text-red-500">
-
-SR 리딩
-
-</h2>
-
-<p class="text-gray-500 mt-3">
-
-SR 성장관리
-
-</p>
-
-<a href="#"
-
-class="inline-block mt-6 bg-red-500 text-white px-5 py-3 rounded-full">
-
-바로가기 →
-
-</a>
-
-</div>
-
-</div>
-
 </section>
 
-
-
-
-<!-- 5단계 커리큘럼 -->
-
-<section class="bg-white py-20">
-
-<div class="max-w-6xl mx-auto">
-
-<h2 class="text-4xl font-bold text-center">
-
-5단계 원서 리딩 커리큘럼
-
-</h2>
-
-<div class="grid md:grid-cols-5 gap-6 mt-14">
-
-<div class="text-center">
-
-<div class="w-20 h-20 rounded-full bg-blue-500 text-white flex items-center justify-center text-3xl font-bold mx-auto">
-
-1
-
+<section id="recommend" class="max-w-6xl mx-auto px-5 pb-20">
+<h2 class="title">📚 이번 달 추천도서</h2>
+<div class="grid md:grid-cols-3 gap-6 mt-8">
+<div class="book">추천도서 1</div>
+<div class="book">추천도서 2</div>
+<div class="book">추천도서 3</div>
 </div>
-
-<h3 class="mt-5 font-bold">
-
-집중 듣기
-
-</h3>
-
-<p class="text-gray-500 text-sm mt-2">
-
-Finger Tracking
-
-</p>
-
-</div>
-
-<div class="text-center">
-
-<div class="w-20 h-20 rounded-full bg-green-500 text-white flex items-center justify-center text-3xl font-bold mx-auto">
-
-2
-
-</div>
-
-<h3 class="mt-5 font-bold">
-
-소리내어 읽기
-
-</h3>
-
-</div>
-
-<div class="text-center">
-
-<div class="w-20 h-20 rounded-full bg-yellow-500 text-white flex items-center justify-center text-3xl font-bold mx-auto">
-
-3
-
-</div>
-
-<h3 class="mt-5 font-bold">
-
-Book Report
-
-</h3>
-
-</div>
-
-<div class="text-center">
-
-<div class="w-20 h-20 rounded-full bg-purple-500 text-white flex items-center justify-center text-3xl font-bold mx-auto">
-
-4
-
-</div>
-
-<h3 class="mt-5 font-bold">
-
-Book Talk
-
-</h3>
-
-</div>
-
-<div class="text-center">
-
-<div class="w-20 h-20 rounded-full bg-red-500 text-white flex items-center justify-center text-3xl font-bold mx-auto">
-
-5
-
-</div>
-
-<h3 class="mt-5 font-bold">
-
-AR Quiz
-
-</h3>
-
-</div>
-
-</div>
-
-</div>
-
 </section>
+
+<footer class="bg-blue-700 text-white text-center py-8">
+© 2026 Genius English Academy
+</footer>
+
+</body>
+</html>
