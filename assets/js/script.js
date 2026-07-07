@@ -1,39 +1,19 @@
-// ===============================
-// Infinite Logo Slider
-// ===============================
-
 document.addEventListener("DOMContentLoaded", () => {
-
-    const track = document.querySelector(".logo-track");
 
     const slides = document.querySelectorAll(".logo-slide");
 
-    let index = 0;
+    let current = 0;
 
-    function move(){
+    setInterval(() => {
 
-        index++;
+        slides[current].classList.remove("active");
 
-        track.style.transition="transform .8s ease";
+        const next = (current + 1) % slides.length;
 
-        track.style.transform=`translateX(-${index*420}px)`;
+        slides[next].classList.add("active");
 
-        if(index===slides.length-1){
+        current = next;
 
-            setTimeout(()=>{
-
-                track.style.transition="none";
-
-                track.style.transform="translateX(0)";
-
-                index=0;
-
-            },800);
-
-        }
-
-    }
-
-    setInterval(move,3000);
+    }, 3000);
 
 });
