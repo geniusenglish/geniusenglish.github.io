@@ -1,21 +1,39 @@
 // ===============================
-// GENIUS English Academy
-// JavaScript
+// Infinite Logo Slider
 // ===============================
 
+document.addEventListener("DOMContentLoaded", () => {
 
-// 로고 슬라이드
+    const track = document.querySelector(".logo-track");
 
-const slides = document.querySelectorAll(".logo-slide");
+    const slides = document.querySelectorAll(".logo-slide");
 
-let current = 0;
+    let index = 0;
 
-setInterval(() => {
+    function move(){
 
-    slides[current].classList.remove("active");
+        index++;
 
-    current = (current + 1) % slides.length;
+        track.style.transition="transform .8s ease";
 
-    slides[current].classList.add("active");
+        track.style.transform=`translateX(-${index*420}px)`;
 
-}, 3500);
+        if(index===slides.length-1){
+
+            setTimeout(()=>{
+
+                track.style.transition="none";
+
+                track.style.transform="translateX(0)";
+
+                index=0;
+
+            },800);
+
+        }
+
+    }
+
+    setInterval(move,3000);
+
+});
