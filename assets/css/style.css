@@ -831,3 +831,202 @@ border-right:none;
 }
 
 }
+/* ==========================================
+   VOCABULARY HERO
+========================================== */
+
+.voca-hero{
+
+    background:#fff7f7;
+
+    padding:80px 20px;
+
+}
+
+.voca-hero .container{
+
+    max-width:900px;
+
+    margin:0 auto;
+
+    text-align:center;
+
+}
+
+.voca-badge{
+
+    display:inline-block;
+
+    background:#ffe5e5;
+
+    color:#dc2626;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    padding:8px 18px;
+
+    border-radius:999px;
+
+    margin-bottom:20px;
+
+    letter-spacing:.5px;
+
+}
+
+.voca-hero h1{
+
+    font-size:52px;
+
+    font-weight:800;
+
+    color:#111827;
+
+    margin-bottom:18px;
+
+    line-height:1.2;
+
+}
+
+.voca-hero p{
+
+    font-size:20px;
+
+    color:#6b7280;
+
+    line-height:1.8;
+
+    margin-bottom:45px;
+
+}
+
+
+/* ==========================================
+   SEARCH
+========================================== */
+
+.search-box{
+
+    position:relative;
+
+    max-width:700px;
+
+    margin:0 auto;
+
+}
+
+.search-box input{
+
+    width:100%;
+
+    height:68px;
+
+    border:2px solid #f1f5f9;
+
+    border-radius:999px;
+
+    background:#fff;
+
+    padding:0 70px 0 28px;
+
+    font-size:18px;
+
+    transition:.25s;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+
+}
+
+.search-box input:focus{
+
+    outline:none;
+
+    border-color:#dc2626;
+
+    box-shadow:0 12px 30px rgba(220,38,38,.15);
+
+}
+
+.search-box button{
+
+    position:absolute;
+
+    right:8px;
+
+    top:8px;
+
+    width:52px;
+
+    height:52px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#dc2626;
+
+    color:#fff;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.search-box button:hover{
+
+    background:#b91c1c;
+
+    transform:scale(1.05);
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:768px){
+
+.voca-hero{
+
+padding:60px 20px;
+
+}
+
+.voca-hero h1{
+
+font-size:36px;
+
+}
+
+.voca-hero p{
+
+font-size:17px;
+
+}
+
+.search-box input{
+
+height:58px;
+
+font-size:16px;
+
+}
+
+.search-box button{
+
+width:44px;
+
+height:44px;
+
+top:7px;
+
+right:7px;
+
+}
+
+}
