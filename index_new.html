@@ -9,31 +9,42 @@
 </head>
 <body class="bg-slate-50">
 
-<header>
+<header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-200">
 
-<div class="header-wrap">
+  <div class="max-w-7xl mx-auto flex items-center justify-between h-20 px-6">
 
-<a href="index_new.html" class="logo">
-<span>G</span>ENIUS
-</a>
+    <!-- Logo -->
+    <a href="index_new.html" class="text-3xl font-black tracking-tight">
+      <span class="text-red-600">G</span>ENIUS
+    </a>
 
-<nav>
+    <!-- Desktop Menu -->
+    <nav class="hidden lg:flex items-center gap-10">
 
-<a href="#">원서듣기</a>
+      <a href="#" class="font-semibold text-gray-700 hover:text-red-600 transition">
+        원서듣기
+      </a>
 
-<a href="#">단어듣기</a>
+      <a href="#" class="font-semibold text-gray-700 hover:text-red-600 transition">
+        단어듣기
+      </a>
 
-<a href="#curriculum">커리큘럼</a>
+      <a href="#curriculum" class="font-semibold text-gray-700 hover:text-red-600 transition">
+        커리큘럼
+      </a>
 
-<a href="#notice">공지사항</a>
+      <a href="#notice" class="font-semibold text-gray-700 hover:text-red-600 transition">
+        공지사항
+      </a>
 
-</nav>
+    </nav>
 
-<button class="menu-btn">
-☰
-</button>
+    <!-- Mobile -->
+    <button class="lg:hidden text-3xl">
+      ☰
+    </button>
 
-</div>
+  </div>
 
 </header>
 
