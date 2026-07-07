@@ -1030,3 +1030,240 @@ right:7px;
 }
 
 }
+
+/*==================================================
+  VOCABULARY PAGE
+==================================================*/
+
+/* Hero */
+
+.voca-hero{
+    background:#fff;
+    padding:60px 20px 45px;
+    text-align:center;
+    border-bottom:1px solid #f3f4f6;
+}
+
+.voca-hero .container{
+    max-width:900px;
+    margin:auto;
+}
+
+.voca-badge{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:8px 18px;
+    border-radius:999px;
+    background:#fff1f2;
+    color:#dc2626;
+    font-weight:700;
+    font-size:14px;
+    margin-bottom:18px;
+}
+
+.voca-hero h1{
+    font-size:52px;
+    font-weight:800;
+    color:#111827;
+    margin-bottom:18px;
+}
+
+.voca-hero p{
+    font-size:20px;
+    line-height:1.8;
+    color:#6b7280;
+    margin-bottom:35px;
+}
+
+/* 검색 */
+
+.search-box{
+    max-width:650px;
+    margin:0 auto;
+    position:relative;
+}
+
+.search-box input{
+    width:100%;
+    height:62px;
+    border:none;
+    border-radius:999px;
+    padding:0 70px 0 28px;
+    font-size:17px;
+    background:#fff;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.25s;
+}
+
+.search-box input:focus{
+    outline:none;
+    box-shadow:0 15px 35px rgba(220,38,38,.15);
+}
+
+.search-box button{
+    position:absolute;
+    right:6px;
+    top:6px;
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:50%;
+    background:#dc2626;
+    color:#fff;
+    font-size:18px;
+    cursor:pointer;
+    transition:.25s;
+}
+
+.search-box button:hover{
+    transform:scale(1.08);
+    background:#b91c1c;
+}
+
+
+/*==================================================
+  CATEGORY
+==================================================*/
+
+.voca-category{
+    background:#fff;
+    padding:25px 20px;
+}
+
+.voca-category .container{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    gap:16px;
+    flex-wrap:wrap;
+}
+
+.voca-category a{
+    background:#fff;
+    color:#374151;
+    padding:10px 22px;
+    border-radius:999px;
+    text-decoration:none;
+    font-weight:700;
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+    transition:.25s;
+}
+
+.voca-category a:hover{
+    background:#dc2626;
+    color:#fff;
+}
+
+
+/*==================================================
+  SECTION
+==================================================*/
+
+.voca-list{
+    padding:70px 20px 20px;
+}
+
+.voca-list .container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.voca-list h2{
+    font-size:32px;
+    font-weight:800;
+    color:#111827;
+    margin-bottom:30px;
+}
+
+
+/*==================================================
+  GRID
+==================================================*/
+
+.voca-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
+    gap:26px;
+}
+
+
+/*==================================================
+  CARD
+==================================================*/
+
+.voca-card{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    text-decoration:none;
+    color:inherit;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.25s;
+}
+
+.voca-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 40px rgba(0,0,0,.15);
+}
+
+.voca-card img{
+    width:100%;
+    display:block;
+}
+
+.card-info{
+    padding:18px;
+    text-align:center;
+}
+
+.card-info h3{
+    font-size:20px;
+    font-weight:700;
+    color:#111827;
+    margin-bottom:8px;
+}
+
+.card-info p{
+    color:#6b7280;
+    font-size:15px;
+}
+
+
+/*==================================================
+  MOBILE
+==================================================*/
+
+@media(max-width:768px){
+
+.voca-hero{
+    padding:50px 20px 40px;
+}
+
+.voca-hero h1{
+    font-size:36px;
+}
+
+.voca-hero p{
+    font-size:17px;
+}
+
+.search-box input{
+    height:56px;
+}
+
+.search-box button{
+    width:44px;
+    height:44px;
+}
+
+.voca-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.voca-list h2{
+    font-size:26px;
+}
+
+}
