@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
         // 다음 이미지
         current = (current + 1) % slides.length;
 
-        // GENIUS는 5초, 슬로건은 2초
-        const delay = current === 1 ? 5000 : 2000;
+        // GENIUS는 5초, 슬로건은 5초
+        const delay = current === 1 ? 5000 : 5000;
 
         setTimeout(startLoop, delay);
     }
