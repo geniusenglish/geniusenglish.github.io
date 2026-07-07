@@ -356,6 +356,10 @@ height:58px;
 
 }
 
+.logo-slide:first-child{
+    transform:scale(1.18);
+}
+
 .logo-slide.active{
 
     opacity:1;
