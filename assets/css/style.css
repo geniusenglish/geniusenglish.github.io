@@ -37,15 +37,19 @@ header{
 }
 
 .header-wrap{
-    max-width:1200px;
-    margin:0 auto;
-    height:78px;
+
+    max-width:1400px;
+
+    margin:auto;
 
     display:flex;
+
     align-items:center;
+
     justify-content:space-between;
 
-    padding:0 28px;
+    padding:18px 20px;
+
 }
 
 /* ---------- Logo ---------- */
@@ -147,6 +151,124 @@ nav a:hover::after{
     cursor:pointer;
 
     color:#111827;
+
+}
+
+.main-menu{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:34px;
+
+}
+
+.main-menu>a,
+.dropdown>a{
+
+    font-size:16px;
+
+    font-weight:600;
+
+    color:#1f2937;
+
+    transition:.25s;
+
+}
+
+.main-menu>a:hover,
+.dropdown>a:hover{
+
+    color:#dc2626;
+
+}
+
+.dropdown{
+
+    position:relative;
+
+}
+
+.dropdown-menu{
+
+    position:absolute;
+
+    top:45px;
+
+    left:0;
+
+    min-width:230px;
+
+    background:#fff;
+
+    border-radius:18px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+    overflow:hidden;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transform:translateY(10px);
+
+    transition:.25s;
+
+}
+
+.dropdown:hover .dropdown-menu{
+
+    opacity:1;
+
+    visibility:visible;
+
+    transform:translateY(0);
+
+}
+
+.dropdown-menu a{
+
+    display:block;
+
+    padding:15px 20px;
+
+    color:#374151;
+
+    transition:.2s;
+
+}
+
+.dropdown-menu a:hover{
+
+    background:#fff5f5;
+
+    color:#dc2626;
+
+}
+
+.consult-btn{
+
+    background:#dc2626;
+
+    color:#fff;
+
+    padding:12px 24px;
+
+    border-radius:999px;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+.consult-btn:hover{
+
+    background:#b91c1c;
+
+    transform:translateY(-2px);
 
 }
 
