@@ -1183,9 +1183,13 @@ right:7px;
 ==================================================*/
 
 .voca-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
-    gap:26px;
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:24px;
+
 }
 
 
@@ -1201,6 +1205,9 @@ right:7px;
     color:inherit;
     box-shadow:0 10px 25px rgba(0,0,0,.08);
     transition:.25s;
+    width:190px;
+
+    flex-shrink:0;
 }
 
 .voca-card:hover{
