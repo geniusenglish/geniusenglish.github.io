@@ -4,16 +4,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let current = 0;
 
-    setInterval(() => {
+    function startLoop() {
 
-        slides[current].classList.remove("active");
+        // 현재 이미지 표시
+        slides.forEach((slide, i) => {
+            slide.classList.toggle("show", i === current);
+        });
 
-        const next = (current + 1) % slides.length;
+        // 다음 이미지
+        current = (current + 1) % slides.length;
 
-        slides[next].classList.add("active");
+        // GENIUS는 5초, 슬로건은 2초
+        const delay = current === 1 ? 5000 : 2000;
 
-        current = next;
+        setTimeout(startLoop, delay);
+    }
 
-    }, 3000);
+    startLoop();
 
 });
