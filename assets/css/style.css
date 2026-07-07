@@ -21,13 +21,209 @@ body{
     line-height:1.6;
 }
 
+
+/* ==========================
+   HEADER
+========================== */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:999;
+    background:rgba(255,255,255,.92);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+    border-bottom:1px solid #ececec;
+}
+
+.header-wrap{
+    max-width:1200px;
+    margin:0 auto;
+    height:78px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 28px;
+}
+
+/* ---------- Logo ---------- */
+
+.logo{
+
+    text-decoration:none;
+
+    font-size:34px;
+
+    font-weight:900;
+
+    letter-spacing:-1px;
+
+    color:#111827;
+
+}
+
+.logo span{
+
+    color:#D62828;
+
+}
+
+/* ---------- Menu ---------- */
+
+nav{
+
+    display:flex;
+
+    gap:40px;
+
+    align-items:center;
+
+}
+
+nav a{
+
+    text-decoration:none;
+
+    color:#374151;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+    position:relative;
+
+}
+
+nav a:hover{
+
+    color:#D62828;
+
+}
+
+/* Hover Underline */
+
+nav a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    background:#D62828;
+
+    transition:.25s;
+
+}
+
+nav a:hover::after{
+
+    width:100%;
+
+}
+
+/* ---------- Menu Button ---------- */
+
+.menu-btn{
+
+    display:none;
+
+    background:none;
+
+    border:none;
+
+    font-size:32px;
+
+    cursor:pointer;
+
+    color:#111827;
+
+}
+
+/* ---------- Mobile ---------- */
+
+@media(max-width:900px){
+
+    nav{
+
+        display:none;
+
+    }
+
+    .menu-btn{
+
+        display:block;
+
+    }
+
+    .logo{
+
+        font-size:28px;
+
+    }
+
+    .header-wrap{
+
+        height:70px;
+
+        padding:0 20px;
+
+    }
+
+}
+
+
 /* -------------------------
    Hero
 ------------------------- */
 
 .hero{
 
-    background:linear-gradient(135deg,#dc2626,#ef4444);
+background:white;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.hero::before{
+
+content:"";
+
+position:absolute;
+
+right:-150px;
+
+top:-100px;
+
+width:550px;
+
+height:550px;
+
+border-radius:9999px;
+
+background:#f3f4f6;
+
+z-index:0;
+
+}
+
+.hero>*{
+
+position:relative;
+
+z-index:1;
 
 }
 
