@@ -1274,3 +1274,36 @@ right:7px;
 }
 
 }
+
+/* ===============================
+   Coming Soon
+================================ */
+
+.coming-text{
+    font-size:18px;
+    color:#999;
+    font-weight:500;
+}
+
+.coming-soon{
+    position:relative;
+    pointer-events:none;
+    opacity:.85;
+}
+
+.coming-badge{
+    position:absolute;
+    top:10px;
+    right:10px;
+
+    background:#e53935;
+    color:#fff;
+
+    padding:6px 12px;
+    border-radius:20px;
+
+    font-size:13px;
+    font-weight:700;
+
+    z-index:10;
+}
