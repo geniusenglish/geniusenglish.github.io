@@ -12,151 +12,149 @@
 
 <style>
 
+body{
+    background:#f7f8fb;
+}
+
 /* ===========================
    VOCA HERO
 =========================== */
 
 .voca-hero{
-
     max-width:1000px;
     margin:60px auto 40px;
-    padding:50px;
-
-    background:#fff;
-
-    border-radius:20px;
+    padding:50px 60px;
 
     display:flex;
     align-items:center;
     gap:60px;
 
+    background:#fff;
+    border-radius:20px;
     box-shadow:0 8px 25px rgba(0,0,0,.08);
-
 }
 
 .voca-book{
-
-    flex:0 0 220px;
+    width:180px;
+    flex-shrink:0;
     text-align:center;
-
 }
 
 .voca-book img{
-
-    width:200px;
-
-    border-radius:15px;
-
-    box-shadow:0 15px 35px rgba(0,0,0,.15);
-
+    width:100%;
+    border-radius:16px;
+    box-shadow:0 12px 30px rgba(0,0,0,.15);
 }
 
 .voca-info{
-
     flex:1;
-
 }
 
 .voca-info h1{
-
+    margin:0 0 20px;
     font-size:46px;
-
-    margin-bottom:20px;
-
+    font-weight:700;
     color:#222;
-
 }
 
 .voca-info p{
-
+    margin:0 0 30px;
     font-size:20px;
-
     color:#666;
-
     line-height:1.8;
-
-    margin-bottom:30px;
-
 }
 
 .back-btn{
-
     display:inline-block;
-
-    background:#E53935;
-
-    color:#fff;
-
-    text-decoration:none;
-
     padding:12px 24px;
 
-    border-radius:50px;
+    background:#E53935;
+    color:#fff;
 
+    border-radius:30px;
+    text-decoration:none;
     font-weight:600;
 
     transition:.25s;
-
 }
 
 .back-btn:hover{
-
     background:#C62828;
-
 }
 
-@media(max-width:768px){
+/* ===========================
+   DAY LIST
+=========================== */
 
-.voca-hero{
-
-    flex-direction:column;
-    text-align:center;
-
-    gap:30px;
-
-    padding:35px 25px;
-
-}
-
-.voca-book{
-
-    flex:none;
-
-}
-
-.voca-book img{
-
-    width:160px;
-
-}
-
-.voca-info h1{
-
-    font-size:32px;
-
-}
-
-.voca-info p{
-
-    font-size:17px;
-
+.day-list{
+    max-width:1000px;
+    margin:50px auto 80px;
+    padding:0 20px;
 }
 
 .day-card{
+    background:#fff;
+    border-radius:15px;
+    padding:20px 25px;
+    margin-bottom:18px;
 
-    flex-direction:column;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 
-    gap:15px;
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+    transition:.25s;
+}
 
-    text-align:center;
+.day-card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 12px 30px rgba(0,0,0,.12);
+}
 
+.day-title{
+    font-size:22px;
+    font-weight:700;
+    color:#333;
 }
 
 audio{
-
-    width:100%;
-
+    width:340px;
 }
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width:768px){
+
+    .voca-hero{
+        flex-direction:column;
+        text-align:center;
+        gap:30px;
+        padding:35px 25px;
+    }
+
+    .voca-book{
+        width:150px;
+    }
+
+    .voca-info h1{
+        font-size:32px;
+    }
+
+    .voca-info p{
+        font-size:17px;
+    }
+
+    .day-card{
+        flex-direction:column;
+        gap:15px;
+        text-align:center;
+    }
+
+    audio{
+        width:100%;
+    }
 
 }
 
@@ -244,7 +242,7 @@ audio{
 <section class="voca-hero">
 
     <div class="voca-book">
-        <img src="../images/vocabulary/starter1.png" alt="능률 VOCA 초등 기본">
+        <img src="../images/vocacover_1.jpg" alt="능률 VOCA 초등 기본">
     </div>
 
     <div class="voca-info">
