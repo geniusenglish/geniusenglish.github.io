@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>능률 VOCA 초등 필수 | Genius English</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="../assets/css/style.css">
+
+<style>
+
+body{
+    background:#f7f8fb;
+}
+
+/* ===========================
+   VOCA HERO
+=========================== */
+
+.voca-hero{
+    max-width:1000px;
+    margin:60px auto 40px;
+    padding:50px 60px;
+
+    display:flex;
+    align-items:center;
+    gap:60px;
+
+    background:#fff;
+    border-radius:20px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+.voca-book{
+    width:180px;
+    flex-shrink:0;
+    text-align:center;
+}
+
+.voca-book img{
+    width:100%;
+    border-radius:16px;
+    box-shadow:0 12px 30px rgba(0,0,0,.15);
+}
+
+.voca-info{
+    flex:1;
+}
+
+.voca-info h1{
+    margin:0 0 20px;
+    font-size:46px;
+    font-weight:700;
+    color:#222;
+}
+
+.voca-info p{
+    margin:0 0 30px;
+    font-size:20px;
+    color:#666;
+    line-height:1.8;
+}
+
+.back-btn{
+    display:inline-block;
+    padding:12px 24px;
+
+    background:#E53935;
+    color:#fff;
+
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:600;
+
+    transition:.25s;
+}
+
+.back-btn:hover{
+    background:#C62828;
+}
+
+/* ===========================
+   DAY LIST
+=========================== */
+
+.day-list{
+    max-width:1000px;
+    margin:50px auto 80px;
+    padding:0 20px;
+}
+
+.day-card{
+    background:#fff;
+    border-radius:15px;
+    padding:20px 25px;
+    margin-bottom:18px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+    transition:.25s;
+}
+
+.day-card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 12px 30px rgba(0,0,0,.12);
+}
+
+.day-title{
+    font-size:22px;
+    font-weight:700;
+    color:#333;
+}
+
+audio{
+    width:340px;
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width:768px){
+
+    .voca-hero{
+        flex-direction:column;
+        text-align:center;
+        gap:30px;
+        padding:35px 25px;
+    }
+
+    .voca-book{
+        width:150px;
+    }
+
+    .voca-info h1{
+        font-size:32px;
+    }
+
+    .voca-info p{
+        font-size:17px;
+    }
+
+    .day-card{
+        flex-direction:column;
+        gap:15px;
+        text-align:center;
+    }
+
+    audio{
+        width:100%;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Header -->
+<header>
+
+<!-- ================= TOP ================= -->
+
+    <div class="header-top">
+
+        <div class="header-wrap">
+
+            <a href="../index_new.html" class="logo-slider">
+
+    <img src="../images/logo1.png" class="logo-slide show">
+
+    <img src="../images/logo2.png" class="logo-slide">
+
+</a>
+
+        </div>
+
+    </div>
+
+    <!-- ================= MENU ================= -->
+
+    <div class="header-menu">
+
+        <div class="header-wrap">
+
+            <nav class="main-menu">
+
+                <a href="../academy.html">학원소개</a>
+
+                <a href="../curriculum.html">커리큘럼</a>
+
+                <div class="dropdown">
+
+                    <a href="#" class="dropdown-toggle">
+                        학습자료
+                    </a>
+
+                    <div class="dropdown-menu">
+
+                        <a href="../reading.html">
+                            📚 원서 음원 듣기
+                        </a>
+
+                        <a href="../vocabulary.html">
+                            🎧 매일 단어 듣기
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <a href="https://global-zone60.renaissance-go.com/welcomeportal/rpna83al">
+                    르네상스 러닝
+                </a>
+
+                <a href="../notice.html">
+                    공지사항
+                </a>
+
+            </nav>
+
+            <a href="../contact.html" class="consult-btn">
+
+                무료 상담문의
+
+            </a>
+
+        </div>
+
+    </div>
+
+</header>
+
+<section class="voca-hero">
+
+    <div class="voca-book">
+        <img src="../images/vocacover_2.jpg" alt="능률 VOCA 초등 필수">
+    </div>
+
+    <div class="voca-info">
+
+        <h1>능률 VOCA 초등 필수</h1>
+
+        <p>
+            매일 10~15분 듣기로<br>
+            발음과 철자를 함께 익혀보세요.
+        </p>
+
+        <a href="../vocabulary.html" class="back-btn">
+            ← 매일 단어 듣기 목록
+        </a>
+
+    </div>
+
+</section>
+
+
+<section class="day-list" id="dayList">
+
+</section>
+
+
+<!-- Footer -->
+
+<footer class="bg-red-600 text-white text-center py-8">
+© 2026 Genius English Academy
+</footer>
+
+
+
+<script>
+const folder = "voca2";
+const totalDays = 39;
+
+// 음원이 없는 DAY
+const skipDays = [5, 10, 15, 20, 25, 30, 35];
+
+const list = document.getElementById("dayList");
+
+for (let i = 1; i <= totalDays; i++) {
+
+    // 음원이 없는 DAY는 건너뛰기
+    if (skipDays.includes(i)) continue;
+
+    const day = i.toString().padStart(2, "0");
+
+    list.innerHTML += `
+        <div class="day-card">
+            <div class="day-title">DAY ${day}</div>
+
+            <audio controls preload="none">
+                <source src="../audio/${folder}/day${i}.mp3" type="audio/mpeg">
+                브라우저가 오디오를 지원하지 않습니다.
+            </audio>
+        </div>
+    `;
+}
+</script>
+</body>
+
+</html>
