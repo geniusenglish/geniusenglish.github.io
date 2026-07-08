@@ -143,7 +143,7 @@ audio{
 
 <section class="hero">
 
-<img src="images/vocabulary/vocacover_1.png">
+<img src="images/vocacover_1.png">
 
 <h1>능률 VOCA 초등 기본</h1>
 
@@ -174,39 +174,32 @@ audio{
 
 
 <script>
+const folder = "starter1";
+const totalDays = 39;
 
-const folder="starter1";
+// 음원이 없는 DAY
+const skipDays = [5, 10, 15, 20, 25, 30, 35];
 
-const totalDays=3;   // ← 나중에 30으로 변경
+const list = document.getElementById("dayList");
 
-const list=document.getElementById("dayList");
+for (let i = 1; i <= totalDays; i++) {
 
-for(let i=1;i<=totalDays;i++){
+    // 음원이 없는 DAY는 건너뛰기
+    if (skipDays.includes(i)) continue;
 
-const day=i.toString().padStart(2,"0");
+    const day = i.toString().padStart(2, "0");
 
-list.innerHTML+=`
+    list.innerHTML += `
+        <div class="day-card">
+            <div class="day-title">DAY ${day}</div>
 
-<div class="day-card">
-
-<div class="day-title">
-
-DAY ${day}
-
-</div>
-
-<audio controls preload="none">
-
-<source src="../audio/${folder}/day${i}.mp3" type="audio/mpeg">
-
-</audio>
-
-</div>
-
-`;
-
+            <audio controls preload="none">
+                <source src="../audio/${folder}/day${i}.mp3" type="audio/mpeg">
+                브라우저가 오디오를 지원하지 않습니다.
+            </audio>
+        </div>
+    `;
 }
-
 </script>
 
 </body>
