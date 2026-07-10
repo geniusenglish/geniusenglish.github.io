@@ -1621,17 +1621,18 @@ font-size:40px;
 
 .book-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
-    gap:30px;
+    grid-template-columns:repeat(auto-fill,minmax(180px,1fr));
+    gap:28px;
 }
 
 .book{
+    display:block;
+    text-decoration:none;
     background:#fff;
     border-radius:18px;
-    padding:18px;
-    text-align:center;
+    overflow:hidden;
     box-shadow:0 8px 20px rgba(0,0,0,.08);
-    transition:.3s;
+    transition:.25s;
 }
 
 .book:hover{
@@ -1640,42 +1641,25 @@ font-size:40px;
 
 .book img{
     width:100%;
-    aspect-ratio:3 / 4;
+    aspect-ratio:3/4;
     object-fit:cover;
-    border-radius:12px;
-    box-shadow:0 8px 18px rgba(0,0,0,.12);
+    display:block;
 }
 
 .book h3{
-    margin:15px 0 12px;
+    padding:16px 16px 8px;
     font-size:16px;
     font-weight:700;
-    line-height:1.5;
-    min-height:50px;
     color:#222;
+    line-height:1.4;
+    min-height:56px;
 }
 
-.audio-btn{
-    width:100%;
-    padding:12px;
-    border:none;
-    border-radius:10px;
-    background:#e63946;
-    color:#fff;
+.book-like{
+    padding:0 16px 18px;
     font-size:15px;
-    font-weight:600;
-    cursor:pointer;
-    transition:.3s;
-}
-
-.audio-btn:hover{
-    background:#c62835;
-}
-
-.book audio{
-    display:none;
-    width:100%;
-    margin-top:15px;
+    color:#e63946;
+    font-weight:700;
 }
 
 /* ===========================
@@ -1689,18 +1673,13 @@ font-size:40px;
     gap:18px;
 }
 
-.book{
-    padding:14px;
-}
-
 .book h3{
     font-size:14px;
-    min-height:42px;
+    min-height:46px;
 }
 
-.audio-btn{
+.book-like{
     font-size:13px;
-    padding:10px;
 }
 
 }
@@ -1784,6 +1763,17 @@ font-size:40px;
     font-size:15px;
 }
 
+}
+
+.hero-guide{
+    margin-top:18px;
+    font-size:15px;
+    color:#666;
+    background:#fff;
+    display:inline-block;
+    padding:10px 18px;
+    border-radius:30px;
+    border:1px solid #eee;
 }
 
 /* ===========================
