@@ -1777,38 +1777,44 @@ font-size:40px;
 }
 
 /* ===========================
-   AR CATEGORY
+   AR LEVEL MENU
 =========================== */
 
-.voca-category{
-    background:#fff;
-    padding:20px 0;
-    border-bottom:1px solid #eee;
+.ar-level-menu{
+    padding:0 0 45px;
 }
 
-.voca-category .container{
+.ar-level-menu .container{
     display:flex;
     justify-content:center;
+    align-items:center;
     flex-wrap:wrap;
-    gap:12px;
+    gap:14px;
 }
 
-.voca-category a{
+.ar-level-menu a{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
     text-decoration:none;
     color:#444;
-    background:#f5f5f5;
-    padding:10px 22px;
-    border-radius:30px;
-    font-weight:600;
-    transition:.25s;
+    background:#fff;
+    padding:12px 24px;
+    border-radius:999px;
+    font-size:15px;
+    font-weight:700;
+    box-shadow:0 8px 20px rgba(0,0,0,.06);
+    transition:all .3s ease;
 }
 
-.voca-category a:hover{
+.ar-level-menu a:hover{
     background:#e63946;
     color:#fff;
+    transform:translateY(-2px);
+    box-shadow:0 12px 28px rgba(230,57,70,.25);
 }
 
-.voca-category a.active{
+.ar-level-menu a.active{
     background:#e63946;
     color:#fff;
 }
