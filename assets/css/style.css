@@ -1678,3 +1678,84 @@ font-size:13px;
 }
 
 }
+
+/* ===========================
+   AR HERO
+=========================== */
+
+.ar-hero{
+    background: linear-gradient(135deg,#f8fafc 0%,#eef2f7 100%);
+    padding:100px 20px;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+}
+
+.ar-hero::before{
+    content:"";
+    position:absolute;
+    top:-120px;
+    right:-120px;
+    width:350px;
+    height:350px;
+    border-radius:50%;
+    background:rgba(230,57,70,.06);
+}
+
+.hero-content{
+    max-width:800px;
+    margin:0 auto;
+    position:relative;
+    z-index:2;
+}
+
+.hero-badge{
+    display:inline-block;
+    background:#e63946;
+    color:#fff;
+    padding:8px 18px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:600;
+    letter-spacing:1px;
+    margin-bottom:22px;
+}
+
+.ar-hero h1{
+    font-size:52px;
+    font-weight:800;
+    color:#1f2937;
+    margin-bottom:20px;
+}
+
+.ar-hero p{
+    font-size:20px;
+    line-height:1.8;
+    color:#4b5563;
+}
+
+.hero-sub{
+    margin-top:20px;
+    color:#6b7280;
+    font-size:17px;
+}
+
+@media(max-width:768px){
+
+.ar-hero{
+    padding:70px 20px;
+}
+
+.ar-hero h1{
+    font-size:34px;
+}
+
+.ar-hero p{
+    font-size:16px;
+}
+
+.hero-sub{
+    font-size:15px;
+}
+
+}
