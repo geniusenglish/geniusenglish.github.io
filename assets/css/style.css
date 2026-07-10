@@ -45,6 +45,13 @@ input{
     font-family:inherit;
 }
 
+.container{
+    width:100%;
+    max-width:1200px;
+    margin:0 auto;
+    padding:0 20px;
+    box-sizing:border-box;
+}
 
 /* ===================================================
    HEADER
@@ -1741,7 +1748,7 @@ font-size:40px;
 .ar-hero{
 
     background:linear-gradient(135deg,#f8fafc,#eef2f7);
-    padding:90px 20px;
+    padding:55px 20px 45px;
     text-align:center;
     position:relative;
     overflow:hidden;
@@ -1752,7 +1759,7 @@ font-size:40px;
 
     content:"";
     position:absolute;
-    top:-140px;
+    top:-120px;
     right:-120px;
     width:340px;
     height:340px;
@@ -1763,7 +1770,7 @@ font-size:40px;
 
 .hero-content{
 
-    max-width:760px;
+    max-width:850px;
     margin:0 auto;
     position:relative;
     z-index:2;
@@ -1776,20 +1783,20 @@ font-size:40px;
     background:#e63946;
     color:#fff;
     padding:8px 18px;
-    border-radius:999px;
+    border-radius:30px;
     font-size:13px;
     font-weight:700;
     letter-spacing:1px;
-    margin-bottom:22px;
+    margin-bottom:24px;
 
 }
 
 .ar-hero h1{
 
-    font-size:54px;
+    font-size:56px;
     font-weight:800;
     color:#222;
-    margin-bottom:18px;
+    margin-bottom:24px;
 
 }
 
@@ -1798,7 +1805,16 @@ font-size:40px;
     font-size:20px;
     line-height:1.8;
     color:#555;
-    margin-bottom:24px;
+    margin-bottom:18px;
+
+}
+
+.hero-sub{
+
+    font-size:18px;
+    color:#666;
+    line-height:1.8;
+    margin-bottom:28px;
 
 }
 
@@ -1811,9 +1827,52 @@ font-size:40px;
     border-radius:999px;
     color:#666;
     font-size:15px;
+    margin-bottom:40px;
+}
+
+/* ===========================
+   AR LEVEL MENU
+=========================== */
+
+.ar-level-menu{
+
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:14px;
+    padding-top:35px;
+    border-top:1px solid #e8e8e8;
 
 }
 
+.ar-level-menu a{
+
+    text-decoration:none;
+    color:#444;
+    background:#fff;
+    padding:12px 24px;
+    border-radius:999px;
+    font-weight:700;
+    font-size:15px;
+    box-shadow:0 6px 16px rgba(0,0,0,.06);
+    transition:.25s;
+
+}
+
+.ar-level-menu a:hover{
+
+    background:#e63946;
+    color:#fff;
+    transform:translateY(-2px);
+
+}
+
+.ar-level-menu a.active{
+
+    background:#e63946;
+    color:#fff;
+
+}
 
 /* ===========================
    Responsive
@@ -1821,22 +1880,9 @@ font-size:40px;
 
 @media(max-width:768px){
 
-.ar-level-nav{
-
-    gap:10px;
-
-}
-
-.ar-level-nav a{
-
-    padding:8px 16px;
-    font-size:14px;
-
-}
-
 .ar-hero{
 
-    padding:70px 20px;
+    padding:45px 20px 35px;
 
 }
 
@@ -1852,8 +1898,29 @@ font-size:40px;
 
 }
 
+.hero-sub{
+
+    font-size:15px;
+
+}
+
 .hero-guide{
 
+    font-size:14px;
+    margin-bottom:30px;
+
+}
+
+.ar-level-menu{
+
+    gap:10px;
+    padding-top:25px;
+
+}
+
+.ar-level-menu a{
+
+    padding:10px 16px;
     font-size:14px;
 
 }
