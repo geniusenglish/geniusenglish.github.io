@@ -110,85 +110,18 @@
 
 <div class="book-grid" id="bookGrid">
 
-<a class="book" data-title="Biscuit" href="#" target="_blank">
-<img src="images/books/biscuit.jpg">
-<p>Biscuit</p>
-</a>
-
-<a class="book" data-title="Little Bear" href="#" target="_blank">
-<img src="images/books/littlebear.jpg">
-<p>Little Bear</p>
-</a>
-
-<a class="book" data-title="Go Dog Go" href="#" target="_blank">
-<img src="images/books/godoggo.jpg">
-<p>Go Dog Go</p>
-</a>
-
-<a class="book" data-title="Hop on Pop" href="#" target="_blank">
-<img src="images/books/hoponpop.jpg">
-<p>Hop on Pop</p>
-</a>
-
-<a class="book" data-title="Sam and the Firefly" href="#" target="_blank">
-<img src="images/books/samfirefly.jpg">
-<p>Sam and the Firefly</p>
-</a>
-
-<a class="book" data-title="Brown Bear" href="#" target="_blank">
-<img src="images/books/brownbear.jpg">
-<p>Brown Bear</p>
-</a>
-
-<a class="book" data-title="Pete the Cat" href="#" target="_blank">
-<img src="images/books/petecat.jpg">
-<p>Pete the Cat</p>
-</a>
-
-<a class="book" data-title="Elephant and Piggie" href="#" target="_blank">
-<img src="images/books/elephantpiggie.jpg">
-<p>Elephant & Piggie</p>
-</a>
-
-<a class="book" data-title="Fly Guy" href="#" target="_blank">
-<img src="images/books/flyguy.jpg">
-<p>Fly Guy</p>
-</a>
-
-<a class="book" data-title="Danny and the Dinosaur" href="#" target="_blank">
-<img src="images/books/danny.jpg">
-<p>Danny and the Dinosaur</p>
-</a>
-
 </div>
 
 </div>
+
 </section>
 
 <footer class="bg-red-600 text-white text-center py-8">
 © 2026 Genius English Academy
 </footer>
 
-<script src="assets/js/script.js"></script>
-<script>
+<script src="../js/books-ar0.js"></script>
+<script src="../script.js"></script>
 
-const searchInput=document.getElementById("searchInput");
-
-searchInput.addEventListener("keyup",function(){
-
-const keyword=this.value.toLowerCase();
-
-document.querySelectorAll(".book").forEach(book=>{
-
-const title=book.dataset.title.toLowerCase();
-
-book.style.display=
-title.includes(keyword)?"block":"none";
-
-});
-
-});
-
-</script>
 </body>
 </html>
