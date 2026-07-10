@@ -1,25 +1,57 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+    /* ===========================
+       HERO LOGO SLIDE
+    =========================== */
+
     const slides = document.querySelectorAll(".logo-slide");
 
-    let current = 0;
+    if (slides.length > 0) {
 
-    function startLoop() {
+        let current = 0;
 
-        // 현재 이미지 표시
-        slides.forEach((slide, i) => {
-            slide.classList.toggle("show", i === current);
-        });
+        function startLoop() {
 
-        // 다음 이미지
-        current = (current + 1) % slides.length;
+            slides.forEach((slide, i) => {
+                slide.classList.toggle("show", i === current);
+            });
 
-        // GENIUS는 5초, 슬로건은 5초
-        const delay = current === 1 ? 5000 : 5000;
+            current = (current + 1) % slides.length;
 
-        setTimeout(startLoop, delay);
+            setTimeout(startLoop, 5000);
+
+        }
+
+        startLoop();
+
     }
 
-    startLoop();
+    /* ===========================
+       BOOK SEARCH
+    =========================== */
+
+    const searchInput = document.getElementById("searchInput");
+
+    if (searchInput) {
+
+        searchInput.addEventListener("keyup", function () {
+
+            const keyword = this.value.toLowerCase().trim();
+
+            document.querySelectorAll(".book").forEach(book => {
+
+                const title = book.dataset.title.toLowerCase();
+
+                if (title.includes(keyword)) {
+                    book.style.display = "";
+                } else {
+                    book.style.display = "none";
+                }
+
+            });
+
+        });
+
+    }
 
 });
