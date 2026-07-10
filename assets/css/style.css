@@ -1322,3 +1322,317 @@ right:7px;
     z-index:10;
 }
 
+body{
+    background:#f7f8fb;
+}
+
+
+/*----여기서부터reading페이지---*/
+/* ===========================
+   HERO
+=========================== */
+
+.reading-hero{
+
+    max-width:1000px;
+
+    margin:60px auto 50px;
+
+    padding:55px;
+
+    background:#fff;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+}
+
+.reading-badge{
+
+    display:inline-block;
+
+    padding:10px 22px;
+
+    background:#fff2f2;
+
+    color:#E53935;
+
+    border-radius:999px;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    margin-bottom:25px;
+
+}
+
+.reading-hero h1{
+
+    font-size:48px;
+
+    color:#222;
+
+    margin-bottom:20px;
+
+}
+
+.reading-hero p{
+
+    font-size:20px;
+
+    color:#666;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+}
+
+/* ===========================
+   SEARCH
+=========================== */
+
+.reading-search{
+
+    display:flex;
+
+    justify-content:center;
+
+    max-width:650px;
+
+    margin:auto;
+
+}
+
+.reading-search input{
+
+    flex:1;
+
+    height:58px;
+
+    border:none;
+
+    border-radius:50px 0 0 50px;
+
+    padding:0 25px;
+
+    font-size:17px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.reading-search button{
+
+    width:70px;
+
+    border:none;
+
+    background:#E53935;
+
+    color:#fff;
+
+    font-size:24px;
+
+    border-radius:0 50px 50px 0;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.reading-search button:hover{
+
+    background:#C62828;
+
+}
+
+/* ===========================
+   AR SECTION
+=========================== */
+
+.ar-section{
+
+    max-width:1200px;
+
+    margin:70px auto;
+
+    padding:0 20px;
+
+}
+
+.ar-section h2{
+
+    text-align:center;
+
+    font-size:34px;
+
+    color:#222;
+
+}
+
+.section-desc{
+
+    text-align:center;
+
+    color:#777;
+
+    margin:12px 0 45px;
+
+}
+
+/* ===========================
+   GRID
+=========================== */
+
+.ar-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.ar-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:40px 20px;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    color:#333;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+    transition:.25s;
+
+}
+
+.ar-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.13);
+
+}
+
+.ar-icon{
+
+    font-size:50px;
+
+    margin-bottom:20px;
+
+}
+
+.ar-card h3{
+
+    font-size:30px;
+
+    margin-bottom:12px;
+
+    color:#222;
+
+}
+
+.ar-card p{
+
+    color:#777;
+
+    font-size:16px;
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:768px){
+
+.reading-hero{
+
+    padding:40px 25px;
+
+}
+
+.reading-hero h1{
+
+    font-size:34px;
+
+}
+
+.reading-hero p{
+
+    font-size:17px;
+
+}
+
+.reading-search{
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.reading-search input{
+
+    border-radius:50px;
+
+}
+
+.reading-search button{
+
+    width:100%;
+
+    height:52px;
+
+    border-radius:50px;
+
+}
+
+.ar-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+}
+
+.ar-card{
+
+    padding:30px 15px;
+
+}
+
+.ar-card h3{
+
+    font-size:24px;
+
+}
+
+.ar-icon{
+
+    font-size:40px;
+
+}
+
+}
+
