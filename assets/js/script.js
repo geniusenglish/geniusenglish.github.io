@@ -64,69 +64,22 @@ if (bookGrid && typeof books !== "undefined") {
 
         bookGrid.innerHTML += `
 
-<div class="book" data-title="${book.title}">
+<a class="book"
+href="book-detail.html?id=${book.id}"
+data-title="${book.title}">
 
     <img src="${book.image}" alt="${book.title}">
 
     <h3>${book.title}</h3>
 
-    <button class="audio-btn">
-        🎧 음원 듣기
-    </button>
+    <div class="book-like">
+        ❤️ ${book.likes}
+    </div>
 
-    <audio preload="none">
-        <source src="${book.audio}" type="audio/mpeg">
-    </audio>
-
-</div>
+</a>
 
 `;
 
     });
 
 }
-
-
-/* 버튼 누르면 플레이어 열기 */
-
-document.addEventListener("click",function(e){
-
-    if(e.target.classList.contains("audio-btn")){
-
-        const card=e.target.parentElement;
-
-        const audio=card.querySelector("audio");
-
-        if(audio.style.display==="block"){
-
-            audio.pause();
-
-            audio.style.display="none";
-
-            e.target.innerHTML="🎧 음원 듣기";
-
-        }else{
-
-            document.querySelectorAll(".book audio").forEach(a=>{
-
-                a.pause();
-
-                a.style.display="none";
-
-            });
-
-            document.querySelectorAll(".audio-btn").forEach(btn=>{
-
-                btn.innerHTML="🎧 음원 듣기";
-
-            });
-
-            audio.style.display="block";
-
-            e.target.innerHTML="❌ 닫기";
-
-        }
-
-    }
-
-});

@@ -1,62 +1,24 @@
 const books = [
 
 {
-    title:"Step into Reading | Big Egg",
+    id:"big-egg",
+    title:"Big Egg",
     image:"../images/ar0/ar0_bigegg.jpg",
-    audio:"../audio/books/ar0/ar0_bigegg.mp3"
+    likes:24
 },
 
-
 {
-    title:"Step into Reading | Cat Traps",
+    id:"cat-traps",
+    title:"Cat Traps",
     image:"../images/ar0/ar0_cattraps.jpg",
-    audio:"../audio/books/ar0/ar0_bigegg.mp3"
+    likes:18
 },
 
 {
-    title:"O.R.T | The Go-kart",
+    id:"the-go-kart",
+    title:"The Go-kart",
     image:"../images/ar0/ar0_thegokart.jpg",
-    audio:"../audio/books/ar0/ar0_bigegg.mp3"
-},
-
-{
-    title:"Step into Reading | Big Egg",
-    image:"../images/ar0/ar0_bigegg.jpg",
-    audio:"../audio/books/ar0/ar0_bigegg.mp3"
-},
-
-
-{
-    title:"Step into Reading | Cat Traps",
-    image:"../images/ar0/ar0_cattraps.jpg",
-    audio:"../audio/books/ar0/ar0_bigegg.mp3"
-},
-
-{
-    title:"O.R.T | The Go-kart",
-    image:"../images/ar0/ar0_thegokart.jpg",
-    audio:"../audio/books/ar0/ar0_bigegg.mp3"
-},
-
-{
-    title:"Step into Reading | Big Egg",
-    image:"../images/ar0/ar0_bigegg.jpg",
-    audio:"../audio/books/ar0/ar0_bigegg.mp3"
-},
-
-
-{
-    title:"Step into Reading | Cat Traps",
-    image:"../images/ar0/ar0_cattraps.jpg",
-    audio:"../audio/books/ar0/ar0_bigegg.mp3"
-},
-
-{
-    title:"O.R.T | The Go-kart",
-    image:"../images/ar0/ar0_thegokart.jpg",
-    audio:"../audio/books/ar0/ar0_bigegg.mp3"
+    likes:31
 }
-
-
 
 ];
