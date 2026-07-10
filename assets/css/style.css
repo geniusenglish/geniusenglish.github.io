@@ -1,8 +1,13 @@
-/* ===========================
-   GENIUS ENGLISH ACADEMY v1
-=========================== */
+/* ===================================================
+   GENIUS ENGLISH ACADEMY
+   STYLE.CSS
+=================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;800&display=swap');
+
+/* ===================================================
+   RESET
+=================================================== */
 
 *{
     margin:0;
@@ -15,16 +20,35 @@ html{
 }
 
 body{
-    font-family:'Noto Sans KR',sans-serif;
+    font-family:'Noto Sans KR', sans-serif;
     background:#f8fafc;
     color:#0f172a;
     line-height:1.6;
 }
 
+/* ===================================================
+   COMMON
+=================================================== */
 
-/* ===========================
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+img{
+    display:block;
+    max-width:100%;
+}
+
+button,
+input{
+    font-family:inherit;
+}
+
+
+/* ===================================================
    HEADER
-=========================== */
+=================================================== */
 
 header{
 
@@ -32,27 +56,29 @@ header{
     top:0;
     z-index:1000;
 
-    background:#ffffff;
+    background:#fff;
 
     box-shadow:0 2px 10px rgba(0,0,0,.05);
 
 }
 
-/* 공통 */
+/* ===================================================
+   HEADER COMMON
+=================================================== */
 
 .header-wrap{
 
     max-width:1280px;
 
-    margin:auto;
+    margin:0 auto;
 
     padding:0 20px;
 
 }
 
-/* ===========================
+/* ===================================================
    TOP LOGO
-=========================== */
+=================================================== */
 
 .header-top{
 
@@ -74,9 +100,9 @@ header{
 
 
 
-/* ===========================
+/* ===================================================
    MENU
-=========================== */
+=================================================== */
 
 .header-menu{
 
@@ -100,7 +126,9 @@ header{
 
 }
 
-/* 메뉴 */
+/* ===================================================
+   MAIN MENU
+=================================================== */
 
 .main-menu{
 
@@ -127,6 +155,8 @@ header{
 
     color:#1f2937;
 
+    text-decoration:none;
+
     transition:.25s;
 
 }
@@ -138,7 +168,7 @@ header{
 
 }
 
-/* 밑줄 효과 */
+/* 메뉴 밑줄 */
 
 .main-menu>a::after,
 .dropdown>a::after{
@@ -168,9 +198,9 @@ header{
 
 }
 
-/* ===========================
+/* ===================================================
    DROPDOWN
-=========================== */
+=================================================== */
 
 .dropdown{
 
@@ -222,6 +252,8 @@ header{
 
     color:#374151;
 
+    text-decoration:none;
+
     transition:.2s;
 
 }
@@ -234,96 +266,9 @@ header{
 
 }
 
-/* 기본은 PC */
-.mobile-text{
-    display:none;
-}
-
-.pc-text{
-    display:inline;
-}
-
-
-
-/* 모바일 버튼 */
-
-.menu-btn{
-
-    display:none;
-
-}
-
-/* ===========================
-   RESPONSIVE
-=========================== */
-
-@media (max-width:1024px){
-
-.header-top{
-
-    padding:14px 0;
-
-}
-
-.logo-slider{
-
-    width:300px;
-    height:60px;
-
-}
-
-.main-menu{
-
-    display:flex;
-
-    flex-wrap:wrap;
-
-    justify-content:center;
-
-    gap:14px 18px;
-
-}
-
-.main-menu>a,
-.dropdown>a{
-
-    font-size:15px;
-
-}
-
-.header-menu .header-wrap{
-
-    height:auto;
-
-    justify-content:center;
-
-    padding:12px 0;
-
-}
-
-.pc-text{
-
-    display:none;
-
-}
-
-.mobile-text{
-
-    display:inline;
-
-}
-
-}
-
-}
-
-.logo img{
-
-    height:52px;
-
-}
-
-
+/* ===================================================
+   LOGO
+=================================================== */
 
 .logo-slider{
 
@@ -338,89 +283,169 @@ header{
 }
 
 .logo-slide{
+
     position:absolute;
+
     top:0;
     left:0;
+
     width:100%;
     height:100%;
+
     object-fit:contain;
 
     opacity:0;
+
     transition:opacity .8s ease;
+
 }
 
 .logo-slide.show{
+
     opacity:1;
+
+}
+
+/* ===================================================
+   MOBILE
+=================================================== */
+
+.pc-text{
+
+    display:inline;
+
+}
+
+.mobile-text{
+
+    display:none;
+
+}
+
+@media (max-width:1024px){
+
+    .header-top{
+
+        padding:14px 0;
+
+    }
+
+    .logo-slider{
+
+        width:300px;
+        height:60px;
+
+    }
+
+    .header-menu .header-wrap{
+
+        height:auto;
+
+        justify-content:center;
+
+        padding:12px 0;
+
+    }
+
+    .main-menu{
+
+        display:flex;
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:14px 18px;
+
+    }
+
+    .main-menu>a,
+    .dropdown>a{
+
+        font-size:15px;
+
+    }
+
+    .pc-text{
+
+        display:none;
+
+    }
+
+    .mobile-text{
+
+        display:inline;
+
+    }
+
 }
 
 
-/* -------------------------
-   Hero
-------------------------- */
+/* ===================================================
+   MAIN HERO
+=================================================== */
 
 .hero{
 
-background:white;
+    position:relative;
 
-position:relative;
+    overflow:hidden;
 
-overflow:hidden;
+    background:#fff;
 
 }
 
 .hero::before{
 
-content:"";
+    content:"";
 
-position:absolute;
+    position:absolute;
 
-right:-150px;
+    top:-100px;
+    right:-150px;
 
-top:-100px;
+    width:550px;
+    height:550px;
 
-width:550px;
+    background:#f3f4f6;
 
-height:550px;
+    border-radius:50%;
 
-border-radius:9999px;
-
-background:#f3f4f6;
-
-z-index:0;
+    z-index:0;
 
 }
 
-.hero>*{
+.hero > *{
 
-position:relative;
+    position:relative;
 
-z-index:1;
+    z-index:1;
 
 }
 
-/* -------------------------
-   Quick Card
-------------------------- */
+/* ===================================================
+   MAIN QUICK CARD
+=================================================== */
 
 .card{
 
     display:block;
 
-    background:#ffffff;
+    padding:35px 25px;
+
+    background:#fff;
 
     border-radius:28px;
 
-    padding:35px 25px;
-
     text-align:center;
-
-    box-shadow:0 15px 40px rgba(0,0,0,.08);
-
-    transition:.3s;
 
     text-decoration:none;
 
     color:#111827;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    transition:.3s;
 
 }
 
@@ -432,7 +457,7 @@ z-index:1;
 
 }
 
-.icon{
+.card .icon{
 
     font-size:55px;
 
@@ -456,9 +481,9 @@ z-index:1;
 
 }
 
-/* -------------------------
-   Section Title
-------------------------- */
+/* ===================================================
+   MAIN SECTION TITLE
+=================================================== */
 
 .title{
 
@@ -468,15 +493,19 @@ z-index:1;
 
     font-weight:800;
 
+    color:#111827;
+
+    line-height:1.3;
+
 }
 
-/* -------------------------
-   Curriculum
-------------------------- */
+/* ===================================================
+  MAIN  CURRICULUM
+=================================================== */
 
 .step{
 
-    background:white;
+    background:#fff;
 
     border-radius:24px;
 
@@ -498,27 +527,27 @@ z-index:1;
 
 .step span{
 
-    width:70px;
-
-    height:70px;
-
-    border-radius:999px;
-
     display:flex;
 
     align-items:center;
 
     justify-content:center;
 
-    margin:auto;
+    width:70px;
+
+    height:70px;
+
+    margin:0 auto;
+
+    border-radius:50%;
 
     background:#2563eb;
 
-    color:white;
+    color:#fff;
 
     font-size:30px;
 
-    font-weight:bold;
+    font-weight:700;
 
 }
 
@@ -532,17 +561,11 @@ z-index:1;
 
 }
 
-/* -------------------------
-   Book Card
-------------------------- */
+/* ===================================================
+   MAIN BOOK CARD
+=================================================== */
 
 .book{
-
-    background:white;
-
-    border-radius:24px;
-
-    min-height:250px;
 
     display:flex;
 
@@ -550,11 +573,17 @@ z-index:1;
 
     justify-content:center;
 
+    min-height:250px;
+
+    background:#fff;
+
+    border-radius:24px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
     font-size:24px;
 
     font-weight:700;
-
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
 
     transition:.3s;
 
@@ -566,9 +595,9 @@ z-index:1;
 
 }
 
-/* -------------------------
-   Buttons
-------------------------- */
+/* ===================================================
+   BUTTON
+=================================================== */
 
 .btn{
 
@@ -586,11 +615,13 @@ z-index:1;
 
 }
 
+/* Blue */
+
 .btn-blue{
 
     background:#2563eb;
 
-    color:white;
+    color:#fff;
 
 }
 
@@ -600,11 +631,13 @@ z-index:1;
 
 }
 
+/* Green */
+
 .btn-green{
 
     background:#10b981;
 
-    color:white;
+    color:#fff;
 
 }
 
@@ -614,11 +647,13 @@ z-index:1;
 
 }
 
+/* Yellow */
+
 .btn-yellow{
 
     background:#f59e0b;
 
-    color:white;
+    color:#fff;
 
 }
 
@@ -628,9 +663,9 @@ z-index:1;
 
 }
 
-/* -------------------------
-   Footer
-------------------------- */
+/* ===================================================
+   FOOTER
+=================================================== */
 
 footer{
 
@@ -638,56 +673,57 @@ footer{
 
 }
 
-/* -------------------------
-   Mobile
-------------------------- */
+/* ===================================================
+   MOBILE
+=================================================== */
 
-@media(max-width:768px){
+@media (max-width:768px){
 
-.title{
+    .title{
 
-font-size:30px;
+        font-size:30px;
+
+    }
+
+    .card{
+
+        padding:28px;
+
+    }
+
+    .card .icon{
+
+        font-size:48px;
+
+    }
+
+    .card h2{
+
+        font-size:24px;
+
+    }
+
+    .hero h1{
+
+        font-size:38px !important;
+
+    }
+
+    .hero p{
+
+        font-size:18px !important;
+
+    }
 
 }
-
-.card{
-
-padding:28px;
-
-}
-
-.icon{
-
-font-size:48px;
-
-}
-
-.card h2{
-
-font-size:24px;
-
-}
-
-.hero h1{
-
-font-size:38px !important;
-
-}
-
-.hero p{
-
-font-size:18px !important;
-
-}
-
-}
-/* ===========================
-   NOTICE
-=========================== */
+/* ===================================================
+   MAIN NOTICE
+=================================================== */
 
 .notice-section{
 
     margin-top:-10px;
+
     margin-bottom:40px;
 
 }
@@ -696,11 +732,11 @@ font-size:18px !important;
 
     max-width:1280px;
 
-    margin:auto;
+    margin:0 auto;
 
     display:grid;
 
-    grid-template-columns:120px repeat(4,1fr);
+    grid-template-columns:120px repeat(4, 1fr);
 
     background:#fff;
 
@@ -714,11 +750,11 @@ font-size:18px !important;
 
 }
 
-/* NOTICE */
+/* ===================================================
+   NOTICE LABEL
+=================================================== */
 
 .notice-label{
-
-    background:#fff8f8;
 
     display:flex;
 
@@ -727,6 +763,8 @@ font-size:18px !important;
     align-items:center;
 
     justify-content:center;
+
+    background:#fff8f8;
 
     border-right:1px solid #eee;
 
@@ -744,19 +782,19 @@ font-size:18px !important;
 
     font-size:13px;
 
-    letter-spacing:2px;
-
     font-weight:700;
+
+    letter-spacing:2px;
 
     color:#dc2626;
 
 }
 
-/* 카드 */
+/* ===================================================
+   NOTICE CARD
+=================================================== */
 
 .notice-card{
-
-    padding:24px;
 
     display:flex;
 
@@ -764,13 +802,15 @@ font-size:18px !important;
 
     justify-content:center;
 
-    border-right:1px solid #f1f1f1;
+    min-height:95px;
 
-    transition:.3s;
+    padding:24px;
+
+    border-right:1px solid #f1f1f1;
 
     cursor:pointer;
 
-    min-height:95px;
+    transition:.3s;
 
 }
 
@@ -786,7 +826,7 @@ font-size:18px !important;
 
 }
 
-/* 첫번째 공지 */
+/* 첫 번째 카드 */
 
 .notice-main{
 
@@ -796,13 +836,13 @@ font-size:18px !important;
 
 .notice-title{
 
+    margin-bottom:8px;
+
     font-size:17px;
 
     font-weight:700;
 
     color:#111827;
-
-    margin-bottom:8px;
 
 }
 
@@ -810,391 +850,294 @@ font-size:18px !important;
 
     font-size:14px;
 
-    color:#6b7280;
-
     line-height:1.6;
+
+    color:#6b7280;
 
 }
 
-/* 모바일 */
+/* ===================================================
+   MOBILE
+=================================================== */
 
 @media(max-width:1000px){
 
-.notice-wrapper{
+    .notice-wrapper{
 
-grid-template-columns:1fr;
+        grid-template-columns:1fr;
+
+    }
+
+    .notice-label{
+
+        flex-direction:row;
+
+        gap:10px;
+
+        padding:20px;
+
+        border-right:none;
+
+        border-bottom:1px solid #eee;
+
+    }
+
+    .notice-card{
+
+        border-right:none;
+
+        border-top:1px solid #eee;
+
+    }
 
 }
 
-.notice-label{
 
-padding:20px;
+/* ===================================================
+   VOCABULARY PAGE
+=================================================== */
 
-flex-direction:row;
-
-gap:10px;
-
-}
-
-.notice-card{
-
-border-top:1px solid #eee;
-
-border-right:none;
-
-}
-
-}
-/* ==========================================
+/* ===================================================
    VOCABULARY HERO
-========================================== */
+=================================================== */
 
 .voca-hero{
-
-    background:#fff7f7;
-
-    padding:80px 20px;
-
-}
-
-.voca-hero .container{
-
-    max-width:900px;
-
-    margin:0 auto;
-
-    text-align:center;
-
-}
-
-.voca-badge{
-
-    display:inline-block;
-
-    background:#ffe5e5;
-
-    color:#dc2626;
-
-    font-size:14px;
-
-    font-weight:700;
-
-    padding:8px 18px;
-
-    border-radius:999px;
-
-    margin-bottom:20px;
-
-    letter-spacing:.5px;
-
-}
-
-.voca-hero h1{
-
-    font-size:52px;
-
-    font-weight:800;
-
-    color:#111827;
-
-    margin-bottom:18px;
-
-    line-height:1.2;
-
-}
-
-.voca-hero p{
-
-    font-size:20px;
-
-    color:#6b7280;
-
-    line-height:1.8;
-
-    margin-bottom:45px;
-
-}
-
-
-/* ==========================================
-   SEARCH
-========================================== */
-
-.search-box{
-
-    position:relative;
-
-    max-width:700px;
-
-    margin:0 auto;
-
-}
-
-.search-box input{
-
-    width:100%;
-
-    height:68px;
-
-    border:2px solid #f1f5f9;
-
-    border-radius:999px;
 
     background:#fff;
 
-    padding:0 70px 0 28px;
-
-    font-size:18px;
-
-    transition:.25s;
-
-    box-shadow:0 10px 25px rgba(0,0,0,.05);
-
-}
-
-.search-box input:focus{
-
-    outline:none;
-
-    border-color:#dc2626;
-
-    box-shadow:0 12px 30px rgba(220,38,38,.15);
-
-}
-
-.search-box button{
-
-    position:absolute;
-
-    right:8px;
-
-    top:8px;
-
-    width:52px;
-
-    height:52px;
-
-    border:none;
-
-    border-radius:50%;
-
-    background:#dc2626;
-
-    color:#fff;
-
-    font-size:20px;
-
-    cursor:pointer;
-
-    transition:.25s;
-
-}
-
-.search-box button:hover{
-
-    background:#b91c1c;
-
-    transform:scale(1.05);
-
-}
-
-
-/* ==========================================
-   MOBILE
-========================================== */
-
-@media(max-width:768px){
-
-.voca-hero{
-
-padding:60px 20px;
-
-}
-
-.voca-hero h1{
-
-font-size:36px;
-
-}
-
-.voca-hero p{
-
-font-size:17px;
-
-}
-
-.search-box input{
-
-height:58px;
-
-font-size:16px;
-
-}
-
-.search-box button{
-
-width:44px;
-
-height:44px;
-
-top:7px;
-
-right:7px;
-
-}
-
-}
-
-/*==================================================
-  VOCABULARY PAGE
-==================================================*/
-
-/* Hero */
-
-.voca-hero{
-    background:#fff;
     padding:60px 20px 45px;
+
     text-align:center;
+
     border-bottom:1px solid #f3f4f6;
+
 }
 
 .voca-hero .container{
+
     max-width:900px;
-    margin:auto;
+
+    margin:0 auto;
+
 }
 
 .voca-badge{
+
     display:inline-flex;
+
     align-items:center;
+
     gap:8px;
+
     padding:8px 18px;
-    border-radius:999px;
-    background:#fff1f2;
-    color:#dc2626;
-    font-weight:700;
-    font-size:14px;
+
     margin-bottom:18px;
+
+    border-radius:999px;
+
+    background:#fff1f2;
+
+    color:#dc2626;
+
+    font-size:14px;
+
+    font-weight:700;
+
 }
 
 .voca-hero h1{
-    font-size:52px;
-    font-weight:800;
-    color:#111827;
+
     margin-bottom:18px;
+
+    font-size:52px;
+
+    font-weight:800;
+
+    color:#111827;
+
 }
 
 .voca-hero p{
-    font-size:20px;
-    line-height:1.8;
-    color:#6b7280;
+
     margin-bottom:35px;
+
+    font-size:20px;
+
+    line-height:1.8;
+
+    color:#6b7280;
+
 }
 
-/* 검색 */
+/* ===================================================
+   SEARCH
+=================================================== */
 
 .search-box{
-    max-width:650px;
-    margin:0 auto;
+
     position:relative;
+
+    max-width:650px;
+
+    margin:0 auto;
+
 }
 
 .search-box input{
+
     width:100%;
+
     height:62px;
-    border:none;
-    border-radius:999px;
+
     padding:0 70px 0 28px;
-    font-size:17px;
+
+    border:none;
+
+    border-radius:999px;
+
     background:#fff;
+
     box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    font-size:17px;
+
     transition:.25s;
+
 }
 
 .search-box input:focus{
+
     outline:none;
+
     box-shadow:0 15px 35px rgba(220,38,38,.15);
+
 }
 
 .search-box button{
+
     position:absolute;
-    right:6px;
+
     top:6px;
+
+    right:6px;
+
     width:50px;
+
     height:50px;
+
     border:none;
+
     border-radius:50%;
+
     background:#dc2626;
+
     color:#fff;
+
     font-size:18px;
+
     cursor:pointer;
+
     transition:.25s;
+
 }
 
 .search-box button:hover{
-    transform:scale(1.08);
+
     background:#b91c1c;
+
+    transform:scale(1.08);
+
 }
 
-
-/*==================================================
-  CATEGORY
-==================================================*/
+/* ===================================================
+   CATEGORY
+=================================================== */
 
 .voca-category{
-    background:#fff;
+
     padding:25px 20px;
+
+    background:#fff;
+
 }
 
 .voca-category .container{
+
     max-width:1200px;
-    margin:auto;
+
+    margin:0 auto;
+
     display:flex;
+
     justify-content:center;
-    gap:16px;
+
     flex-wrap:wrap;
+
+    gap:16px;
+
 }
 
 .voca-category a{
-    background:#fff;
-    color:#374151;
+
     padding:10px 22px;
+
+    background:#fff;
+
     border-radius:999px;
-    text-decoration:none;
+
+    color:#374151;
+
     font-weight:700;
+
+    text-decoration:none;
+
     box-shadow:0 5px 18px rgba(0,0,0,.08);
+
     transition:.25s;
+
 }
 
 .voca-category a:hover{
+
     background:#dc2626;
+
     color:#fff;
+
 }
 
-
-/*==================================================
-  SECTION
-==================================================*/
+/* ===================================================
+   VOCABULARY SECTION
+=================================================== */
 
 .voca-list{
+
     padding:70px 20px 20px;
+
 }
 
 .voca-list .container{
+
     max-width:1200px;
-    margin:auto;
+
+    margin:0 auto;
+
 }
 
 .voca-list h2{
-    font-size:32px;
-    font-weight:800;
-    color:#111827;
+
     margin-bottom:30px;
+
+    font-size:32px;
+
+    font-weight:800;
+
+    color:#111827;
+
 }
 
-
-/*==================================================
-  GRID
-==================================================*/
+/* ===================================================
+   VOCABULARY GRID
+=================================================== */
 
 .voca-grid{
 
@@ -1206,237 +1149,178 @@ right:7px;
 
 }
 
-
-/*==================================================
-  CARD
-==================================================*/
+/* ===================================================
+   VOCABULARY CARD
+=================================================== */
 
 .voca-card{
-    background:#fff;
-    border-radius:20px;
-    overflow:hidden;
-    text-decoration:none;
-    color:inherit;
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
-    transition:.25s;
+
     width:190px;
 
     flex-shrink:0;
-}
-
-.voca-card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 18px 40px rgba(0,0,0,.15);
-}
-
-.voca-card img{
-    width:100%;
-    display:block;
-}
-
-.card-info{
-    padding:18px;
-    text-align:center;
-}
-
-.card-info h3{
-    font-size:20px;
-    font-weight:700;
-    color:#111827;
-    margin-bottom:8px;
-}
-
-.card-info p{
-    color:#6b7280;
-    font-size:15px;
-}
-
-
-/*==================================================
-  MOBILE
-==================================================*/
-
-@media(max-width:768px){
-
-.voca-hero{
-    padding:50px 20px 40px;
-}
-
-.voca-hero h1{
-    font-size:36px;
-}
-
-.voca-hero p{
-    font-size:17px;
-}
-
-.search-box input{
-    height:56px;
-}
-
-.search-box button{
-    width:44px;
-    height:44px;
-}
-
-.voca-grid{
-    grid-template-columns:repeat(2,1fr);
-}
-
-.voca-list h2{
-    font-size:26px;
-}
-
-}
-
-/* ===============================
-   Coming Soon
-================================ */
-
-.coming-text{
-    font-size:18px;
-    color:#999;
-    font-weight:500;
-}
-
-.coming-soon{
-    position:relative;
-    pointer-events:none;
-    opacity:.85;
-}
-
-.coming-badge{
-    position:absolute;
-    top:10px;
-    right:10px;
-
-    background:#e53935;
-    color:#fff;
-
-    padding:6px 12px;
-    border-radius:20px;
-
-    font-size:13px;
-    font-weight:700;
-
-    z-index:10;
-}
-
-body{
-    background:#f7f8fb;
-}
-
-
-/*----여기서부터reading페이지---*/
-/* ===========================
-   HERO
-=========================== */
-
-.hero{
-
-    text-align:center;
-
-    padding:55px 20px 40px;
-
-}
-
-.hero-badge{
-
-    display:inline-block;
-
-    padding:10px 22px;
-
-    background:#fff2f2;
-
-    color:#E53935;
-
-    border-radius:999px;
-
-    font-size:14px;
-
-    font-weight:700;
-
-    letter-spacing:.5px;
-
-}
-
-.hero h1{
-
-    font-size:64px;
-
-    margin-top:20px;
-
-    color:#111827;
-
-    font-weight:800;
-
-}
-
-.hero p{
-
-    margin-top:18px;
-
-    color:#6b7280;
-
-    font-size:20px;
-
-    line-height:1.8;
-
-}
-
-/* ===========================
-   SEARCH
-=========================== */
-
-.search-box{
-
-    max-width:560px;
-
-    margin:45px auto 35px;
-
-    display:flex;
-
-    border-radius:999px;
 
     overflow:hidden;
 
+    background:#fff;
+
+    border-radius:20px;
+
+    color:inherit;
+
+    text-decoration:none;
+
     box-shadow:0 10px 25px rgba(0,0,0,.08);
 
-}
-
-.search-box input{
-
-    flex:1;
-
-    border:none;
-
-    padding:18px 24px;
-
-    font-size:17px;
-
-    outline:none;
+    transition:.25s;
 
 }
 
-.search-box button{
+.voca-card:hover{
 
-    width:70px;
+    transform:translateY(-8px);
 
-    border:none;
+    box-shadow:0 18px 40px rgba(0,0,0,.15);
 
-    background:#E53935;
+}
+
+.voca-card img{
+
+    display:block;
+
+    width:100%;
+
+}
+
+.card-info{
+
+    padding:18px;
+
+    text-align:center;
+
+}
+
+.card-info h3{
+
+    margin-bottom:8px;
+
+    font-size:20px;
+
+    font-weight:700;
+
+    color:#111827;
+
+}
+
+.card-info p{
+
+    font-size:15px;
+
+    color:#6b7280;
+
+}
+
+/* ===================================================
+   COMING SOON
+=================================================== */
+
+.coming-text{
+
+    font-size:18px;
+
+    font-weight:500;
+
+    color:#999;
+
+}
+
+.coming-soon{
+
+    position:relative;
+
+    pointer-events:none;
+
+    opacity:.85;
+
+}
+
+.coming-badge{
+
+    position:absolute;
+
+    top:10px;
+
+    right:10px;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    background:#e53935;
 
     color:#fff;
 
-    font-size:24px;
+    font-size:13px;
 
-    cursor:pointer;
+    font-weight:700;
+
+    z-index:10;
 
 }
 
-/* ===========================
+/* ===================================================
+   VOCABULARY MOBILE
+=================================================== */
+
+@media(max-width:768px){
+
+    .voca-hero{
+
+        padding:50px 20px 40px;
+
+    }
+
+    .voca-hero h1{
+
+        font-size:36px;
+
+    }
+
+    .voca-hero p{
+
+        font-size:17px;
+
+    }
+
+    .search-box input{
+
+        height:56px;
+
+    }
+
+    .search-box button{
+
+        width:44px;
+
+        height:44px;
+
+    }
+
+    .voca-list h2{
+
+        font-size:26px;
+
+    }
+
+}
+
+
+/* ===================================================
+   READING PAGE
+=================================================== */
+
+/* ===================================================
    CATEGORY
-=========================== */
+=================================================== */
 
 .category-buttons{
 
@@ -1444,17 +1328,19 @@ body{
 
     justify-content:center;
 
-    gap:18px;
-
     flex-wrap:wrap;
+
+    gap:18px;
 
 }
 
 .category-buttons a{
 
-    background:#fff;
+    display:inline-block;
 
     padding:13px 24px;
+
+    background:#fff;
 
     border-radius:999px;
 
@@ -1472,55 +1358,31 @@ body{
 
 .category-buttons a:hover{
 
-    transform:translateY(-3px);
-
     color:#E53935;
+
+    transform:translateY(-3px);
 
 }
 
-/* ===========================
-   MOBILE
-=========================== */
+/* ===================================================
+   READING MOBILE
+=================================================== */
 
 @media(max-width:768px){
 
-.hero{
+    .category-buttons{
 
-    padding:45px 20px;
+        gap:12px;
 
-}
+    }
 
-.hero h1{
+    .category-buttons a{
 
-    font-size:42px;
+        padding:12px 18px;
 
-}
+        font-size:14px;
 
-.hero p{
-
-    font-size:17px;
-
-}
-
-.search-box{
-
-    margin:35px auto 30px;
-
-}
-
-.category-buttons{
-
-    gap:12px;
-
-}
-
-.category-buttons a{
-
-    padding:12px 18px;
-
-    font-size:14px;
-
-}
+    }
 
 }
 
