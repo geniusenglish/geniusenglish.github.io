@@ -56,28 +56,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
-const bookGrid=document.getElementById("bookGrid");
+const bookGrid = document.getElementById("bookGrid");
 
-if(bookGrid && typeof books!=="undefined"){
+if (bookGrid && typeof books !== "undefined") {
 
-books.forEach(book=>{
+    books.forEach(book => {
 
-bookGrid.innerHTML+=`
+        bookGrid.innerHTML += `
 
-<a
-class="book"
-href="${book.youtube}"
-target="_blank"
-data-title="${book.title}">
+<div class="book" data-title="${book.title}">
 
-<img src="${book.image}" alt="${book.title}">
+    <img src="${book.image}" alt="${book.title}">
 
-<p>${book.title}</p>
+    <p>${book.title}</p>
 
-</a>
+    <audio controls preload="none">
+        <source src="${book.audio}" type="audio/mpeg">
+        브라우저가 오디오를 지원하지 않습니다.
+    </audio>
 
-`;
+</div>
 
-});
+        `;
+
+    });
 
 }
