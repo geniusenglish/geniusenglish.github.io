@@ -898,10 +898,10 @@ footer{
 =================================================== */
 
 /* ===================================================
-   VOCABULARY HERO
+   SUB HERO
 =================================================== */
 
-.voca-hero{
+.sub-hero{
 
     background:#fff;
 
@@ -913,7 +913,7 @@ footer{
 
 }
 
-.voca-hero .container{
+.sub-hero .container{
 
     max-width:900px;
 
@@ -921,7 +921,7 @@ footer{
 
 }
 
-.voca-badge{
+.sub-badge{
 
     display:inline-flex;
 
@@ -945,7 +945,7 @@ footer{
 
 }
 
-.voca-hero h1{
+.sub-hero h1{
 
     margin-bottom:18px;
 
@@ -957,7 +957,7 @@ footer{
 
 }
 
-.voca-hero p{
+.sub-hero p{
 
     margin-bottom:35px;
 
@@ -1268,24 +1268,24 @@ footer{
 }
 
 /* ===================================================
-   VOCABULARY MOBILE
+    SUB HERO MOBILE
 =================================================== */
 
 @media(max-width:768px){
 
-    .voca-hero{
+    .sub-hero{
 
         padding:50px 20px 40px;
 
     }
 
-    .voca-hero h1{
+    .sub-hero h1{
 
         font-size:36px;
 
     }
 
-    .voca-hero p{
+    .sub-hero p{
 
         font-size:17px;
 
