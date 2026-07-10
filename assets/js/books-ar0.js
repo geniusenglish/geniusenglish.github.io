@@ -1,33 +1,33 @@
 const books = [
 
 {
-    title:"Biscuit",
-    image:"images/books/biscuit.jpg",
-    youtube:"https://youtu.be/xxxx"
+    title:"Step into Reading | Big Egg",
+    image:"../images/ar0/ar_bigegg.jpg",
+    audio:"../audio/books/ar0/ar0_bigegg.mp3"
 },
 
 {
     title:"Little Bear",
-    image:"images/books/littlebear.jpg",
-    youtube:"https://youtu.be/xxxx"
+    image:"../images/ar0/ar0_bigegg.jpg",
+    audio:"../audio/books/ar0/ar0_bigegg.mp3"
 },
 
 {
     title:"Go Dog Go",
-    image:"images/books/godoggo.jpg",
-    youtube:"https://youtu.be/xxxx"
+    image:"../images/ar0/ar0_cattraps.jpg",
+    audio:"../audio/books/ar0/ar0_bigegg.mp3"
 },
 
 {
     title:"Hop on Pop",
-    image:"images/books/hoponpop.jpg",
-    youtube:"https://youtu.be/xxxx"
+    image:"../images/ar0/ar0_thegokart.jpg",
+    audio:"../audio/books/ar0/ar0_bigegg.mp3"
 },
 
 {
     title:"Brown Bear",
-    image:"images/books/brownbear.jpg",
-    youtube:"https://youtu.be/xxxx"
+    image:"../images/ar0/brownbear.jpg",
+    audio:"../audio/books/ar0/ar0_bigegg.mp3"
 }
 
 ];
