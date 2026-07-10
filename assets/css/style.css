@@ -1332,25 +1332,15 @@ body{
    HERO
 =========================== */
 
-.reading-hero{
-
-    max-width:1000px;
-
-    margin:60px auto 50px;
-
-    padding:55px;
-
-    background:#fff;
-
-    border-radius:20px;
+.hero{
 
     text-align:center;
 
-    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    padding:55px 20px 40px;
 
 }
 
-.reading-badge{
+.hero-badge{
 
     display:inline-block;
 
@@ -1366,31 +1356,31 @@ body{
 
     font-weight:700;
 
-    letter-spacing:1px;
-
-    margin-bottom:25px;
+    letter-spacing:.5px;
 
 }
 
-.reading-hero h1{
+.hero h1{
 
-    font-size:48px;
+    font-size:64px;
 
-    color:#222;
+    margin-top:20px;
 
-    margin-bottom:20px;
+    color:#111827;
+
+    font-weight:800;
 
 }
 
-.reading-hero p{
+.hero p{
+
+    margin-top:18px;
+
+    color:#6b7280;
 
     font-size:20px;
 
-    color:#666;
-
     line-height:1.8;
-
-    margin-bottom:35px;
 
 }
 
@@ -1398,37 +1388,37 @@ body{
    SEARCH
 =========================== */
 
-.reading-search{
+.search-box{
+
+    max-width:560px;
+
+    margin:45px auto 35px;
 
     display:flex;
 
-    justify-content:center;
+    border-radius:999px;
 
-    max-width:650px;
+    overflow:hidden;
 
-    margin:auto;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
 
 }
 
-.reading-search input{
+.search-box input{
 
     flex:1;
 
-    height:58px;
-
     border:none;
 
-    border-radius:50px 0 0 50px;
-
-    padding:0 25px;
+    padding:18px 24px;
 
     font-size:17px;
 
-    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    outline:none;
 
 }
 
-.reading-search button{
+.search-box button{
 
     width:70px;
 
@@ -1440,123 +1430,51 @@ body{
 
     font-size:24px;
 
-    border-radius:0 50px 50px 0;
-
     cursor:pointer;
 
-    transition:.25s;
-
-}
-
-.reading-search button:hover{
-
-    background:#C62828;
-
 }
 
 /* ===========================
-   AR SECTION
+   CATEGORY
 =========================== */
 
-.ar-section{
+.category-buttons{
 
-    max-width:1200px;
+    display:flex;
 
-    margin:70px auto;
+    justify-content:center;
 
-    padding:0 20px;
+    gap:18px;
 
-}
-
-.ar-section h2{
-
-    text-align:center;
-
-    font-size:34px;
-
-    color:#222;
+    flex-wrap:wrap;
 
 }
 
-.section-desc{
-
-    text-align:center;
-
-    color:#777;
-
-    margin:12px 0 45px;
-
-}
-
-/* ===========================
-   GRID
-=========================== */
-
-.ar-grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(3,1fr);
-
-    gap:30px;
-
-}
-
-/* ===========================
-   CARD
-=========================== */
-
-.ar-card{
+.category-buttons a{
 
     background:#fff;
 
-    border-radius:20px;
+    padding:13px 24px;
 
-    padding:40px 20px;
+    border-radius:999px;
 
-    text-align:center;
+    color:#222;
+
+    font-weight:600;
 
     text-decoration:none;
 
-    color:#333;
-
-    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
 
     transition:.25s;
 
 }
 
-.ar-card:hover{
+.category-buttons a:hover{
 
-    transform:translateY(-6px);
+    transform:translateY(-3px);
 
-    box-shadow:0 15px 35px rgba(0,0,0,.13);
-
-}
-
-.ar-icon{
-
-    font-size:50px;
-
-    margin-bottom:20px;
-
-}
-
-.ar-card h3{
-
-    font-size:30px;
-
-    margin-bottom:12px;
-
-    color:#222;
-
-}
-
-.ar-card p{
-
-    color:#777;
-
-    font-size:16px;
+    color:#E53935;
 
 }
 
@@ -1566,71 +1484,41 @@ body{
 
 @media(max-width:768px){
 
-.reading-hero{
+.hero{
 
-    padding:40px 25px;
-
-}
-
-.reading-hero h1{
-
-    font-size:34px;
+    padding:45px 20px;
 
 }
 
-.reading-hero p{
+.hero h1{
+
+    font-size:42px;
+
+}
+
+.hero p{
 
     font-size:17px;
 
 }
 
-.reading-search{
+.search-box{
 
-    flex-direction:column;
-
-    gap:15px;
+    margin:35px auto 30px;
 
 }
 
-.reading-search input{
+.category-buttons{
 
-    border-radius:50px;
-
-}
-
-.reading-search button{
-
-    width:100%;
-
-    height:52px;
-
-    border-radius:50px;
+    gap:12px;
 
 }
 
-.ar-grid{
+.category-buttons a{
 
-    grid-template-columns:repeat(2,1fr);
+    padding:12px 18px;
 
-    gap:18px;
-
-}
-
-.ar-card{
-
-    padding:30px 15px;
-
-}
-
-.ar-card h3{
-
-    font-size:24px;
-
-}
-
-.ar-icon{
-
-    font-size:40px;
+    font-size:14px;
 
 }
 
