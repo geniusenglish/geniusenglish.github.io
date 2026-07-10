@@ -55,3 +55,29 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 });
+
+const bookGrid=document.getElementById("bookGrid");
+
+if(bookGrid && typeof books!=="undefined"){
+
+books.forEach(book=>{
+
+bookGrid.innerHTML+=`
+
+<a
+class="book"
+href="${book.youtube}"
+target="_blank"
+data-title="${book.title}">
+
+<img src="${book.image}" alt="${book.title}">
+
+<p>${book.title}</p>
+
+</a>
+
+`;
+
+});
+
+}
