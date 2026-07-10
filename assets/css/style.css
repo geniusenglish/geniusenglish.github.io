@@ -1820,14 +1820,24 @@ font-size:40px;
 
 .hero-guide{
 
-    display:inline-block;
-    background:#fff;
-    border:1px solid #ececec;
-    padding:12px 22px;
-    border-radius:999px;
-    color:#666;
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+
+    background:#fff8f8;
+    border:1px solid #ffd7d7;
+
+    color:#d64a4a;
+
+    padding:12px 20px;
+
+    border-radius:14px;
+
     font-size:15px;
-    margin-bottom:40px;
+    font-weight:600;
+
+    margin:30px auto 40px;
+
 }
 
 /* ===========================
