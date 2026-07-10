@@ -2,7 +2,7 @@ const books = [
 
 {
     title:"Step into Reading | Big Egg",
-    image:"../images/ar0/ar_bigegg.jpg",
+    image:"../images/ar0/ar0_bigegg.jpg",
     audio:"../audio/books/ar0/ar0_bigegg.mp3"
 },
 
@@ -21,7 +21,7 @@ const books = [
 
 {
     title:"Step into Reading | Big Egg",
-    image:"../images/ar0/ar_bigegg.jpg",
+    image:"../images/ar0/ar0_bigegg.jpg",
     audio:"../audio/books/ar0/ar0_bigegg.mp3"
 },
 
@@ -40,7 +40,7 @@ const books = [
 
 {
     title:"Step into Reading | Big Egg",
-    image:"../images/ar0/ar_bigegg.jpg",
+    image:"../images/ar0/ar0_bigegg.jpg",
     audio:"../audio/books/ar0/ar0_bigegg.mp3"
 },
 
