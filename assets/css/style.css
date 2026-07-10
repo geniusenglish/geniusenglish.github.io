@@ -82,15 +82,19 @@ header{
 
     background:#fff;
 
+    border-top:1px solid #fafafa;
+
+    border-bottom:1px solid #f3f4f6;
+
 }
 
 .header-menu .header-wrap{
 
     display:flex;
 
-    align-items:center;
+    justify-content:center;
 
-    justify-content:space-between;
+    align-items:center;
 
     height:64px;
 
@@ -230,37 +234,16 @@ header{
 
 }
 
-/* ===========================
-   BUTTON
-=========================== */
-
-.consult-btn{
-
-    background:#dc2626;
-
-    color:#fff;
-
-    padding:12px 24px;
-
-    border-radius:999px;
-
-    font-size:15px;
-
-    font-weight:700;
-
-    white-space:nowrap;
-
-    transition:.3s;
-
+/* 기본은 PC */
+.mobile-text{
+    display:none;
 }
 
-.consult-btn:hover{
-
-    background:#b91c1c;
-
-    transform:translateY(-2px);
-
+.pc-text{
+    display:inline;
 }
+
+
 
 /* 모바일 버튼 */
 
@@ -274,54 +257,84 @@ header{
    RESPONSIVE
 =========================== */
 
-@media(max-width:1024px){
+@media (max-width:1024px){
+
+.header-top{
+
+    padding:14px 0;
+
+}
+
+.logo-slider{
+
+    width:300px;
+    height:60px;
+
+}
 
 .main-menu{
 
     display:flex;
+
     flex-wrap:wrap;
+
     justify-content:center;
-    gap:16px 24px;
 
-    width:100%;
-
-}
-
-.consult-btn{
-
-    display:none;
+    gap:14px 18px;
 
 }
 
-.menu-btn{
+.main-menu>a,
+.dropdown>a{
 
-    display:none;
+    font-size:15px;
 
 }
 
 .header-menu .header-wrap{
 
-    flex-direction:column;
-    align-items:center;
-    gap:15px;
+    height:auto;
+
+    justify-content:center;
+
+    padding:12px 0;
+
+}
+
+.pc-text{
+
+    display:none;
+
+}
+
+.mobile-text{
+
+    display:inline;
+
+}
+
+}
 
 }
 
 .logo img{
 
-    height:58px;
+    height:52px;
 
 }
 
-}
 
-}
 
 .logo-slider{
+
     position:relative;
-    width:420px;
-    height:82px;
+
+    width:360px;
+
+    height:72px;
+
     margin:auto;
+
 }
 
 .logo-slide{
@@ -1308,3 +1321,4 @@ right:7px;
 
     z-index:10;
 }
+
