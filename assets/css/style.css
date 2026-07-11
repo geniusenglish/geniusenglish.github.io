@@ -2180,45 +2180,47 @@ font-size:40px;
 
 .book-about{
 
-    padding:70px 0;
+    padding:50px 0 20px;
 
 }
 
 .book-about h2{
 
-    font-size:28px;
-    font-weight:800;
-    margin-bottom:20px;
+    font-size:24px;
+    font-weight:700;
     color:#222;
+    margin-bottom:20px;
 
 }
 
-.book-about p{
+.summary-text{
 
-    font-size:18px;
-    line-height:2;
+    font-size:17px;
+    line-height:1.9;
     color:#555;
-    margin-bottom:50px;
+
+    white-space:pre-line;
 
 }
-
 
 
 /* ===========================
-   MORE BOOKS
+   MORE FROM THIS SERIES
 =========================== */
 
 .more-books{
 
-    padding:20px 0 90px;
+    padding:30px 0 80px;
 
 }
 
 .more-books h2{
 
-    font-size:28px;
-    font-weight:800;
-    margin-bottom:35px;
+    font-size:24px;
+    font-weight:700;
+    color:#222;
+
+    margin-bottom:25px;
 
 }
 
@@ -2227,82 +2229,17 @@ font-size:40px;
     display:grid;
 
     grid-template-columns:
-    repeat(auto-fill,minmax(180px,1fr));
+    repeat(auto-fill,minmax(150px,1fr));
 
-    gap:30px;
-
-}
-
-.series-card{
-
-    background:#fff;
-
-    border-radius:18px;
-
-    overflow:hidden;
-
-    box-shadow:0 8px 25px rgba(0,0,0,.08);
-
-    transition:.3s;
-
-    text-decoration:none;
-
-    color:#222;
-
-}
-
-.series-card:hover{
-
-    transform:translateY(-6px);
-
-}
-
-.series-card img{
-
-    width:100%;
-    display:block;
-
-}
-
-.series-card h3{
-
-    padding:18px;
-
-    font-size:17px;
-
-    font-weight:700;
-
-    text-align:center;
-
-}
-
-/* ===========================
-   MORE BOOKS
-=========================== */
-
-.series-grid{
-
-    display:grid;
-    grid-template-columns:repeat(auto-fill,minmax(180px,1fr));
-    gap:25px;
-
-    margin-top:35px;
+    gap:20px;
 
 }
 
 .series-book{
 
-    background:#fff;
-
-    border-radius:20px;
-
-    overflow:hidden;
-
     text-decoration:none;
 
     color:#222;
-
-    box-shadow:0 8px 25px rgba(0,0,0,.08);
 
     transition:.25s;
 
@@ -2310,7 +2247,7 @@ font-size:40px;
 
 .series-book:hover{
 
-    transform:translateY(-8px);
+    transform:translateY(-6px);
 
 }
 
@@ -2318,15 +2255,19 @@ font-size:40px;
 
     width:100%;
 
+    border-radius:14px;
+
     display:block;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
 
 }
 
 .series-book h4{
 
-    padding:15px 15px 8px;
+    margin-top:10px;
 
-    font-size:17px;
+    font-size:15px;
 
     font-weight:700;
 
@@ -2338,46 +2279,10 @@ font-size:40px;
 
     display:block;
 
-    padding:0 15px 18px;
+    margin-top:4px;
 
     color:#888;
 
-    font-size:14px;
-
-}
-
-.book-about{
-
-    padding:70px 0;
-
-}
-
-.book-about h2{
-
-    font-size:34px;
-    font-weight:800;
-    margin-bottom:30px;
-
-}
-
-.summary-en{
-
-    font-size:18px;
-    line-height:2;
-    color:#444;
-
-    margin-bottom:30px;
-
-}
-
-.summary-ko{
-
-    font-size:18px;
-    line-height:2;
-    color:#666;
-
-    padding-top:30px;
-
-    border-top:1px solid #eee;
+    font-size:13px;
 
 }
