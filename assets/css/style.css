@@ -2584,3 +2584,63 @@ font-size:40px;
     background:#b71c1c;
 
 }
+
+.consult-process{
+
+    margin-top:45px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:14px;
+
+    flex-wrap:wrap;
+
+}
+
+.process-step{
+
+    background:#fff;
+
+    padding:14px 22px;
+
+    border-radius:16px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.06);
+
+    font-size:15px;
+
+    font-weight:700;
+
+    line-height:1.6;
+
+    text-align:center;
+
+    color:#333;
+
+}
+
+.process-step small{
+
+    display:block;
+
+    margin-top:6px;
+
+    font-size:12px;
+
+    font-weight:500;
+
+    color:#777;
+
+}
+
+.process-arrow{
+
+    color:#d32f2f;
+
+    font-size:18px;
+
+}
