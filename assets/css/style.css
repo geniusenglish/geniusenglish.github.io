@@ -2587,60 +2587,54 @@ font-size:40px;
 
 .consult-process{
 
-    margin-top:45px;
-
     display:flex;
-
     justify-content:center;
-
     align-items:center;
-
-    gap:14px;
-
+    gap:18px;
     flex-wrap:wrap;
 
 }
 
-.process-step{
+.process-item{
 
-    background:#fff;
+    display:flex;
+    align-items:center;
+    gap:8px;
 
-    padding:14px 22px;
-
-    border-radius:16px;
-
-    box-shadow:0 8px 20px rgba(0,0,0,.06);
-
-    font-size:15px;
-
+    font-size:16px;
     font-weight:700;
-
-    line-height:1.6;
-
-    text-align:center;
 
     color:#333;
 
 }
 
-.process-step small{
+.process-item i{
 
-    display:block;
-
-    margin-top:6px;
-
-    font-size:12px;
-
-    font-weight:500;
-
-    color:#777;
+    color:#d32f2f;
+    font-size:20px;
 
 }
 
 .process-arrow{
 
-    color:#d32f2f;
-
+    color:#bbb;
     font-size:18px;
+
+}
+
+@media(max-width:768px){
+
+    .consult-process{
+
+        flex-direction:column;
+        gap:15px;
+
+    }
+
+    .process-arrow{
+
+        transform:rotate(90deg);
+
+    }
 
 }
