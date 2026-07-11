@@ -68,22 +68,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     /* ===========================
-       ABOUT THIS BOOK
-    =========================== */
+   ABOUT THIS BOOK
+=========================== */
 
-    const summaryEn = document.getElementById("summaryEn");
+const summary = document.getElementById("summary");
 
-    if (summaryEn) {
-        summaryEn.textContent =
-            book.summary_en || "Coming soon.";
-    }
+if (summary) {
 
-    const summaryKo = document.getElementById("summaryKo");
+    summary.textContent = book.summary || "";
 
-    if (summaryKo) {
-        summaryKo.textContent =
-            book.summary_ko || "준비중입니다.";
-    }
+}
 
     /* ===========================
        BACK BUTTON
@@ -102,21 +96,28 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     /* ===========================
-       MORE FROM THIS SERIES
-    =========================== */
+   MORE FROM THIS SERIES
+=========================== */
 
-    const seriesGrid = document.getElementById("seriesBooks");
+const seriesTitle = document.getElementById("seriesTitle");
+const seriesGrid = document.getElementById("seriesBooks");
 
-    if (seriesGrid && book.series) {
+if (seriesGrid && book.series) {
 
-        const relatedBooks = books.filter(item =>
-            item.series === book.series &&
-            item.id !== book.id
-        );
+    // 시리즈 제목 표시
+    if (seriesTitle) {
+        seriesTitle.innerHTML = `📚 ${book.series}`;
+    }
 
-        relatedBooks.forEach(item => {
+    // 같은 시리즈 책 (현재 책 제외)
+    const relatedBooks = books.filter(item =>
+        item.series === book.series &&
+        item.id !== book.id
+    );
 
-            seriesGrid.innerHTML += `
+    relatedBooks.forEach(item => {
+
+        seriesGrid.innerHTML += `
 
 <a class="series-book" href="book-detail.html?id=${item.id}">
 
@@ -130,8 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 `;
 
-        });
+    });
 
-    }
-
+}
 });
