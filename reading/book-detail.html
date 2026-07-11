@@ -87,9 +87,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 
     <div class="container">
 
-        <a href="ar0.html" class="back-btn">
+        <a href="#" class="back-btn" id="backBtn">
             <i class="fa-solid fa-arrow-left"></i>
-            AR 0점대 목록으로
+
+<span id="backText"></span>
         </a>
 
         <div class="detail-grid">
@@ -106,72 +107,72 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
             </div>
 
 
-            <!-- BOOK INFO -->
-
-            <div class="book-info">
-
-                <span class="detail-badge">
-                    BOOK DETAIL
-                </span>
-
-                <h1 id="bookTitle"></h1>
-
-                <div class="book-ar">
-                    <span id="bookAR"></span>
-                </div>
-
-                <div class="book-rating">
-                    ★★★★★
-                </div>
-
-                <div class="book-meta">
-
-                    <p>
-                        <strong>Author</strong><br>
-                        <span id="bookAuthor"></span>
-                    </p>
-
-                    <p>
-                        <strong>Series</strong><br>
-                        <span id="bookSeries"></span>
-                    </p>
-
-                    <p>
-                        <strong>Category</strong><br>
-                        <span id="bookPublisher"></span>
-                    </p>
-
-                </div>
-
-                <!-- ===========================
-     AUDIO PLAYER
+            <!-- ===========================
+     BOOK INFO
 =========================== -->
 
-<div class="audio-player">
+<div class="book-info">
 
-    <h3>
-        <i class="fa-solid fa-headphones"></i>
-        원서 음원 듣기
-    </h3>
+    <span class="detail-badge">
+        BOOK DETAIL
+    </span>
 
-    <audio
-        id="bookAudio"
-        controls
-        preload="metadata"
-        controlsList="nodownload">
+    <h1 id="bookTitle"></h1>
 
-        <source
-            id="audioSource"
-            src=""
-            type="audio/mpeg">
+    <p class="book-author">
+        <i class="fa-solid fa-user"></i>
+        <span id="bookAuthor"></span>
+    </p>
 
-        브라우저가 Audio를 지원하지 않습니다.
+    <p class="book-series">
+        <i class="fa-solid fa-book"></i>
+        <span id="bookSeries"></span>
+    </p>
 
-    </audio>
+    <div class="detail-tags">
+
+        <span
+            class="category-tag"
+            id="bookPublisher">
+        </span>
+
+        <span
+            class="ar-tag"
+            id="bookAR">
+        </span>
+
+    </div>
+
+
+    <!-- ===========================
+         AUDIO PLAYER
+    ============================ -->
+
+    <div class="audio-player">
+
+        <h3>
+            <i class="fa-solid fa-headphones"></i>
+            원서 음원 듣기
+        </h3>
+
+        <audio
+            id="bookAudio"
+            controls
+            preload="metadata"
+            controlsList="nodownload">
+
+            <source
+                id="audioSource"
+                src=""
+                type="audio/mpeg">
+
+            브라우저가 Audio를 지원하지 않습니다.
+
+        </audio>
+
+    </div>
 
 </div>
-
-            </div>
 
         </div>
 
