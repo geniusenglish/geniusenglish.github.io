@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
        BOOK SEARCH
     =========================== */
 
-    const searchInput = document.getElementById("searchInput");
+    const searchInput = document.getElementById("bookSearch");
 
     if (searchInput) {
 
@@ -42,11 +42,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 const title = book.dataset.title.toLowerCase();
 
-                if (title.includes(keyword)) {
-                    book.style.display = "";
-                } else {
-                    book.style.display = "none";
-                }
+                book.style.display =
+                    title.includes(keyword) ? "" : "none";
 
             });
 
@@ -54,15 +51,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
     }
 
-});
+    /* ===========================
+       BOOK GRID
+    =========================== */
 
-const bookGrid = document.getElementById("bookGrid");
+    const bookGrid = document.getElementById("bookGrid");
 
-if (bookGrid && typeof books !== "undefined") {
+    if (bookGrid && typeof books !== "undefined") {
 
-    books.forEach(book => {
+        const level =
+            typeof currentLevel !== "undefined"
+                ? currentLevel
+                : null;
 
-        bookGrid.innerHTML += `
+        const filteredBooks =
+            level === null
+                ? books
+                : books.filter(book => book.level === level);
+
+        filteredBooks.forEach(book => {
+
+            bookGrid.innerHTML += `
 
 <a class="book"
 href="book-detail.html?id=${book.id}"
@@ -80,6 +89,8 @@ data-title="${book.title}">
 
 `;
 
-    });
+        });
 
-}
+    }
+
+});
