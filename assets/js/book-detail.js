@@ -1,12 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    // URL에서 id 가져오기
+    /* ===========================
+       URL에서 책 ID 가져오기
+    =========================== */
+
     const params = new URLSearchParams(window.location.search);
     const id = params.get("id");
 
     if (!id || typeof books === "undefined") return;
 
-    // 해당 책 찾기
+    /* ===========================
+       책 찾기
+    =========================== */
+
     const book = books.find(item => item.id === id);
 
     if (!book) {
@@ -30,15 +36,10 @@ document.addEventListener("DOMContentLoaded", () => {
     document.title = `${book.title} | Genius English Academy`;
 
     document.getElementById("bookTitle").textContent = book.title;
+    document.getElementById("bookAR").textContent = `AR ${book.ar}`;
 
-    document.getElementById("bookAR").textContent =
-        `AR ${book.ar}`;
-
-    document.getElementById("bookImage").src =
-        book.image;
-
-    document.getElementById("bookImage").alt =
-        book.title;
+    document.getElementById("bookImage").src = book.image;
+    document.getElementById("bookImage").alt = book.title;
 
     document.getElementById("bookAuthor").textContent =
         book.author || "-";
@@ -46,118 +47,78 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("bookSeries").textContent =
         book.series || "-";
 
-    /* ===========================
-   Category 표시
-=========================== */
+    const category = document.getElementById("bookCategory");
 
-const category = document.getElementById("bookCategory");
-
-if (category) {
-
-    category.textContent = book.category || "-";
-
-}
-
-
+    if (category) {
+        category.textContent = book.category || "-";
+    }
 
     /* ===========================
-   AUDIO PLAYER
-=========================== */
+       AUDIO PLAYER
+    =========================== */
 
-const audioPlayer =
-document.getElementById("bookAudio");
+    const audioPlayer = document.getElementById("bookAudio");
+    const audioSource = document.getElementById("audioSource");
 
-const audioSource =
-document.getElementById("audioSource");
+    if (audioPlayer && audioSource) {
 
-if(audioPlayer && audioSource){
+        audioSource.src = book.audio;
+        audioPlayer.load();
 
-    audioSource.src = book.audio;
-
-    audioPlayer.load();
-
-}
-
-
-/* ===========================
-   Book Summary
-=========================== */
-
-const summaryEn = document.getElementById("summaryEn");
-
-if (summaryEn) {
-    summaryEn.textContent =
-        book.summary_en || "Coming soon.";
-}
-
-const summaryKo = document.getElementById("summaryKo");
-
-if (summaryKo) {
-    summaryKo.textContent =
-        book.summary_ko || "준비중입니다.";
-}
-
-
-});
-
-/* ===========================
-   BACK BUTTON
-=========================== */
-
-const backBtn = document.getElementById("backBtn");
-const backText = document.getElementById("backText");
-
-if(backBtn && backText){
-
-    backBtn.href = `ar${book.level}.html`;
-
-    backText.textContent =
-        `AR ${book.level}점대 목록으로`;
-
-}
+    }
 
     /* ===========================
-   SUMMARY
-=========================== */
+       ABOUT THIS BOOK
+    =========================== */
 
-document.getElementById("summaryEn").textContent =
-book.summary_en || "";
+    const summaryEn = document.getElementById("summaryEn");
 
-document.getElementById("summaryKo").textContent =
-book.summary_ko || "";
+    if (summaryEn) {
+        summaryEn.textContent =
+            book.summary_en || "Coming soon.";
+    }
 
+    const summaryKo = document.getElementById("summaryKo");
 
-/* ===========================
-   More from this Series
-=========================== */
+    if (summaryKo) {
+        summaryKo.textContent =
+            book.summary_ko || "준비중입니다.";
+    }
 
-const seriesGrid = document.getElementById("seriesBooks");
+    /* ===========================
+       BACK BUTTON
+    =========================== */
 
-if (seriesGrid && book.series) {
+    const backBtn = document.getElementById("backBtn");
+    const backText = document.getElementById("backText");
 
-    const relatedBooks = books.filter(b =>
-        b.series === book.series &&
-        b.id !== book.id
-    );
+    if (backBtn && backText) {
 
-    // ⭐ 같은 시리즈가 없는 경우
-    if (relatedBooks.length === 0) {
+        backBtn.href = `ar${book.level}.html`;
 
-        seriesGrid.innerHTML = `
-            <p class="empty-series">
-                같은 시리즈의 다른 도서를 준비 중입니다.
-            </p>
-        `;
+        backText.textContent =
+            `AR ${book.level}점대 목록으로`;
 
-    } else {
+    }
 
-        // ⭐ 같은 시리즈가 있는 경우
+    /* ===========================
+       MORE FROM THIS SERIES
+    =========================== */
+
+    const seriesGrid = document.getElementById("seriesBooks");
+
+    if (seriesGrid && book.series) {
+
+        const relatedBooks = books.filter(item =>
+            item.series === book.series &&
+            item.id !== book.id
+        );
+
         relatedBooks.forEach(item => {
 
             seriesGrid.innerHTML += `
 
-<a class="series-book"
-href="book-detail.html?id=${item.id}">
+<a class="series-book" href="book-detail.html?id=${item.id}">
 
     <img src="${item.image}" alt="${item.title}">
 
@@ -173,5 +134,4 @@ href="book-detail.html?id=${item.id}">
 
     }
 
-}
-
+});
