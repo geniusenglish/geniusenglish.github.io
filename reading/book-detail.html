@@ -143,17 +143,33 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 
                 </div>
 
-                <a
-                    id="listenBtn"
-                    href="#"
-                    target="_blank"
-                    class="listen-btn">
+                <!-- ===========================
+     AUDIO PLAYER
+=========================== -->
 
-                    <i class="fa-solid fa-headphones"></i>
+<div class="audio-player">
 
-                    원서 음원 듣기
+    <h3>
+        <i class="fa-solid fa-headphones"></i>
+        원서 음원 듣기
+    </h3>
 
-                </a>
+    <audio
+        id="bookAudio"
+        controls
+        preload="metadata"
+        controlsList="nodownload">
+
+        <source
+            id="audioSource"
+            src=""
+            type="audio/mpeg">
+
+        브라우저가 Audio를 지원하지 않습니다.
+
+    </audio>
+
+</div>
 
             </div>
 
