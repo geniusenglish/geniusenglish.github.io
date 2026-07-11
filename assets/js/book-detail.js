@@ -56,6 +56,8 @@ book.category || "";
 
     }
 
+
+
     /* ===========================
    AUDIO PLAYER
 =========================== */
@@ -89,5 +91,50 @@ if(backBtn && backText){
 
     backText.textContent =
         `AR ${book.level}점대 목록으로`;
+
+}
+
+    /* ===========================
+   SUMMARY
+=========================== */
+
+document.getElementById("summaryEn").textContent =
+book.summary_en || "";
+
+document.getElementById("summaryKo").textContent =
+book.summary_ko || "";
+
+/* ===========================
+   SAME SERIES
+=========================== */
+
+const seriesGrid =
+document.getElementById("seriesBooks");
+
+if(seriesGrid){
+
+    const sameSeries = books.filter(item=>
+
+        item.series===book.series &&
+        item.id!==book.id
+
+    );
+
+    sameSeries.forEach(item=>{
+
+        seriesGrid.innerHTML+=`
+
+<a class="series-card"
+href="book-detail.html?id=${item.id}">
+
+<img src="${item.image}">
+
+<h3>${item.title}</h3>
+
+</a>
+
+`;
+
+    });
 
 }
