@@ -56,14 +56,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
     }
 
-    // 음원 버튼
-    const listenBtn =
-        document.getElementById("listenBtn");
+    /* ===========================
+   AUDIO PLAYER
+=========================== */
 
-    if (listenBtn) {
+const audioPlayer =
+document.getElementById("bookAudio");
 
-        listenBtn.href = book.audio;
+const audioSource =
+document.getElementById("audioSource");
 
-    }
+if(audioPlayer && audioSource){
+
+    audioSource.src = book.audio;
+
+    audioPlayer.load();
+
+}
 
 });
