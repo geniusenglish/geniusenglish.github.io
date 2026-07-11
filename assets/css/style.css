@@ -2068,3 +2068,37 @@ font-size:40px;
     background:#cf2333;
 
 }
+
+/* ===========================
+   AUDIO PLAYER
+=========================== */
+
+.audio-player{
+
+    margin-top:40px;
+
+}
+
+.audio-player h3{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    font-size:20px;
+    font-weight:700;
+
+    color:#222;
+
+    margin-bottom:18px;
+
+}
+
+.audio-player audio{
+
+    width:100%;
+    max-width:450px;
+
+    border-radius:12px;
+
+}
