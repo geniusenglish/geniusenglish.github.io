@@ -46,15 +46,17 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("bookSeries").textContent =
         book.series || "-";
 
-    // Publisher 대신 Category 표시
-    const publisher = document.getElementById("bookPublisher");
+    /* ===========================
+   Category 표시
+=========================== */
 
-    if (publisher) {
+const category = document.getElementById("bookCategory");
 
-        publisher.textContent =
-book.category || "";
+if (category) {
 
-    }
+    category.textContent = book.category || "-";
+
+}
 
 
 
@@ -75,6 +77,26 @@ if(audioPlayer && audioSource){
     audioPlayer.load();
 
 }
+
+
+/* ===========================
+   Book Summary
+=========================== */
+
+const summaryEn = document.getElementById("summaryEn");
+
+if (summaryEn) {
+    summaryEn.textContent =
+        book.summary_en || "Coming soon.";
+}
+
+const summaryKo = document.getElementById("summaryKo");
+
+if (summaryKo) {
+    summaryKo.textContent =
+        book.summary_ko || "준비중입니다.";
+}
+
 
 });
 
@@ -104,37 +126,52 @@ book.summary_en || "";
 document.getElementById("summaryKo").textContent =
 book.summary_ko || "";
 
+
 /* ===========================
-   SAME SERIES
+   More from this Series
 =========================== */
 
-const seriesGrid =
-document.getElementById("seriesBooks");
+const seriesGrid = document.getElementById("seriesBooks");
 
-if(seriesGrid){
+if (seriesGrid && book.series) {
 
-    const sameSeries = books.filter(item=>
-
-        item.series===book.series &&
-        item.id!==book.id
-
+    const relatedBooks = books.filter(b =>
+        b.series === book.series &&
+        b.id !== book.id
     );
 
-    sameSeries.forEach(item=>{
+    // ⭐ 같은 시리즈가 없는 경우
+    if (relatedBooks.length === 0) {
 
-        seriesGrid.innerHTML+=`
+        seriesGrid.innerHTML = `
+            <p class="empty-series">
+                같은 시리즈의 다른 도서를 준비 중입니다.
+            </p>
+        `;
 
-<a class="series-card"
+    } else {
+
+        // ⭐ 같은 시리즈가 있는 경우
+        relatedBooks.forEach(item => {
+
+            seriesGrid.innerHTML += `
+
+<a class="series-book"
 href="book-detail.html?id=${item.id}">
 
-<img src="${item.image}">
+    <img src="${item.image}" alt="${item.title}">
 
-<h3>${item.title}</h3>
+    <h4>${item.title}</h4>
+
+    <span>AR ${item.ar}</span>
 
 </a>
 
 `;
 
-    });
+        });
+
+    }
 
 }
+

@@ -94,3 +94,4 @@ data-title="${book.title}">
     }
 
 });
+
