@@ -58,7 +58,7 @@ const books = [
     image:"../images/ar2/ar2_awesomeamphibians.jpg",
     audio:"../audio/books/ar2/ar2_awesomeamphibians.mp3",
     author:"Jeff Bauer",
-    summary_en:"This science nonfiction book introduces amphibians through engaging photographs and simple text. Readers will learn what amphibians are, how they grow, where they live, and what makes them unique."
+    summary_en:"This science nonfiction book introduces amphibians through engaging photographs and simple text. Readers will learn what amphibians are, how they grow, where they live, and what makes them unique.",
     summary_ko:"양서류는 어떤 동물인지, 어떻게 자라고 어디에서 살며 어떤 특징을 가지고 있는지를 다양한 사진과 함께 배우는 과학 논픽션 책입니다."
 },
 
@@ -72,7 +72,7 @@ const books = [
     image:"../images/ar2/ar2_beautifulbirds.jpg",
     audio:"../audio/books/ar2/ar2_beautifulbirds.mp3",
     author:"Justin McCory Martin",
-    summary_en:"This science nonfiction book helps readers learn about different kinds of birds, their physical features, how they live, and how they adapt to their environments."
+    summary_en:"This science nonfiction book helps readers learn about different kinds of birds, their physical features, how they live, and how they adapt to their environments.",
     summary_ko:"다양한 새들의 생김새와 생활 방식, 그리고 새들이 환경에 적응하며 살아가는 특징을 배우는 과학 논픽션 책입니다."
 },
 
@@ -86,7 +86,7 @@ const books = [
     image:"../images/ar2/ar2_chicklifecycle.jpg",
     audio:"../audio/books/ar2/ar2_chicklifecycle.mp3",
     author:"",
-    summary_en:""
+    summary_en:"",
     summary_ko:""
 },
 
