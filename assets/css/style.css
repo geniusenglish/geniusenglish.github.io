@@ -2275,3 +2275,73 @@ font-size:40px;
     text-align:center;
 
 }
+
+/* ===========================
+   MORE BOOKS
+=========================== */
+
+.series-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(180px,1fr));
+    gap:25px;
+
+    margin-top:35px;
+
+}
+
+.series-book{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    text-decoration:none;
+
+    color:#222;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+    transition:.25s;
+
+}
+
+.series-book:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.series-book img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+.series-book h4{
+
+    padding:15px 15px 8px;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    line-height:1.4;
+
+}
+
+.series-book span{
+
+    display:block;
+
+    padding:0 15px 18px;
+
+    color:#888;
+
+    font-size:14px;
+
+}
