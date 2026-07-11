@@ -57,8 +57,8 @@ const books = [
     category:"Nonfiction",
     image:"../images/ar2/ar2_awesomeamphibians.jpg",
     audio:"../audio/books/ar2/ar2_awesomeamphibians.mp3",
-    author:"",
-    summary:""
+    author:"Jeff Bauer",
+    summary:"양서류는 어떤 동물인지, 어떻게 자라고 어디에서 살며 어떤 특징을 가지고 있는지를 다양한 사진과 함께 배우는 과학 논픽션 책입니다."
 },
 
 {
@@ -70,8 +70,8 @@ const books = [
     category:"Nonfiction",
     image:"../images/ar2/ar2_beautifulbirds.jpg",
     audio:"../audio/books/ar2/ar2_beautifulbirds.mp3",
-    author:"",
-    summary:""
+    author:"Justin McCory Martin",
+    summary:"다양한 새들의 생김새와 생활 방식, 그리고 새들이 환경에 적응하며 살아가는 특징을 배우는 과학 논픽션 책입니다."
 },
 
 {
