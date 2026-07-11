@@ -43,6 +43,57 @@ const books = [
     summary:""
 },
 
+/* ===========================
+   AR 1
+=========================== */
+
+{
+    id:"bestpartyever",
+    level:1,
+    ar:"1.8",
+    title:"Best Party Ever!",
+    series:"Pizza and Taco",
+    category:"Fiction",
+    image:"../images/ar2/ar2_bestpartyever.jpg",
+    audio:"../audio/books/ar2/ar2_bestpartyever.mp3",
+    author:"Stephen Shaskan",
+    summary:`Pizza and Taco throw a party, but everything goes hilariously wrong!
+
+    피자와 타코가 최고의 파티를 준비하지만, 모든 일이 엉망이 되며 웃음을 선사하는 이야기입니다.`
+},
+
+{
+    id:"toocoolforschool",
+    level:1,
+    ar:"1.9",
+    title:"Too Cool for School",
+    series:"Pizza and Taco",
+    category:"Fiction",
+    image:"../images/ar2/ar2_toocoolforschool.jpg",
+    audio:"../audio/books/ar2/ar2_toocoolforschool.mp3",
+    author:"Stephen Shaskan",
+    summary:`Pizza and Taco try to be cool at school, but they learn that being yourself is the coolest of all.
+
+    피자와 타코가 멋진 친구를 따라 하다가, 가장 멋진 것은 자기답게 행동하는 것임을 배우는 이야기입니다.`
+},
+
+{
+    id:"daretobescared",
+    level:1,
+    ar:"1.9",
+    title:"Dare to be Scared!",
+    series:"Pizza and Taco",
+    category:"Fiction",
+    image:"../images/ar2/ar2_daretobescared.jpg",
+    audio:"../audio/books/ar2/ar2_daretobescared.mp3",
+    author:"Stephen Shaskan",
+    summary:`Pizza and Taco challenge each other to be brave, but they discover everyone gets scared sometimes.
+
+    피자와 타코가 용감함을 증명하려 하지만, 누구나 무서울 때가 있다는 것을 깨닫는 이야기입니다.`
+},
+
+
+
 
 /* ===========================
    AR 2
@@ -232,6 +283,36 @@ const books = [
     audio:"../audio/books/ar2/ar2_yourheart.mp3",
     author:"",
     summary:""
+},
+
+{
+    id:"rockout",
+    level:2,
+    ar:"2.0",
+    title:"Rock Out!",
+    series:"Pizza and Taco",
+    category:"Fiction",
+    image:"../images/ar2/ar2_rockout.jpg",
+    audio:"../audio/books/ar2/ar2_rockout.mp3",
+    author:"Stephen Shaskan",
+    summary:`Pizza and Taco start a band and learn that making music takes teamwork and practice.
+
+    피자와 타코가 밴드를 만들며 음악에는 팀워크와 연습이 필요하다는 것을 배우는 이야기입니다.`
+},
+
+{
+    id:"superawesomecomic",
+    level:2,
+    ar:"2.6",
+    title:"Super-Awesome Comic!",
+    series:"Pizza and Taco",
+    category:"Fiction",
+    image:"../images/ar2/ar2_superawesomecomic.jpg",
+    audio:"../audio/books/ar2/ar2_superawesomecomic.mp3",
+    author:"Stephen Shaskan",
+    summary:`Pizza and Taco create a comic book together and learn to share ideas and work as a team.
+
+    피자와 타코가 함께 만화책을 만들며 서로의 아이디어를 존중하고 협력하는 방법을 배우는 이야기입니다.`
 }
 
 ];
