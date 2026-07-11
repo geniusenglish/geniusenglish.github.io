@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>원서 음원 듣기 | Genius English Academy</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-slate-50">
+
+<header>
+
+    <!-- ================= TOP ================= -->
+
+    <div class="header-top">
+
+        <div class="header-wrap">
+
+            <a href="index_new.html" class="logo-slider">
+
+    <img src="images/logo1.png" class="logo-slide show">
+
+    <img src="images/logo2.png" class="logo-slide">
+
+</a>
+
+        </div>
+
+    </div>
+
+    <!-- ================= MENU ================= -->
+
+    <div class="header-menu">
+
+        <div class="header-wrap">
+
+            <nav class="main-menu">
+
+    <a href="academy.html">학원소개</a>
+    <a href="curriculum.html">커리큘럼</a>
+
+    <div class="dropdown">
+
+        <a href="#">학습자료</a>
+
+        <div class="dropdown-menu">
+            <a href="reading.html">📚 원서 음원 듣기</a>
+            <a href="vocabulary.html">🎧 매일 단어 듣기</a>
+        </div>
+
+    </div>
+
+    <a href="https://global-zone60.renaissance-go.com/welcomeportal/rpna83al" target="_blank">
+        <span class="pc-text">르네상스 러닝</span>
+        <span class="mobile-text">르네상스</span>
+    </a>
+
+    <a href="notice.html">공지사항</a>
+
+    <a href="contact.html">상담문의</a>
+
+</nav>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- ===========================
+     HERO
+=========================== -->
+
+<section class="contact-hero">
+
+    <div class="container">
+
+        <div class="hero-content">
+
+            <span class="hero-badge">
+                GENIUS ENGLISH ACADEMY
+            </span>
+
+            <h1>상담 신청</h1>
+
+            <p class="hero-desc">
+                학생의 현재 영어 수준을 정확하게 파악하여<br>
+                가장 적합한 학습 방향과 커리큘럼을 안내해드립니다.
+            </p>
+
+            <p class="hero-sub">
+                아래 상담 신청서를 작성해 주시면<br>
+                확인 후 빠르게 연락드리겠습니다.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+     CONSULT FORM
+=========================== -->
+
+<section class="consult-section">
+
+    <div class="container">
+
+        <div class="consult-card">
+
+            <h2>상담 신청서</h2>
+
+            <p class="consult-guide">
+                학생의 현재 영어 수준을 파악하여
+                가장 적합한 학습 방향을 안내해드립니다.
+                아래 내용을 작성해 주세요.
+            </p>
+
+            <form id="consultForm">
+
+                <!-- =======================
+                     학생 정보
+                ======================== -->
+
+                <div class="form-title">
+
+                    <i class="fa-solid fa-user-graduate"></i>
+                    학생 정보
+
+                </div>
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label>학부모 연락처 <span>*</span></label>
+
+                        <input
+                            type="tel"
+                            name="phone"
+                            placeholder="010-0000-0000"
+                            required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>학생 이름 <span>*</span></label>
+
+                        <input
+                            type="text"
+                            name="student"
+                            placeholder="학생 이름"
+                            required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>학교</label>
+
+                        <input
+                            type="text"
+                            name="school"
+                            placeholder="예) 장기초등학교">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>학년</label>
+
+                        <select name="grade">
+
+                            <option value="">선택해주세요</option>
+
+                            <option>유치부</option>
+
+                            <option>초등 1학년</option>
+                            <option>초등 2학년</option>
+                            <option>초등 3학년</option>
+                            <option>초등 4학년</option>
+                            <option>초등 5학년</option>
+                            <option>초등 6학년</option>
+
+                            <option>중등 1학년</option>
+                            <option>중등 2학년</option>
+                            <option>중등 3학년</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =======================
+                     영어 학습 정보
+                ======================== -->
+
+                <div class="form-title">
+
+                    <i class="fa-solid fa-book-open"></i>
+                    영어 학습 정보
+
+                </div>
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label>영어 학습 기간</label>
+
+                        <select name="experience">
+
+                            <option value="">선택해주세요</option>
+
+                            <option>처음 시작</option>
+                            <option>1년 미만</option>
+                            <option>1~2년</option>
+                            <option>3~5년</option>
+                            <option>5년 이상</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>이전(현재) 영어학원</label>
+
+                        <input
+                            type="text"
+                            name="academy"
+                            placeholder="없으면 비워두세요">
+
+                    </div>
+
+                </div>
+
+
+                <!-- =======================
+                     희망 수업
+                ======================== -->
+
+                <div class="form-title">
+
+                    <i class="fa-solid fa-pencil"></i>
+                    희망 수업
+
+                </div>
+
+                <div class="radio-group">
+
+                    <label>
+
+                        <input
+                            type="radio"
+                            name="course"
+                            value="파닉스">
+
+                        파닉스
+
+                    </label>
+
+                    <label>
+
+                        <input
+                            type="radio"
+                            name="course"
+                            value="원서리딩">
+
+                        원서 리딩
+
+                    </label>
+
+                    <label>
+
+                        <input
+                            type="radio"
+                            name="course"
+                            value="상담후결정">
+
+                        상담 후 결정
+
+                    </label>
+
+                </div>
+
+                <!-- =======================
+     원서 리딩 학습 정보
+======================== -->
+
+<div id="readingSection" style="display:none;">
+
+    <div class="form-title">
+
+        <i class="fa-solid fa-book"></i>
+        원서 리딩 학습 정보
+
+    </div>
+
+    <div class="form-grid">
+
+        <!-- 파닉스 경험 -->
+
+        <div class="form-group">
+
+            <label>파닉스를 배운 적이 있나요?</label>
+
+            <select name="phonics">
+
+                <option value="">선택해주세요</option>
+
+                <option>예</option>
+                <option>아니오</option>
+                <option>잘 모르겠습니다</option>
+
+            </select>
+
+        </div>
+
+        <!-- SR Test -->
+
+        <div class="form-group">
+
+            <label>SR Test를 본 적이 있나요?</label>
+
+            <select id="srTest" name="srtest">
+
+                <option value="">선택해주세요</option>
+
+                <option value="yes">예</option>
+                <option value="no">아니오</option>
+
+            </select>
+
+        </div>
+
+    </div>
+
+    <!-- SR 지수 -->
+
+    <div
+        class="form-group"
+        id="srLevelBox"
+        style="display:none;">
+
+        <label>SR 지수</label>
+
+        <input
+            type="text"
+            name="sr"
+            placeholder="예) 2.4">
+
+    </div>
+
+</div>
+
+
+<!-- =======================
+     학원 정보
+======================== -->
+
+<div class="form-title">
+
+    <i class="fa-solid fa-school"></i>
+    학원 정보
+
+</div>
+
+<div class="form-grid">
+
+    <!-- 소개받은 친구 -->
+
+    <div class="form-group">
+
+        <label>소개받은 친구 (선택)</label>
+
+        <input
+            type="text"
+            name="friend"
+            placeholder="친구 이름">
+
+    </div>
+
+    <!-- 알게 된 경로 -->
+
+    <div class="form-group">
+
+        <label>학원을 알게 된 경로</label>
+
+        <select name="route">
+
+            <option value="">선택해주세요</option>
+
+            <option>친구 소개</option>
+
+            <option>인스타그램</option>
+
+            <option>네이버 블로그</option>
+
+            <option>네이버 검색</option>
+
+            <option>지나가다가</option>
+
+            <option>전단지</option>
+
+            <option>기타</option>
+
+        </select>
+
+    </div>
+
+</div>
+
+
+<!-- =======================
+     문의내용
+======================== -->
+
+<div class="form-title">
+
+    <i class="fa-solid fa-comment"></i>
+    문의 내용
+
+</div>
+
+<div class="form-group">
+
+    <textarea
+        name="message"
+        rows="6"
+        placeholder="궁금한 점이나 상담하고 싶은 내용을 자유롭게 작성해주세요."></textarea>
+
+</div>
+
+
+<!-- 버튼 -->
+
+<button
+    type="submit"
+    class="submit-btn">
+
+    상담 신청하기
+
+</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="bg-red-600 text-white text-center py-8">
+© 2026 Genius English Academy
+</footer>
+
+<script src="assets/js/contact.js"></script>
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>
