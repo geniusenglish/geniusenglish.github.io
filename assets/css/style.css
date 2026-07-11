@@ -2345,3 +2345,39 @@ font-size:40px;
     font-size:14px;
 
 }
+
+.book-about{
+
+    padding:70px 0;
+
+}
+
+.book-about h2{
+
+    font-size:34px;
+    font-weight:800;
+    margin-bottom:30px;
+
+}
+
+.summary-en{
+
+    font-size:18px;
+    line-height:2;
+    color:#444;
+
+    margin-bottom:30px;
+
+}
+
+.summary-ko{
+
+    font-size:18px;
+    line-height:2;
+    color:#666;
+
+    padding-top:30px;
+
+    border-top:1px solid #eee;
+
+}
