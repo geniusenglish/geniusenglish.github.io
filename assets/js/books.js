@@ -9,8 +9,12 @@ const books = [
     level:0,
     ar:"0.4",
     title:"Big Egg",
+    series:"Step into Reading",
+    category:"Fiction",
     image:"../images/ar0/ar0_bigegg.jpg",
-    likes:24
+    audio:"../audio/books/ar0/ar0_bigegg.mp3",
+    author:"Molly Coxe",
+    summary:""
 },
 
 {
@@ -18,8 +22,12 @@ const books = [
     level:0,
     ar:"0.5",
     title:"Cat Traps",
+    series:"Step into Reading",
+    category:"Fiction",
     image:"../images/ar0/ar0_cattraps.jpg",
-    likes:18
+    audio:"../audio/books/ar0/ar0_cattraps.mp3",
+    author:"",
+    summary:""
 },
 
 {
@@ -27,8 +35,12 @@ const books = [
     level:0,
     ar:"0.8",
     title:"The Go-kart",
+    series:"Step into Reading",
+    category:"Fiction",
     image:"../images/ar0/ar0_thegokart.jpg",
-    likes:31
+    audio:"../audio/books/ar0/ar0_thegokart.mp3",
+    author:"",
+    summary:""
 },
 
 
@@ -40,108 +52,156 @@ const books = [
     id:"awesomeamphibians",
     level:2,
     ar:"2.0",
-    title:"Awesome Amphibians | Science Vocabulary Readers",
+    title:"Awesome Amphibians",
+    series:"Science Vocabulary Readers",
+    category:"Nonfiction",
     image:"../images/ar2/ar2_awesomeamphibians.jpg",
-    likes:24
+    audio:"../audio/books/ar2/ar2_awesomeamphibians.mp3",
+    author:"",
+    summary:""
 },
 
 {
     id:"beautifulbirds",
     level:2,
     ar:"2.2",
-    title:"Beautiful Birds | Science Vocabulary Readers",
+    title:"Beautiful Birds",
+    series:"Science Vocabulary Readers",
+    category:"Nonfiction",
     image:"../images/ar2/ar2_beautifulbirds.jpg",
-    likes:18
+    audio:"../audio/books/ar2/ar2_beautifulbirds.mp3",
+    author:"",
+    summary:""
 },
 
 {
     id:"chicklifecycle",
     level:2,
     ar:"2.1",
-    title:"Chick Life Cycle | Science Vocabulary Readers",
+    title:"Chick Life Cycle",
+    series:"Science Vocabulary Readers",
+    category:"Nonfiction",
     image:"../images/ar2/ar2_chicklifecycle.jpg",
-    likes:31
+    audio:"../audio/books/ar2/ar2_chicklifecycle.mp3",
+    author:"",
+    summary:""
 },
 
 {
     id:"froglifecycle",
     level:2,
     ar:"2.1",
-    title:"Frog Life Cycle | Science Vocabulary Readers",
+    title:"Frog Life Cycle",
+    series:"Science Vocabulary Readers",
+    category:"Nonfiction",
     image:"../images/ar2/ar2_froglifecycle.jpg",
-    likes:24
+    audio:"../audio/books/ar2/ar2_froglifecycle.mp3",
+    author:"",
+    summary:""
 },
 
 {
     id:"honeyhunthelpers",
     level:2,
     ar:"2.8",
-    title:"Honey Hunt Helpers | The Berenstain Bears",
+    title:"Honey Hunt Helpers",
+    series:"The Berenstain Bears",
+    category:"Fiction",
     image:"../images/ar2/ar2_honeyhunthelpers.jpg",
-    likes:18
+    audio:"../audio/books/ar2/ar2_honeyhunthelpers.mp3",
+    author:"",
+    summary:""
 },
 
 {
     id:"justforyou",
     level:2,
     ar:"2.5",
-    title:"Just for You | Little Critter",
+    title:"Just for You",
+    series:"Little Critter",
+    category:"Fiction",
     image:"../images/ar2/ar2_justforyou.jpg",
-    likes:31
+    audio:"../audio/books/ar2/ar2_justforyou.mp3",
+    author:"",
+    summary:""
 },
 
 {
     id:"justgotobed",
     level:2,
     ar:"2.4",
-    title:"Just Go To Bed | Little Critter",
+    title:"Just Go To Bed",
+    series:"Little Critter",
+    category:"Fiction",
     image:"../images/ar2/ar2_justgotobed.jpg",
-    likes:24
+    audio:"../audio/books/ar2/ar2_justgotobed.mp3",
+    author:"",
+    summary:""
 },
 
 {
     id:"ladybuglifecycle",
     level:2,
     ar:"2.2",
-    title:"Ladybug Life Cycle | Science Vocabulary Readers",
+    title:"Ladybug Life Cycle",
+    series:"Science Vocabulary Readers",
+    category:"Nonfiction",
     image:"../images/ar2/ar2_ladybuglifecycle.jpg",
-    likes:18
+    audio:"../audio/books/ar2/ar2_ladybuglifecycle.mp3",
+    author:"",
+    summary:""
 },
 
 {
     id:"sunflowerlifecycle",
     level:2,
     ar:"2.3",
-    title:"Sunflower Life Cycle | Science Vocabulary Readers",
+    title:"Sunflower Life Cycle",
+    series:"Science Vocabulary Readers",
+    category:"Nonfiction",
     image:"../images/ar2/ar2_sunflowerlifecycle.jpg",
-    likes:31
+    audio:"../audio/books/ar2/ar2_sunflowerlifecycle.mp3",
+    author:"",
+    summary:""
 },
 
 {
     id:"thecoolcaterpillar",
     level:2,
     ar:"2.1",
-    title:"The Cool Caterpillar | Science Vocabulary Readers",
+    title:"The Cool Caterpillar",
+    series:"Science Vocabulary Readers",
+    category:"Nonfiction",
     image:"../images/ar2/ar2_thecoolcaterpillar.jpg",
-    likes:24
+    audio:"../audio/books/ar2/ar2_thecoolcaterpillar.mp3",
+    author:"",
+    summary:""
 },
 
 {
     id:"theearth",
     level:2,
     ar:"2.5",
-    title:"The Earth | Science Vocabulary Readers",
+    title:"The Earth",
+    series:"Science Vocabulary Readers",
+    category:"Nonfiction",
     image:"../images/ar2/ar2_theearth.jpg",
-    likes:18
+    audio:"../audio/books/ar2/ar2_theearth.mp3",
+    author:"",
+    summary:""
 },
 
 {
     id:"themoon",
     level:2,
     ar:"2.4",
-    title:"The Moon | Science Vocabulary Readers",
+    title:"The Moon",
+    series:"Science Vocabulary Readers",
+    category:"Nonfiction",
     image:"../images/ar2/ar2_themoon.jpg",
-    likes:31
+    audio:"../audio/books/ar2/ar2_themoon.mp3",
+    author:"",
+    summary:""
 },
 
 {
@@ -149,17 +209,25 @@ const books = [
     level:2,
     ar:"2.7",
     title:"When Spring Comes",
+    series:"",
+    category:"Fiction",
     image:"../images/ar2/ar2_whenspringcomes.jpg",
-    likes:31
+    audio:"../audio/books/ar2/ar2_whenspringcomes.mp3",
+    author:"",
+    summary:""
 },
 
 {
     id:"yourheart",
     level:2,
     ar:"2.2",
-    title:"Your Heart | Science Vocabulary Readers",
+    title:"Your Heart",
+    series:"Science Vocabulary Readers",
+    category:"Nonfiction",
     image:"../images/ar2/ar2_yourheart.jpg",
-    likes:31
+    audio:"../audio/books/ar2/ar2_yourheart.mp3",
+    author:"",
+    summary:""
 }
 
 ];
