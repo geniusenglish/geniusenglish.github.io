@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (publisher) {
 
         publisher.textContent =
-            book.category || "-";
+book.category || "";
 
     }
 
@@ -75,3 +75,19 @@ if(audioPlayer && audioSource){
 }
 
 });
+
+/* ===========================
+   BACK BUTTON
+=========================== */
+
+const backBtn = document.getElementById("backBtn");
+const backText = document.getElementById("backText");
+
+if(backBtn && backText){
+
+    backBtn.href = `ar${book.level}.html`;
+
+    backText.textContent =
+        `AR ${book.level}점대 목록으로`;
+
+}
