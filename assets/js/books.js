@@ -54,8 +54,8 @@ const books = [
     title:"Best Party Ever!",
     series:"Pizza and Taco",
     category:"Fiction",
-    image:"../images/ar2/ar2_bestpartyever.jpg",
-    audio:"../audio/books/ar2/ar2_bestpartyever.mp3",
+    image:"../images/ar1/ar1_bestpartyever.jpg",
+    audio:"../audio/books/ar1/ar1_bestpartyever.mp3",
     author:"Stephen Shaskan",
     summary:`Pizza and Taco throw a party, but everything goes hilariously wrong!
 
@@ -69,8 +69,8 @@ const books = [
     title:"Too Cool for School",
     series:"Pizza and Taco",
     category:"Fiction",
-    image:"../images/ar2/ar2_toocoolforschool.jpg",
-    audio:"../audio/books/ar2/ar2_toocoolforschool.mp3",
+    image:"../images/ar1/ar1_toocoolforschool.jpg",
+    audio:"../audio/books/ar1/ar1_toocoolforschool.mp3",
     author:"Stephen Shaskan",
     summary:`Pizza and Taco try to be cool at school, but they learn that being yourself is the coolest of all.
 
@@ -84,8 +84,8 @@ const books = [
     title:"Dare to be Scared!",
     series:"Pizza and Taco",
     category:"Fiction",
-    image:"../images/ar2/ar2_daretobescared.jpg",
-    audio:"../audio/books/ar2/ar2_daretobescared.mp3",
+    image:"../images/ar1/ar1_daretobescared.jpg",
+    audio:"../audio/books/ar1/ar1_daretobescared.mp3",
     author:"Stephen Shaskan",
     summary:`Pizza and Taco challenge each other to be brave, but they discover everyone gets scared sometimes.
 
