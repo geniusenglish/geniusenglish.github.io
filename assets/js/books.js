@@ -92,6 +92,127 @@ const books = [
     피자와 타코가 용감함을 증명하려 하지만, 누구나 무서울 때가 있다는 것을 깨닫는 이야기입니다.`
 },
 
+{
+    id:"miaandthebigsisterballet",
+    level:1,
+    ar:"1.4",
+    title:"Mia and the Big Sister Ballet",
+    series:"I Can Read Mia",
+    category:"Fiction",
+    image:"../images/ar1/ar1_miaandthebigsisterballet.jpg",
+    audio:"../audio/books/ar1/ar1_miaandthebigsisterballet.mp3",
+    author:"Olga Ivanov,Aleksey Ivanov,Robin Farley",
+    summary:`Mia dreams of dancing like her big sister and learns to believe in herself.
+
+    미아는 언니처럼 멋진 발레리나가 되기를 꿈꾸며 자신감을 키워 가는 이야기입니다.`
+},
+
+{
+    id:"miaandthedaisydance",
+    level:1,
+    ar:"1.2",
+    title:"Mia and the Daisy Dance",
+    series:"I Can Read Mia",
+    category:"Fiction",
+    image:"../images/ar1/ar1_miaandthedaisydance.jpg",
+    audio:"../audio/books/ar1/ar1_miaandthedaisydance.mp3",
+    author:"Olga Ivanov,Aleksey Ivanov,Robin Farley",
+    summary:`Mia helps her friend get ready for a dance show and learns that practicing together is the best part.
+
+    미아는 친구와 함께 공연을 준비하며, 함께 연습하는 즐거움과 우정의 소중함을 배우는 이야기입니다.`
+},
+
+{
+    id:"miaandthedancefortwo",
+    level:1,
+    ar:"1.4",
+    title:"Mia and the Dance for Two",
+    series:"I Can Read Mia",
+    category:"Fiction",
+    image:"../images/ar1/ar1_miaandthedancefortwo.jpg",
+    audio:"../audio/books/ar1/ar1_miaandthedancefortwo.mp3",
+    author:"Olga Ivanov,Aleksey Ivanov,Robin Farley",
+    summary:`When her partner is absent, Mia finds a kind way to make sure no one feels left out.
+
+    댄스 파트너가 결석하자, 미아는 모두가 함께할 수 있는 방법을 찾아가는 따뜻한 이야기입니다.`
+},
+
+{
+    id:"miaandthegirlwithatwirl",
+    level:1,
+    ar:"1.7",
+    title:"Mia and the Girl with a Twirl",
+    series:"I Can Read Mia",
+    category:"Fiction",
+    image:"../images/ar1/ar1_miaandthegirlwithatwirl.jpg",
+    audio:"../audio/books/ar1/ar1_miaandthegirlwithatwirl.mp3",
+    author:"Olga Ivanov,Aleksey Ivanov,Robin Farley",
+    summary:`Mia welcomes a new dancer and learns that everyone has their own special way to shine.
+
+    미아는 새 친구를 만나며, 저마다 자신만의 특별한 매력이 있다는 것을 배우는 이야기입니다.`
+},
+
+{
+    id:"miaandthetinytoeshoes",
+    level:1,
+    ar:"1.6",
+    title:"Mia and the Tiny Toe Shoes",
+    series:"I Can Read Mia",
+    category:"Fiction",
+    image:"../images/ar1/ar1_miaandthetinytoeshoes.jpg",
+    audio:"../audio/books/ar1/ar1_miaandthetinytoeshoes.mp3",
+    author:"Olga Ivanov,Aleksey Ivanov,Robin Farley",
+    summary:`Mia helps young dancers learn ballet and discovers that a great teacher encourages everyone to do their best.
+
+    미아는 어린 발레리나들을 가르치며, 좋은 선생님은 모두가 최선을 다할 수 있도록 도와준다는 것을 배우는 이야기입니다.`
+},
+
+{
+    id:"miaandthetoobigtutu",
+    level:1,
+    ar:"1.3",
+    title:"Mia and the Too Big Tutu",
+    series:"I Can Read Mia",
+    category:"Fiction",
+    image:"../images/ar1/ar1_miaandthetoobigtutu.jpg",
+    audio:"../audio/books/ar1/ar1_miaandthetoobigtutu.mp3",
+    author:"Olga Ivanov,Aleksey Ivanov,Robin Farley",
+    summary:`On her first ballet day, Mia overcomes a small problem with the help of a new friend.
+
+    첫 발레 수업에서 예상치 못한 어려움을 겪은 미아가 새로운 친구의 도움으로 용기를 얻는 이야기입니다.`
+},
+
+{
+    id:"miajazzesitup",
+    level:1,
+    ar:"1.8",
+    title:"Mia Jazzes It Up!",
+    series:"I Can Read Mia",
+    category:"Fiction",
+    image:"../images/ar1/ar1_miajazzesitup.jpg",
+    audio:"../audio/books/ar1/ar1_miajazzesitup.mp3",
+    author:"Olga Ivanov,Aleksey Ivanov,Robin Farley",
+    summary:`Mia tries jazz dance and learns that creativity and confidence help her shine.
+
+    미아는 재즈댄스에 도전하며, 창의력과 자신감으로 자신만의 매력을 표현하는 방법을 배우는 이야기입니다.`
+},
+
+{
+    id:"miasetsthestage",
+    level:1,
+    ar:"1.2",
+    title:"Mia Sets the Stage",
+    series:"I Can Read Mia",
+    category:"Fiction",
+    image:"../images/ar1/ar1_miasetsthestage.jpg",
+    audio:"../audio/books/ar1/ar1_miasetsthestage.mp3",
+    author:"Olga Ivanov,Aleksey Ivanov,Robin Farley",
+    summary:`Mia learns that helping others can be just as important as being in the spotlight.
+
+    미아는 무대의 주인공이 아니어도 다른 사람을 돕는 일이 얼마나 소중한지 배우는 이야기입니다.`
+},
+
+
 
 
 
