@@ -212,6 +212,51 @@ const books = [
     미아는 무대의 주인공이 아니어도 다른 사람을 돕는 일이 얼마나 소중한지 배우는 이야기입니다.`
 },
 
+{
+    id:"happybirthdaydannyandthedinosaur",
+    level:1,
+    ar:"1.9",
+    title:"Happy Birthday, Danny and the Dinosaur!",
+    series:"Danny and the Dinosaur",
+    category:"Fiction",
+    image:"../images/ar1/ar1_happybirthdaydannyandthedinosaur.jpg",
+    audio:"../audio/books/ar1/ar1_happybirthdaydannyandthedinosaur.mp3",
+    author:"Syd Hoff",
+    summary:`Danny celebrates his birthday with his dinosaur friend, making it a fun and unforgettable day.
+
+    대니는 공룡 친구와 함께 즐겁고 잊지 못할 생일 파티를 보내는 이야기입니다.`
+},
+
+{
+    id:"dannyandthedinosaurgotocamp",
+    level:1,
+    ar:"1.8",
+    title:"Danny and the Dinosaur Go to Camp",
+    series:"Danny and the Dinosaur",
+    category:"Fiction",
+    image:"../images/ar1/ar1_dannyandthedinosaurgotocamp.jpg",
+    audio:"../audio/books/ar1/ar1_dannyandthedinosaurgotocamp.mp3",
+    author:"Syd Hoff",
+    summary:`Danny and his dinosaur enjoy an exciting camp adventure filled with fun, friendship, and outdoor activities.
+
+    대니와 공룡 친구가 캠프에서 다양한 활동을 즐기며 특별한 추억을 만드는 이야기입니다.`
+},
+
+{
+    id:"chester",
+    level:1,
+    ar:"1.9",
+    title:"Chester",
+    series:"I Can Read Level 1",
+    category:"Fiction",
+    image:"../images/ar1/ar1_chester.jpg",
+    audio:"../audio/books/ar1/ar1_chester.mp3",
+    author:"Syd Hoff",
+    summary:`A wild horse named Chester searches for a family and discovers a place where he truly belongs.
+
+    야생마 체스터가 자신을 아껴 줄 가족을 찾아 진정한 보금자리를 발견하는 이야기입니다.`
+},
+
 
 
 
