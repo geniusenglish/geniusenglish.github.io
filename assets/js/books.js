@@ -217,7 +217,7 @@ const books = [
     level:1,
     ar:"1.9",
     title:"Happy Birthday, Danny and the Dinosaur!",
-    series:"Danny and the Dinosaur",
+    series:"I Can Read Level 1",
     category:"Fiction",
     image:"../images/ar1/ar1_happybirthdaydannyandthedinosaur.jpg",
     audio:"../audio/books/ar1/ar1_happybirthdaydannyandthedinosaur.mp3",
@@ -232,7 +232,7 @@ const books = [
     level:1,
     ar:"1.8",
     title:"Danny and the Dinosaur Go to Camp",
-    series:"Danny and the Dinosaur",
+    series:"I Can Read Level 1",
     category:"Fiction",
     image:"../images/ar1/ar1_dannyandthedinosaurgotocamp.jpg",
     audio:"../audio/books/ar1/ar1_dannyandthedinosaurgotocamp.mp3",
@@ -257,6 +257,50 @@ const books = [
     야생마 체스터가 자신을 아껴 줄 가족을 찾아 진정한 보금자리를 발견하는 이야기입니다.`
 },
 
+{
+    id:"whowillbemyfriends",
+    level:1,
+    ar:"1.4",
+    title:"Who Will Be My Friends?",
+    series:"I Can Read Level 1",
+    category:"Fiction",
+    image:"../images/ar1/ar1_whowillbemyfriends.jpg",
+    audio:"../audio/books/ar1/ar1_whowillbemyfriends.mp3",
+    author:"Syd Hoff",
+    summary:`Freddy moves to a new neighborhood and discovers that friendship grows when you keep trying.
+
+    프레디는 새로운 동네에서 친구를 찾아가며, 포기하지 않으면 소중한 우정을 만날 수 있다는 것을 배우는 이야기입니다.`
+},
+
+{
+    id:"thenewpuppy",
+    level:1,
+    ar:"1.7",
+    title:"Danny and the Dinosaur and the New Puppy",
+    series:"I Can Read Level 1",
+    category:"Fiction",
+    image:"../images/ar1/ar1_thenewpuppy.jpg",
+    audio:"../audio/books/ar1/ar1_thenewpuppy.mp3",
+    author:"Syd Hoff",
+    summary:`Danny, his new puppy, and the dinosaur share a fun day and learn that everyone can be a great friend.
+
+    대니와 새 강아지, 그리고 공룡 친구가 함께 즐거운 하루를 보내며 모두가 좋은 친구가 될 수 있다는 것을 배우는 이야기입니다.`
+},
+
+{
+    id:"tootall",
+    level:1,
+    ar:"1.8",
+    title:"Danny and the Dinosaur Too Tall",
+    series:"I Can Read Level 1",
+    category:"Fiction",
+    image:"../images/ar1/ar1_tootall.jpg",
+    audio:"../audio/books/ar1/ar1_tootall.mp3",
+    author:"Syd Hoff",
+    summary:`Danny and the dinosaur learn that being different can be a special strength.
+
+    대니와 공룡은 남들과 다른 점도 특별한 장점이 될 수 있다는 것을 배우는 이야기입니다.`
+},
 
 
 
@@ -479,6 +523,144 @@ const books = [
     summary:`Pizza and Taco create a comic book together and learn to share ideas and work as a team.
 
     피자와 타코가 함께 만화책을 만들며 서로의 아이디어를 존중하고 협력하는 방법을 배우는 이야기입니다.`
+},
+
+{
+    id:"barneyshorse",
+    level:2,
+    ar:"2.2",
+    title:"Barney's Horse",
+    series:"I Can Read Level 1",
+    category:"Fiction",
+    image:"../images/ar2/ar2_barneyshorse.jpg",
+    audio:"../audio/books/ar2/ar2_barneyshorse.mp3",
+    author:"Syd Hoff",
+    summary:`Barney and his faithful horse face a big change and learn to be brave together.
+
+    바니와 그의 말은 새로운 변화 속에서 함께 용기를 내며 어려움을 극복하는 이야기입니다.`
+},
+
+{
+    id:"captaincat",
+    level:2,
+    ar:"2.2",
+    title:"Captain Cat",
+    series:"I Can Read Level 1",
+    category:"Fiction",
+    image:"../images/ar2/ar2_captaincat.jpg",
+    audio:"../audio/books/ar2/ar2_captaincat.mp3",
+    author:"Syd Hoff",
+    summary:`Captain Cat joins the army and finds friendship, adventure, and a place to belong.
+
+    고양이 캡틴 캣이 군대에서 새로운 친구를 만나며 우정과 소속감의 소중함을 배우는 이야기입니다.`
+},
+
+{
+    id:"dannyandthedinosaur",
+    level:2,
+    ar:"2.3",
+    title:"Danny and the Dinosaur",
+    series:"I Can Read Level 1",
+    category:"Fiction",
+    image:"../images/ar2/ar2_dannyandthedinosaur.jpg",
+    audio:"../audio/books/ar2/ar2_dannyandthedinosaur.mp3",
+    author:"Syd Hoff",
+    summary:`Danny spends a fun-filled day with a friendly dinosaur and discovers the joy of friendship and imagination.
+
+    대니는 친절한 공룡과 특별한 하루를 보내며 우정과 상상의 즐거움을 경험하는 이야기입니다.`
+},
+
+{
+    id:"thegirlnextdoor",
+    level:2,
+    ar:"2.2",
+    title:"Danny and the Dinosaur and the Girl Next Door",
+    series:"I Can Read Level 1",
+    category:"Fiction",
+    image:"../images/ar2/ar2_thegirlnextdoor.jpg",
+    audio:"../audio/books/ar2/ar2_thegirlnextdoor.mp3",
+    author:"Syd Hoff",
+    summary:`Danny, his dinosaur, and a new neighbor discover that sharing adventures is the best way to make friends.
+
+    대니와 공룡은 새로 이사 온 친구와 함께 모험을 하며 우정을 쌓아 가는 이야기입니다.`
+},
+
+{
+    id:"thesandcastlecontest",
+    level:2,
+    ar:"2.3",
+    title:"Danny and the Dinosaur and the Sand Castle Contest",
+    series:"I Can Read Level 1",
+    category:"Fiction",
+    image:"../images/ar2/ar2_thesandcastlecontest.jpg",
+    audio:"../audio/books/ar2/ar2_thesandcastlecontest.mp3",
+    author:"Syd Hoff",
+    summary:`Danny and the dinosaur build a sandcastle together and learn that kindness is more important than winning.
+
+    대니와 공룡은 모래성 대회에 참가하며, 승리보다 서로를 돕는 마음이 더 소중하다는 것을 배우는 이야기입니다.`
+},
+
+{
+    id:"mindtheirmanners",
+    level:2,
+    ar:"2.3",
+    title:"Danny and the Dinosaur Mind Their Manners",
+    series:"I Can Read Level 1",
+    category:"Fiction",
+    image:"../images/ar2/ar2_mindtheirmanners.jpg",
+    audio:"../audio/books/ar2/ar2_mindtheirmanners.mp3",
+    author:"Syd Hoff",
+    summary:`Danny and the dinosaur practice good manners and learn that kindness and respect matter every day.
+
+    대니와 공룡이 예절을 배우며, 친절과 배려가 일상에서 얼마나 중요한지 깨닫는 이야기입니다.`
+},
+
+{
+    id:"schooldays",
+    level:2,
+    ar:"2.1",
+    title:"Danny and the Dinosaur School Days",
+    series:"I Can Read Level 1",
+    category:"Fiction",
+    image:"../images/ar2/ar2_schooldays.jpg",
+    audio:"../audio/books/ar2/ar2_schooldays.mp3",
+    author:"Syd Hoff",
+    summary:`The dinosaur joins Danny at school and discovers that learning can be fun for everyone.
+
+    공룡은 대니와 함께 학교에 가서, 배우는 즐거움과 학교생활의 재미를 경험하는 이야기입니다.`
+},
+
+{
+    id:"sammytheseal",
+    level:2,
+    ar:"2.0",
+    title:"Sammy the Seal",
+    series:"I Can Read Level 1",
+    category:"Fiction",
+    image:"../images/ar2/ar2_sammytheseal.jpg",
+    audio:"../audio/books/ar2/ar2_sammytheseal.mp3",
+    author:"Syd Hoff",
+    summary:`Sammy the seal explores the city and discovers that home is the best place to be.
+
+    호기심 많은 물개 새미는 도시를 모험하며, 가장 소중한 곳은 집이라는 것을 깨닫는 이야기입니다.`
+},
+
+{
+    id:"oliver",
+    level:2,
+    ar:"2.1",
+    title:"Oliver",
+    series:"I Can Read Level 1",
+    category:"Fiction",
+    image:"../images/ar2/ar2_oliver.jpg",
+    audio:"../audio/books/ar2/ar2_oliver.mp3",
+    author:"Syd Hoff",
+    summary:`Oliver follows his dream and discovers that his special talent makes him shine.
+
+    올리버는 꿈을 포기하지 않고 자신만의 특별한 재능을 발견하며 성장하는 이야기입니다.`
 }
+
+
+
 
 ];
