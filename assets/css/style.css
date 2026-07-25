@@ -1792,7 +1792,7 @@ font-size:40px;
     z-index:2;
 }
 
-.hero-badge{
+.ar-hero .hero-badge{
     display:inline-block;
     background:#e63946;
     color:#fff;
@@ -2232,22 +2232,15 @@ font-size:40px;
 
 }
 
-.hero-badge{
-
+.contact-hero .hero-badge{
     display:inline-block;
-
     padding:10px 22px;
-
     border-radius:30px;
-
     background:rgba(255,255,255,.18);
-
+    color:#fff;
     font-size:14px;
-
     font-weight:700;
-
     margin-bottom:24px;
-
 }
 
 .contact-hero h1{
