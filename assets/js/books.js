@@ -4,6 +4,7 @@ const books = [
    AR 0
 =========================== */
 
+
 {
     id:"big-egg",
     level:0,
@@ -19,7 +20,36 @@ const books = [
     summary:`A mother hen finds a giant egg and sets off to discover where it came from.
 암탉은 커다란 알의 주인을 찾기 위해 특별한 모험을 떠나는 이야기입니다.`
 },
-
+{
+    id:"jumppup",
+    level:0,
+    ar:"0.5",
+    quiz:"168647 EN",
+    wordCount:44,
+    title:"Jump, Pup!",
+    series:"National Geographic Kids",
+    category:"Nonfiction",
+    image:"../images/ar0/ar0_jumppup.jpg",
+    audio:"../audio/books/ar0/ar0_jumppup.mp3",
+    author:"Neuman, Susan B.",
+    summary:`Learn how playful puppies jump, run, and explore the world.
+    강아지의 다양한 움직임과 행동을 재미있게 알아보는 논픽션입니다.`
+},
+{
+    id:"tigerisascredycat",
+    level:0,
+    ar:"0.9",
+    quiz:"7297 EN",
+    wordCount:219,
+    title:"Tiger Is a Scaredy Cat",
+    series:"Step into Reading Step 2",
+    category:"Fiction",
+    image:"../images/ar0/ar0_tigerisascredycat.jpg",
+    audio:"../audio/books/ar0/ar0_tigerisascredycat.mp3",
+    author:"Phillips, Joan",
+    summary:`Tiger learns that being brave means helping others, even when you feel scared.
+    겁이 많은 고양이 타이거가 다른 친구를 돕기 위해 용기를 내는 이야기입니다.`
+},
 {
     id:"biscuitandthebaby",
     level:0,
@@ -27,7 +57,7 @@ const books = [
     quiz:"84976 EN",
     wordCount:153,
     title:"Biscuit and the Baby",
-    series: "Biscuit",
+    series:"Biscuit",
     category:"Fiction",
     image:"../images/ar0/ar0_biscuitandthebaby.jpg",
     audio:"../audio/books/ar0/ar0_biscuitandthebaby.mp3",
@@ -43,7 +73,7 @@ const books = [
     quiz:"155510 EN",
     wordCount:152,
     title:"Biscuit and the Little Pup",
-    series: "Biscuit",
+    series:"Biscuit",
     category:"Fiction",
     image:"../images/ar0/ar0_biscuitandthelittlepup.jpg",
     audio:"../audio/books/ar0/ar0_biscuitandthelittlepup.mp3",
@@ -59,7 +89,7 @@ const books = [
     quiz:"154337 EN",
     wordCount:158,
     title:"Biscuit and the Lost Teddy Bear",
-    series: "Biscuit",
+    series:"Biscuit",
     category:"Fiction",
     image:"../images/ar0/ar0_biscuitandthelostteddybear.jpg",
     audio:"../audio/books/ar0/ar0_biscuitandthelostteddybear.mp3",
@@ -133,7 +163,7 @@ const books = [
     ar:"0.8",
     quiz:"135206 EN",
     wordCount:133,
-    title:"	Biscuit Meets the Class Pet",
+    title:"Biscuit Meets the Class Pet",
     series: "Biscuit",
     category:"Fiction",
     image:"../images/ar0/ar0_biscuitmeetstheclasspet.jpg",
@@ -142,6 +172,97 @@ const books = [
     summary:`Biscuit helps find the missing class pet during a school visit.
     비스킷은 학교에서 길을 잃은 반려동물을 찾는 것을 도와주는 이야기입니다.`
 },
+{
+    id:"biscuitplaysball",
+    level:0,
+    ar:"0.9",
+    quiz:"158730 EN",
+    wordCount:158,
+    title:"Biscuit Plays Ball",
+    series: "Biscuit",
+    category:"Fiction",
+    image:"../images/ar0/ar0_biscuitplaysball.jpg",
+    audio:"../audio/books/ar0/ar0_biscuitplaysball.mp3",
+    author:"Capucilli, Alyssa Satin",
+    summary:`Biscuit finds a fun way to join the ball game with his friends.
+    비스킷은 친구들과 함께 야구를 즐길 수 있는 자신만의 방법을 찾아가는 이야기입니다.`
+},
+{
+    id:"biscuitsbigfriend",
+    level:0,
+    ar:"0.8",
+    quiz:"158730 EN",
+    wordCount:141,
+    title:"Biscuit's Big Friend",
+    series: "Biscuit",
+    category:"Fiction",
+    image:"../images/ar0/ar0_biscuitsbigfriend.jpg",
+    audio:"../audio/books/ar0/ar0_biscuitsbigfriend.mp3",
+    author:"Capucilli, Alyssa Satin",
+    summary:`Biscuit and a big dog become good friends despite their size difference.
+    비스킷은 몸집이 큰 강아지와 친구가 되며, 서로 다른 모습도 우정을 막을 수 없다는 것을 배우는 이야기입니다.`
+},
+{
+    id:"biscuitsdayatthefarm",
+    level:0,
+    ar:"0.8",
+    quiz:"155513 EN",
+    wordCount:144,
+    title:"	Biscuit's Day at the Farm",
+    series: "Biscuit",
+    category:"Fiction",
+    image:"../images/ar0/ar0_biscuitsdayatthefarm.jpg",
+    audio:"../audio/books/ar0/ar0_biscuitsdayatthefarm.mp3",
+    author:"Capucilli, Alyssa Satin",
+    summary:`Biscuit visits a farm, meets friendly animals, and makes a new friend.
+    비스킷은 농장을 둘러보며 다양한 동물들을 만나고 새로운 친구를 사귀는 이야기입니다.`
+},
+{
+    id:"biscuittakesawalk",
+    level:0,
+    ar:"0.9",
+    quiz:"155512 EN",
+    wordCount:146,
+    title:"Biscuit Takes a Walk",
+    series: "Biscuit",
+    category:"Fiction",
+    image:"../images/ar0/ar0_biscuittakesawalk.jpg",
+    audio:"../audio/books/ar0/ar0_biscuittakesawalk.mp3",
+    author:"Capucilli, Alyssa Satin",
+    summary:`Biscuit enjoys every moment on a walk to Grandpa's house.
+    비스킷은 할아버지 집으로 가는 길에서 주변을 둘러보며 즐거운 산책을 하는 이야기입니다.`
+},
+{
+    id:"biscuitwantstoplay",
+    level:0,
+    ar:"0.9",
+    quiz:"45490 EN",
+    wordCount:117,
+    title:"Biscuit Wants to Play",
+    series: "Biscuit",
+    category:"Fiction",
+    image:"../images/ar0/ar0_biscuitwantstoplay.jpg",
+    audio:"../audio/books/ar0/ar0_biscuitwantstoplay.mp3",
+    author:"Capucilli, Alyssa Satin",
+    summary:`Biscuit makes friends with two playful kittens.
+    비스킷은 두 마리의 아기 고양이와 친구가 되어 함께 즐거운 시간을 보내는 이야기입니다.`
+},
+{
+    id:"biscuitwinsaprize",
+    level:0,
+    ar:"0.9",
+    quiz:"75643 EN",
+    wordCount:162,
+    title:"Biscuit Wins a Prize",
+    series: "Biscuit",
+    category:"Fiction",
+    image:"../images/ar0/ar0_biscuitwinsaprize.jpg",
+    audio:"../audio/books/ar0/ar0_biscuitwinsaprize.mp3",
+    author:"Capucilli, Alyssa Satin",
+    summary:`Biscuit joins a pet show and enjoys a fun and exciting adventure.
+    비스킷은 애완동물 대회에 참가하며 즐겁고 신나는 하루를 보내는 이야기입니다.`
+},
+
 
 /* ===========================
    AR 1
