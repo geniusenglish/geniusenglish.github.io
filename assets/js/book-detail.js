@@ -65,8 +65,6 @@ document.getElementById("bookQuiz").textContent =
 document.getElementById("bookWordCount").textContent =
     book.wordCount || "-";
 
-document.getElementById("bookInterest").textContent =
-    book.interest || "-";
 
 
 /* ===========================
