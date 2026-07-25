@@ -1320,20 +1320,7 @@ const books = [
     author:"Hess, Nina",
     summary:`This book introduces feet and describes how their differences allow animals to do special things.`
 },
-{
-    id:"whosefeet",
-    level:1,
-    ar:"1.7",
-    quiz:"77276 EN",
-    wordCount:353,
-    title:"Whose Feet?",
-    series:"Step into Reading Step 2",
-    category:"Fiction",
-    image:"../images/ar1/ar1_whosefeet.jpg",
-    audio:"../audio/books/ar1/ar1_whosefeet.mp3",
-    author:"Hess, Nina",
-    summary:`This book introduces feet and describes how their differences allow animals to do special things.`
-},
+
 
 
 
@@ -1357,23 +1344,34 @@ const books = [
     summary: `This science nonfiction book introduces amphibians through engaging photographs and simple text. Readers will learn what amphibians are, how they grow, where they live, and what makes them unique.
 양서류는 어떤 동물인지, 어떻게 자라고 어디에서 살며 어떤 특징을 가지고 있는지를 다양한 사진과 함께 배우는 과학 논픽션 책입니다.`
 },
-
 {
-    id:"beautifulbirds",
+    id:"awhaleofatale",
     level:2,
-    ar:"2.3",
-    quiz:"146060 EN",
-    wordCount:388,
-    title:"Beautiful Birds",
-    series:"Science Vocabulary Readers",
-    category:"Nonfiction",
-    image:"../images/ar2/ar2_beautifulbirds.jpg",
-    audio:"../audio/books/ar2/ar2_beautifulbirds.mp3",
-    author:"Martin, Justin McCory",
-    summary: `This science nonfiction book helps readers learn about different kinds of birds, their physical features, how they live, and how they adapt to their environments.
-다양한 새들의 생김새와 생활 방식, 그리고 새들이 환경에 적응하며 살아가는 특징을 배우는 과학 논픽션 책입니다.`
+    ar:"2.0",
+    quiz:"160319 EN",
+    wordCount:406,
+    title:"A Whale of a Tale",
+    series:"Splat the Cat",
+    category:"Fiction",
+    image:"../images/ar2/ar2_awhaleofatale.jpg",
+    audio:"../audio/books/ar2/ar2_awhaleofatale.mp3",
+    author:"Hsu Lin, Amy",
+    summary: `Splat the Cat has an adventure at the beach while finding a shell for his grandpa. Based on the series created by Rob Scotton.`
 },
-
+{
+    id:"barnstorm",
+    level:2,
+    ar:"2.4",
+    quiz:"139786 EN",
+    wordCount:273,
+    title:"Barn Storm",
+    series:"Step into Reading Step 2",
+    category:"Fiction",
+    image:"../images/ar2/ar2_barnstorm.jpg",
+    audio:"../audio/books/ar2/ar2_barnstorm.mp3",
+    author:"Ghigna, Charles",
+    summary: `When a tornado touches down in a pond on Farmer Brown's property, it sets off a chain of events among the barnyard animals that soon has every creature displaced, but not unhappy. The coauthor is Debra Chigna.`
+},
 {
     id:"chicklifecycle",
     level:2,
@@ -1389,7 +1387,6 @@ const books = [
     summary:`Learn how a chick grows from an egg into a chicken.
     병아리가 알에서 닭으로 자라는 생애 과정을 배우는 논픽션입니다.`
 },
-
 {
     id:"froglifecycle",
     level:2,
@@ -1740,7 +1737,21 @@ const books = [
     author:"Hoff, Syd",
     summary:`Oliver follows his dream and discovers that his special talent makes him shine.
     올리버는 꿈을 포기하지 않고 자신만의 특별한 재능을 발견하며 성장하는 이야기입니다.`
-}
+},
+{
+    id:"blowsnowblow",
+    level:2,
+    ar:"2.0",
+    quiz:"162877 EN",
+    wordCount:382,
+    title:"Blow, Snow, Blow",
+    series:"Splat the Cat",
+    category:"Fiction",
+    image:"../images/ar2/ar2_blowsnowblow.jpg",
+    audio:"../audio/books/ar2/ar2_blowsnowblow.mp3",
+    author:"Hsu Lin, Amy",
+    summary: `Splat the Cat is excited for the snowstorm, but when he becomes tired of waiting, he decides to make it snow. Based on the series created by Rob Scotton.`
+},
 
 
 
