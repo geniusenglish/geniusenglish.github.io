@@ -1811,14 +1811,14 @@ font-size:40px;
     margin-bottom:18px;
 }
 
-.hero-desc{
+.ar-hero .hero-desc{
     font-size:20px;
     line-height:1.7;
     color:#555;
     margin-bottom:10px;
 }
 
-.hero-sub{
+.ar-hero .hero-sub{
     font-size:18px;
     line-height:1.7;
     color:#666;
@@ -1889,15 +1889,15 @@ font-size:40px;
         font-size:36px;
     }
 
-    .hero-desc{
-        font-size:16px;
-        margin-bottom:8px;
-    }
+    .ar-hero .hero-desc{
+    font-size:16px;
+    margin-bottom:8px;
+}
 
-    .hero-sub{
-        font-size:15px;
-        margin-bottom:16px;
-    }
+.ar-hero .hero-sub{
+    font-size:15px;
+    margin-bottom:16px;
+}
 
     .hero-guide{
         font-size:14px;
@@ -2260,7 +2260,7 @@ font-size:40px;
 
 }
 
-.hero-desc{
+.contact-hero .hero-desc{
 
     font-size:20px;
 
@@ -2342,7 +2342,7 @@ font-size:40px;
 
 }
 
-.hero-desc{
+.contact-hero .hero-desc{
 
     font-size:17px;
 
