@@ -1653,20 +1653,37 @@ font-size:40px;
     display:block;
 }
 
-.book h3{
-    padding:16px 16px 8px;
+.book-ar{
+    padding:16px 16px 0;
+    color:#e63946;
+    font-size:15px;
+    font-weight:700;
+}
+
+.book-title{
+    padding:6px 16px 0;
+
     font-size:16px;
     font-weight:700;
     color:#222;
     line-height:1.4;
-    min-height:56px;
+
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2;
+    overflow:hidden;
+
+    min-height:45px;
 }
 
-.book-like{
-    padding:0 16px 18px;
-    font-size:15px;
-    color:#e63946;
-    font-weight:700;
+.book-series{
+    padding:6px 16px 18px;
+    font-size:13px;
+    color:#888;
+
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
 }
 
 /* ===========================
@@ -1680,13 +1697,17 @@ font-size:40px;
     gap:18px;
 }
 
-.book h3{
+.book-title{
     font-size:14px;
-    min-height:46px;
+    min-height:44px;
 }
 
-.book-like{
+.book-ar{
     font-size:13px;
+}
+
+.book-series{
+    font-size:12px;
 }
 
 }
