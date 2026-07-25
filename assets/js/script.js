@@ -79,11 +79,11 @@ data-title="${book.title}">
 
     <img src="${book.image}" alt="${book.title}">
 
-    <h3>${book.title}</h3>
+    <div class="book-ar">AR ${book.ar}</div>
 
-    <div class="book-like">
-        ❤️ ${book.likes}
-    </div>
+    <h3 class="book-title">${book.title}</h3>
+
+    <p class="book-series">${book.series}</p>
 
 </a>
 
