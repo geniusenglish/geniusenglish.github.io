@@ -30,42 +30,58 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     /* ===========================
-       책 정보 출력
-    =========================== */
+   책 정보 출력
+=========================== */
 
-    document.title = `${book.title} | Genius English Academy`;
+document.title = `${book.title} | Genius English Academy`;
 
-    document.getElementById("bookTitle").textContent = book.title;
-    document.getElementById("bookAR").textContent = `AR ${book.ar}`;
+document.getElementById("bookTitle").textContent = book.title;
 
-    document.getElementById("bookImage").src = book.image;
-    document.getElementById("bookImage").alt = book.title;
+// 책 표지
+document.getElementById("bookImage").src = book.image;
+document.getElementById("bookImage").alt = book.title;
 
-    document.getElementById("bookAuthor").textContent =
-        book.author || "-";
+/* ===========================
+   BOOK INFORMATION
+=========================== */
 
-    document.getElementById("bookSeries").textContent =
-        book.series || "-";
+document.getElementById("bookAuthor").textContent =
+    book.author || "-";
 
-    const category = document.getElementById("bookCategory");
+document.getElementById("bookSeries").textContent =
+    Array.isArray(book.series)
+        ? book.series.join(", ")
+        : (book.series || "-");
 
-    if (category) {
-        category.textContent = book.category || "-";
-    }
+document.getElementById("bookCategoryText").textContent =
+    book.category || "-";
 
-    /* ===========================
-       AUDIO PLAYER
-    =========================== */
+document.getElementById("bookARText").textContent =
+    book.ar || "-";
 
-    const audioPlayer = document.getElementById("bookAudio");
-    const audioSource = document.getElementById("audioSource");
+document.getElementById("bookQuiz").textContent =
+    book.quiz || "-";
 
-    if (audioPlayer && audioSource) {
+document.getElementById("bookWordCount").textContent =
+    book.wordCount || "-";
 
-        audioSource.src = book.audio;
-        audioPlayer.load();
+document.getElementById("bookInterest").textContent =
+    book.interest || "-";
 
-    }
+
+/* ===========================
+   AUDIO PLAYER
+=========================== */
+
+const audioPlayer = document.getElementById("bookAudio");
+const audioSource = document.getElementById("audioSource");
+
+if (audioPlayer && audioSource && book.audio) {
+
+    audioSource.src = book.audio;
+    audioPlayer.load();
+
+}
 
     /* ===========================
    ABOUT THIS BOOK

@@ -8,39 +8,62 @@ const books = [
     id:"big-egg",
     level:0,
     ar:"0.4",
+    quiz:"36573 EN",
+    wordCount:99,
+    interest:"Lower Grades (LG K-3)",
     title:"Big Egg",
-    series:"Step into Reading",
+    series:["Step into Reading"],
     category:"Fiction",
     image:"../images/ar0/ar0_bigegg.jpg",
     audio:"../audio/books/ar0/ar0_bigegg.mp3",
     author:"Molly Coxe",
-    summary:""
+    summary:`A mother hen finds a giant egg and sets off to discover where it came from.
+암탉은 커다란 알의 주인을 찾기 위해 특별한 모험을 떠나는 이야기입니다.`
 },
 
 {
-    id:"cat-traps",
+    id:"biscuitandthebaby",
     level:0,
-    ar:"0.5",
-    title:"Cat Traps",
-    series:"Step into Reading",
+    ar:"0.9",
+    quiz:"36573 EN",
+    wordCount:99,
+    interest:"Lower Grades (LG K-3)",
+    title:"My First I Can Read : Biscuit and the Baby",
+    series:["My First I Can Read", "Biscuit"],
     category:"Fiction",
-    image:"../images/ar0/ar0_cattraps.jpg",
-    audio:"../audio/books/ar0/ar0_cattraps.mp3",
-    author:"",
-    summary:""
+    image:"../images/ar0/ar0_biscuitandthebaby.jpg",
+    audio:"../audio/books/ar0/ar0_biscuitandthebaby.mp3",
+    author:"Capucilli, Alyssa Satin",
+    summary:`Biscuit eagerly waits to meet the new baby after naptime.
+    비스킷은 낮잠에서 깬 아기를 만나기 위해 설레는 마음으로 기다리는 이야기입니다.`
 },
 
 {
-    id:"the-go-kart",
+    id:"biscuitandthelittlepup",
     level:0,
-    ar:"0.8",
-    title:"The Go-kart",
-    series:"Step into Reading",
+    ar:"0.7",
+    title:"My First I Can Read : Biscuit and the Little Pup",
+    series:["My First I Can Read", "Biscuit"],
     category:"Fiction",
-    image:"../images/ar0/ar0_thegokart.jpg",
-    audio:"../audio/books/ar0/ar0_thegokart.mp3",
-    author:"",
-    summary:""
+    image:"../images/ar0/ar0_biscuitandthelittlepup.jpg",
+    audio:"../audio/books/ar0/ar0_biscuitandthelittlepup.mp3",
+    author:"Capucilli, Alyssa Satin",
+    summary:`Biscuit tries to coax a little puppy to come out and play.
+    비스킷은 작은 강아지가 나와 함께 놀 수 있도록 다정하게 이끄는 이야기입니다.`
+},
+
+{
+    id:"biscuitandthelostteddybear",
+    level:0,
+    ar:"0.7",
+    title:"My First I Can Read :  Biscuit and the Lost Teddy Bear",
+    series:["My First I Can Read", "Biscuit"],
+    category:"Fiction",
+    image:"../images/ar0/ar0_biscuitandthelostteddybear.jpg",
+    audio:"../audio/books/ar0/ar0_biscuitandthelostteddybear.mp3",
+    author:"Capucilli, Alyssa Satin",
+    summary:`Biscuit helps a lost teddy bear find its owner again.
+    비스킷은 길을 잃은 곰인형이 주인을 다시 만날 수 있도록 도와주는 이야기입니다.`
 },
 
 /* ===========================
