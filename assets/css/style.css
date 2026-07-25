@@ -1795,7 +1795,7 @@ font-size:40px;
 .ar-hero .hero-badge{
     display:inline-block;
     background:#e63946;
-    color:#fff;
+    color:#ffffff !important;
     padding:8px 18px;
     border-radius:30px;
     font-size:13px;
@@ -2265,7 +2265,7 @@ font-size:40px;
 
 }
 
-.hero-info{
+.contact-hero .hero-info{
 
     display:flex;
 
@@ -2279,7 +2279,7 @@ font-size:40px;
 
 }
 
-.hero-info-item{
+.contact-hero .hero-info-item{
 
     background:rgba(255,255,255,.12);
 
@@ -2293,7 +2293,7 @@ font-size:40px;
 
 }
 
-.hero-btn{
+.contact-hero .hero-btn{
 
     display:inline-block;
 
@@ -2313,7 +2313,7 @@ font-size:40px;
 
 }
 
-.hero-btn:hover{
+.contact-hero .hero-btn:hover{
 
     background:#f5f5f5;
 
@@ -2341,7 +2341,7 @@ font-size:40px;
 
 }
 
-.hero-info{
+.contact-hero .hero-info{
 
     flex-direction:column;
 
@@ -2349,7 +2349,7 @@ font-size:40px;
 
 }
 
-.hero-info-item{
+.contact-hero .hero-info-item{
 
     width:100%;
 
