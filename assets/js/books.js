@@ -36,6 +36,21 @@ const books = [
     강아지의 다양한 움직임과 행동을 재미있게 알아보는 논픽션입니다.`
 },
 {
+    id:"peekotter",
+    level:0,
+    ar:"0.6",
+    quiz:"183796 EN",
+    wordCount:55,
+    title:"Jump, Pup!",
+    series:"National Geographic Kids",
+    category:"Nonfiction",
+    image:"../images/ar0/ar0_peekotter.jpg",
+    audio:"https://youtu.be/ANsDy37plM4?si=_L76BGEQT2Kku31N",
+    author:"Evans, Shira",
+    summary:`Learn about funny and adorable river otters and their amazing lives.
+    재미있고 사랑스러운 수달의 특징과 생활 모습을 알아보는 논픽션입니다.`
+},
+{
     id:"tigerisascredycat",
     level:0,
     ar:"0.9",
