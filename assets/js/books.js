@@ -41,14 +41,44 @@ const books = [
     ar:"0.6",
     quiz:"183796 EN",
     wordCount:55,
-    title:"Jump, Pup!",
+    title:"Peek, Otter!",
     series:"National Geographic Kids",
     category:"Nonfiction",
     image:"../images/ar0/ar0_peekotter.jpg",
-    audio:"https://youtu.be/ANsDy37plM4?si=_L76BGEQT2Kku31N",
+    audio:"../audio/books/ar0/ar0_peekotter.mp3",
     author:"Evans, Shira",
     summary:`Learn about funny and adorable river otters and their amazing lives.
     재미있고 사랑스러운 수달의 특징과 생활 모습을 알아보는 논픽션입니다.`
+},
+{
+    id:"playkitty",
+    level:0,
+    ar:"0.6",
+    quiz:"182678 EN",
+    wordCount:40,
+    title:"Play, Kitty!",
+    series:"National Geographic Kids",
+    category:"Nonfiction",
+    image:"../images/ar0/ar0_playkitty.jpg",
+    audio:"../audio/books/ar0/ar0_playkitty.mp3",
+    author:"Evans, Shira",
+    summary:`Follow a playful kitty through a fun-filled day of adventures.
+    장난꾸러기 고양이의 즐겁고 신나는 하루를 따라가 보는 이야기입니다.`
+},
+{
+    id:"sleepbear",
+    level:0,
+    ar:"0.7",
+    quiz:"174215 EN",
+    wordCount:98,
+    title:"Sleep, Bear!",
+    series:"National Geographic Kids",
+    category:"Nonfiction",
+    image:"../images/ar0/ar0_sleepbear.jpg",
+    audio:"../audio/books/ar0/ar0_sleepbear.mp3",
+    author:"Alinsky, Shelby",
+    summary:`Learn how a bear cub and its family prepare for winter hibernation.
+    곰 가족이 겨울잠을 준비하는 과정과 곰의 겨울 생활을 알아보는 논픽션입니다.`
 },
 {
     id:"tigerisascredycat",
