@@ -66,6 +66,36 @@ const books = [
 소년이 만든 눈사람이 살아나 함께 하늘을 날아가는 마법 같은 이야기입니다.`
 },
 {
+    id:"thepupspeaksup",
+    level:0,
+    ar:"0.7",
+    quiz:"117219 EN",
+    wordCount:176,
+    title:"The Pup Speaks Up",
+    series:"Step into Reading Step 1",
+    category:"Fiction",
+    image:"../images/ar0/ar0_thepupspeaksup.jpg",
+    audio:"../audio/books/ar0/ar0_thepupspeaksup.mp3",
+    author:"Hays, Anna Jane",
+    summary:`Bo and his silent puppy hear many sounds before the puppy finally speaks up.
+보와 말이 없는 강아지가 산책하며 다양한 소리를 듣다가 강아지가 마침내 소리를 내는 이야기입니다.`
+},
+{
+    id:"thelionandthemouse",
+    level:0,
+    ar:"0.7",
+    quiz:"31592 EN",
+    wordCount:83,
+    title:"	The Lion and the Mouse",
+    series:"Step into Reading Step 1",
+    category:"Fiction",
+    image:"../images/ar0/ar0_thelionandthemouse.jpg",
+    audio:"../audio/books/ar0/ar0_thelionandthemouse.mp3",
+    author:"Herman, Gail",
+    summary:`A brave little mouse rescues a lion and proves that even small creatures can do great things.
+작은 생쥐가 사자를 구하며 작은 존재도 큰일을 해낼 수 있음을 보여 주는 이야기입니다.`
+},
+{
     id:"jumppup",
     level:0,
     ar:"0.5",
