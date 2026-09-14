@@ -21,6 +21,36 @@ const books = [
 암탉은 커다란 알의 주인을 찾기 위해 특별한 모험을 떠나는 이야기입니다.`
 },
 {
+    id:"sleepydog",
+    level:0,
+    ar:"0.8",
+    quiz:"7242 EN",
+    wordCount:131,
+    title:"Sleepy Dog",
+    series:"Step into Reading Step 1",
+    category:"Fiction",
+    image:"../images/ar0/ar0_sleepydog.jpg",
+    audio:"../audio/books/ar0/ar0_sleepydog.mp3",
+    author:"Ziefert, Harriet",
+    summary:`A sleepy dog and his cat share goodnight kisses and playful dreams.
+졸린 강아지와 고양이가 잘 자라는 인사를 나누며 즐거운 꿈을 꾸는 이야기입니다.`
+},
+{
+    id:"thesnowman",
+    level:0,
+    ar:"0.8",
+    quiz:"154281 EN",
+    wordCount:137,
+    title:"Raymond Briggs' The Snowman",
+    series:"Step into Reading Step 1",
+    category:"Fiction",
+    image:"../images/ar0/ar0_thesnowman.jpg",
+    audio:"../audio/books/ar0/ar0_thesnowman.mp3",
+    author:"Knudsen, Michelle",
+    summary:`A little boy's snowman comes to life and takes him on a magical flight.
+소년이 만든 눈사람이 살아나 함께 하늘을 날아가는 마법 같은 이야기입니다.`
+},
+{
     id:"jumppup",
     level:0,
     ar:"0.5",
