@@ -21,6 +21,21 @@ const books = [
 암탉은 커다란 알의 주인을 찾기 위해 특별한 모험을 떠나는 이야기입니다.`
 },
 {
+    id:"cattraps",
+    level:0,
+    ar:"0.4",
+    quiz:"86010 EN",
+    wordCount:95,
+    title:"	Cat Traps",
+    series:"Step into Reading Step 1",
+    category:"Fiction",
+    image:"../images/ar0/ar0_cattraps.jpg",
+    audio:"../audio/books/ar0/ar0_cattraps.mp3",
+    author:"Coxe, Molly",
+    summary:`A hungry cat tries to catch different animals for a snack.
+배고픈 고양이가 간식을 먹기 위해 여러 동물을 잡으려 하는 이야기입니다.`
+},
+{
     id:"sleepydog",
     level:0,
     ar:"0.8",
@@ -109,6 +124,51 @@ const books = [
     author:"Alinsky, Shelby",
     summary:`Learn how a bear cub and its family prepare for winter hibernation.
     곰 가족이 겨울잠을 준비하는 과정과 곰의 겨울 생활을 알아보는 논픽션입니다.`
+},
+{
+    id:"trotpony",
+    level:0,
+    ar:"0.9",
+    quiz:"182679 EN",
+    wordCount:76,
+    title:"Trot, Pony!",
+    series:"National Geographic Kids",
+    category:"Nonfiction",
+    image:"../images/ar0/ar0_trotpony.jpg",
+    audio:"../audio/books/ar0/ar0_trotpony.mp3",
+    author:"Evans, Shira",
+    summary:`Learn about wild ponies, where they live, and what they eat.
+    야생 조랑말의 생활과 서식지, 먹이에 대해 알아보는 논픽션입니다.`
+},
+{
+    id:"hangonmonkey",
+    level:0,
+    ar:"0.9",
+    quiz:"173251 EN",
+    wordCount:78,
+    title:"Hang On, Monkey!",
+    series:"National Geographic Kids",
+    category:"Nonfiction",
+    image:"../images/ar0/ar0_hangonmonkey.jpg",
+    audio:"../audio/books/ar0/ar0_hangonmonkey.mp3",
+    author:"Neuman, Susan B.",
+    summary:`Learn about monkeys and how they behave in the wild.
+    원숭이의 다양한 행동과 생활 모습을 알아보는 논픽션입니다.`
+},
+{
+    id:"hopbunny",
+    level:0,
+    ar:"0.9",
+    quiz:"168733 EN",
+    wordCount:61,
+    title:"	Hop, Bunny!",
+    series:"National Geographic Kids",
+    category:"Nonfiction",
+    image:"../images/ar0/ar0_hopbunny.jpg",
+    audio:"../audio/books/ar0/ar0_hopbunny.mp3",
+    author:"Neuman, Susan B.",
+    summary:`Explore the forest and discover the plants, animals, and water a bunny sees.
+    토끼가 숲에서 만나는 식물과 동물, 물을 살펴보는 논픽션입니다.`
 },
 {
     id:"tigerisascredycat",
