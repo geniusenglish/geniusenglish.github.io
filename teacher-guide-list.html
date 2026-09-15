@@ -1,1206 +1,449 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teacher Guide | Genius English Academy</title>
 
-  <title>Teacher Guide | Genius English Academy</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="./assets/css/style.css">
 
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
+<style>
+*{box-sizing:border-box}
 
-  <!-- Existing Style -->
-  <link rel="stylesheet" href="assets/css/style.css">
+body{
+  margin:0;
+  background:#f8f8f8;
+  color:#222;
+  font-family:Arial,"Noto Sans KR",sans-serif;
+}
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+.guide-page{
+  max-width:1200px;
+  margin:0 auto;
+  padding:42px 20px 60px;
+}
 
-    body {
-      margin: 0;
-      background: #f7f7f7;
-      color: #222;
-      font-family: Arial, "Noto Sans KR", sans-serif;
-    }
+.guide-title{
+  text-align:center;
+  margin-bottom:30px;
+}
 
-    /* =========================
-       Header
-    ========================= */
+.guide-title h1{
+  margin:0 0 7px;
+  font-size:30px;
+  font-weight:700;
+}
 
-    .logo-slider {
-      display: inline-block;
-      position: relative;
-      width: 180px;
-      height: 55px;
-    }
+.guide-title p{
+  margin:0;
+  font-size:13px;
+  color:#777;
+}
 
-    .logo-slide {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 180px;
-      height: 55px;
-      object-fit: contain;
-      opacity: 0;
-      transition: opacity 0.5s ease;
-    }
+.search-box{
+  max-width:680px;
+  margin:0 auto 28px;
+}
 
-    .logo-slide.show {
-      opacity: 1;
-    }
+.search-box input{
+  width:100%;
+  height:50px;
+  border:1px solid #d4d4d4;
+  border-radius:5px;
+  background:#fff;
+  padding:0 18px;
+  font-size:14px;
+  outline:none;
+}
 
-    /* =========================
-       Teacher Guide Page
-    ========================= */
+.search-box input:focus{
+  border-color:#777;
+}
 
-    .guide-page {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 45px 20px 60px;
-    }
+.ar-tabs{
+  display:flex;
+  justify-content:center;
+  gap:7px;
+  flex-wrap:wrap;
+  margin-bottom:35px;
+}
 
-    .guide-title {
-      text-align: center;
-      margin-bottom: 32px;
-    }
+.ar-tab{
+  border:1px solid #d0d0d0;
+  background:#fff;
+  color:#555;
+  padding:9px 20px;
+  border-radius:4px;
+  font-size:13px;
+  cursor:pointer;
+}
 
-    .guide-title h1 {
-      font-size: 32px;
-      font-weight: 700;
-      margin: 0 0 8px;
-      letter-spacing: -0.5px;
-    }
+.ar-tab.active{
+  background:#222;
+  border-color:#222;
+  color:#fff;
+}
 
-    .guide-title p {
-      margin: 0;
-      font-size: 14px;
-      color: #777;
-    }
+.result-info{
+  display:none;
+  background:#fff;
+  border:1px solid #ddd;
+  padding:11px 14px;
+  margin-bottom:22px;
+  border-radius:4px;
+  font-size:13px;
+}
 
-    /* =========================
-       Search
-    ========================= */
+.level-section{
+  margin-bottom:42px;
+}
 
-    .search-box {
-      max-width: 700px;
-      margin: 0 auto 32px;
-      position: relative;
-    }
+.level-title{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  border-bottom:2px solid #222;
+  padding-bottom:9px;
+  margin-bottom:18px;
+}
 
-    .search-box input {
-      width: 100%;
-      height: 52px;
-      border: 1px solid #d5d5d5;
-      border-radius: 6px;
-      background: #fff;
-      padding: 0 50px 0 18px;
-      font-size: 15px;
-      outline: none;
-      transition: border-color 0.2s;
-    }
+.level-title h2{
+  margin:0;
+  font-size:20px;
+}
 
-    .search-box input:focus {
-      border-color: #777;
-    }
+.book-count{
+  color:#888;
+  font-size:12px;
+}
 
-    .search-icon {
-      position: absolute;
-      right: 17px;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 21px;
-      color: #777;
-      pointer-events: none;
-    }
+.book-grid{
+  display:grid;
+  grid-template-columns:repeat(6,1fr);
+  gap:18px;
+}
 
-    /* =========================
-       AR Tabs
-    ========================= */
+.book-card{
+  background:#fff;
+  border:1px solid #e0e0e0;
+  border-radius:5px;
+  overflow:hidden;
+  cursor:pointer;
+  transition:.2s;
+}
 
-    .ar-tabs {
-      display: flex;
-      justify-content: center;
-      gap: 8px;
-      flex-wrap: wrap;
-      margin-bottom: 35px;
-    }
+.book-card:hover{
+  transform:translateY(-3px);
+  box-shadow:0 5px 16px rgba(0,0,0,.08);
+}
 
-    .ar-tab {
-      border: 1px solid #d2d2d2;
-      background: #fff;
-      color: #555;
-      padding: 10px 22px;
-      border-radius: 4px;
-      font-size: 14px;
-      cursor: pointer;
-      transition: all 0.2s ease;
-    }
+.cover{
+  aspect-ratio:3/4;
+  background:#eee;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+}
 
-    .ar-tab:hover {
-      border-color: #888;
-      color: #222;
-    }
+.cover img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
 
-    .ar-tab.active {
-      background: #222;
-      border-color: #222;
-      color: #fff;
-    }
+.book-info{
+  padding:10px;
+}
 
-    /* =========================
-       Section Title
-    ========================= */
+.book-title{
+  font-size:13px;
+  font-weight:700;
+  line-height:1.35;
+  min-height:35px;
+  margin-bottom:6px;
+}
 
-    .level-section {
-      margin-bottom: 45px;
-    }
+.book-meta{
+  color:#777;
+  font-size:10px;
+  line-height:1.7;
+}
 
-    .level-title {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      border-bottom: 2px solid #222;
-      padding-bottom: 10px;
-      margin-bottom: 20px;
-    }
+.no-result{
+  display:none;
+  text-align:center;
+  padding:70px 20px;
+  background:#fff;
+  border:1px solid #ddd;
+  color:#888;
+}
 
-    .level-title h2 {
-      margin: 0;
-      font-size: 21px;
-      font-weight: 700;
-    }
+@media(max-width:1050px){
+  .book-grid{grid-template-columns:repeat(5,1fr)}
+}
 
-    .book-count {
-      font-size: 13px;
-      color: #888;
-    }
+@media(max-width:850px){
+  .book-grid{grid-template-columns:repeat(4,1fr)}
+}
 
-    /* =========================
-       Book Grid
-    ========================= */
+@media(max-width:600px){
+  .guide-page{padding:30px 15px 45px}
+  .book-grid{grid-template-columns:repeat(3,1fr);gap:12px}
+  .ar-tab{padding:8px 14px}
+}
 
-    .book-grid {
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      gap: 20px;
-    }
-
-    .book-card {
-      background: #fff;
-      border: 1px solid #e1e1e1;
-      border-radius: 5px;
-      overflow: hidden;
-      cursor: pointer;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .book-card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-    }
-
-    .book-cover-wrap {
-      width: 100%;
-      aspect-ratio: 3 / 4;
-      background: #f1f1f1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-    }
-
-    .book-cover {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .book-info {
-      padding: 12px;
-    }
-
-    .book-title {
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 1.35;
-      min-height: 38px;
-      margin-bottom: 8px;
-    }
-
-    .book-meta {
-      font-size: 11px;
-      line-height: 1.7;
-      color: #777;
-    }
-
-    .book-meta strong {
-      color: #444;
-      font-weight: 600;
-    }
-
-    /* =========================
-       Search Result
-    ========================= */
-
-    .search-result-info {
-      display: none;
-      margin-bottom: 25px;
-      padding: 13px 15px;
-      background: #fff;
-      border: 1px solid #ddd;
-      font-size: 14px;
-      color: #555;
-      border-radius: 4px;
-    }
-
-    .search-result-info strong {
-      color: #222;
-    }
-
-    .no-result {
-      display: none;
-      text-align: center;
-      padding: 70px 20px;
-      color: #888;
-      background: #fff;
-      border: 1px solid #e1e1e1;
-      border-radius: 5px;
-    }
-
-    .no-result strong {
-      display: block;
-      color: #333;
-      font-size: 17px;
-      margin-bottom: 8px;
-    }
-
-    /* =========================
-       Footer
-    ========================= */
-
-    .teacher-footer-link {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    .teacher-footer-link:hover {
-      opacity: 0.8;
-    }
-
-    /* =========================
-       Responsive
-    ========================= */
-
-    @media (max-width: 1100px) {
-      .book-grid {
-        grid-template-columns: repeat(5, 1fr);
-      }
-    }
-
-    @media (max-width: 900px) {
-      .book-grid {
-        grid-template-columns: repeat(4, 1fr);
-      }
-    }
-
-    @media (max-width: 700px) {
-      .guide-page {
-        padding: 30px 15px 45px;
-      }
-
-      .guide-title h1 {
-        font-size: 26px;
-      }
-
-      .book-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 12px;
-      }
-
-      .book-info {
-        padding: 9px;
-      }
-
-      .book-title {
-        font-size: 12px;
-        min-height: 34px;
-      }
-
-      .book-meta {
-        font-size: 10px;
-      }
-
-      .ar-tab {
-        padding: 9px 15px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .book-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .search-box input {
-        height: 48px;
-      }
-    }
-  </style>
+@media(max-width:430px){
+  .book-grid{grid-template-columns:repeat(2,1fr)}
+}
+</style>
 </head>
-
 
 <body>
 
-  <!-- =========================================
-       HEADER
-  ========================================== -->
+<header>
+  <div class="header-top">
+    <div class="header-wrap">
+      <a href="./index_new.html" class="logo-slider">
+        <img src="./images/logo1.png" class="logo-slide show">
+        <img src="./images/logo2.png" class="logo-slide">
+      </a>
+    </div>
+  </div>
 
-  <header class="bg-white shadow-sm">
-    <div class="max-w-7xl mx-auto px-4">
+  <div class="header-menu">
+    <div class="header-wrap">
+      <nav class="main-menu">
+        <a href="./academy.html">학원소개</a>
+        <a href="./curriculum.html">커리큘럼</a>
 
-      <div class="flex items-center justify-between h-20">
+        <div class="dropdown">
+          <a href="#">학습자료</a>
+          <div class="dropdown-menu">
+            <a href="./reading.html">📚 원서 음원 듣기</a>
+            <a href="./vocabulary.html">🎧 매일 단어 듣기</a>
+          </div>
+        </div>
 
-        <!-- Logo -->
-        <a href="index.html" class="logo-slider">
-          <img
-            src="images/logo1.png"
-            class="logo-slide show"
-            alt="Genius English"
-          >
-
-          <img
-            src="images/logo2.png"
-            class="logo-slide"
-            alt="Genius English"
-          >
+        <a href="https://global-zone60.renaissance-go.com/welcomeportal/rpna83al" target="_blank">
+          <span class="pc-text">르네상스 러닝</span>
+          <span class="mobile-text">르네상스</span>
         </a>
 
-
-        <!-- Desktop Navigation -->
-        <nav class="hidden md:flex items-center gap-6 text-sm">
-
-          <a href="academy.html"
-             class="text-gray-700 hover:text-black">
-            학원소개
-          </a>
-
-          <a href="curriculum.html"
-             class="text-gray-700 hover:text-black">
-            커리큘럼
-          </a>
-
-
-          <!-- 학습자료 -->
-          <div class="relative group">
-
-            <button
-              class="text-gray-700 hover:text-black flex items-center gap-1"
-            >
-              학습자료
-              <span class="text-xs">▼</span>
-            </button>
-
-            <div
-              class="absolute hidden group-hover:block bg-white border border-gray-200 shadow-lg rounded-md mt-2 w-36 z-50"
-            >
-
-              <a
-                href="reading.html"
-                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-100"
-              >
-                원서리딩
-              </a>
-
-              <a
-                href="vocabulary.html"
-                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-100"
-              >
-                단어듣기
-              </a>
-
-            </div>
-
-          </div>
-
-
-          <!-- Renaissance -->
-          <a
-            href="https://global-zone.renaissance.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="text-gray-700 hover:text-black"
-          >
-            Renaissance
-          </a>
-
-
-          <a
-            href="notice.html"
-            class="text-gray-700 hover:text-black"
-          >
-            공지사항
-          </a>
-
-
-          <a
-            href="contact.html"
-            class="text-gray-700 hover:text-black"
-          >
-            상담문의
-          </a>
-
-        </nav>
-
-      </div>
-
+        <a href="./notice.html">공지사항</a>
+        <a href="./contact.html">상담문의</a>
+      </nav>
     </div>
-  </header>
+  </div>
+</header>
 
+<main class="guide-page">
 
-  <!-- =========================================
-       MAIN
-  ========================================== -->
+  <div class="guide-title">
+    <h1>Teacher Guide</h1>
+    <p>Book Talk &amp; 3-Sentence Summary Writing</p>
+  </div>
 
-  <main class="guide-page">
-
-    <!-- Page Title -->
-    <div class="guide-title">
-
-      <h1>Teacher Guide</h1>
-
-      <p>
-        Book Talk &amp; Summary Writing Guide
-      </p>
-
-    </div>
-
-
-    <!-- =======================================
-         SEARCH
-    ======================================== -->
-
-    <div class="search-box">
-
-      <input
-        type="text"
-        id="searchInput"
-        placeholder="책 제목 또는 AR Quiz Number를 검색하세요"
-        autocomplete="off"
-      >
-
-      <span class="search-icon">⌕</span>
-
-    </div>
-
-
-    <!-- =======================================
-         AR TABS
-    ======================================== -->
-
-    <div class="ar-tabs">
-
-      <button
-        class="ar-tab active"
-        data-level="all"
-      >
-        전체
-      </button>
-
-      <button
-        class="ar-tab"
-        data-level="0"
-      >
-        AR 0점대
-      </button>
-
-      <button
-        class="ar-tab"
-        data-level="1"
-      >
-        AR 1점대
-      </button>
-
-      <button
-        class="ar-tab"
-        data-level="2"
-      >
-        AR 2점대
-      </button>
-
-      <button
-        class="ar-tab"
-        data-level="3"
-      >
-        AR 3점대
-      </button>
-
-    </div>
-
-
-    <!-- =======================================
-         SEARCH RESULT MESSAGE
-    ======================================== -->
-
-    <div
-      id="searchResultInfo"
-      class="search-result-info"
+  <div class="search-box">
+    <input
+      id="searchInput"
+      type="text"
+      placeholder="책 제목 또는 AR Quiz Number를 검색하세요"
+      autocomplete="off"
     >
-      검색 결과:
-      <strong id="searchResultText"></strong>
+  </div>
+
+  <div class="ar-tabs">
+    <button class="ar-tab active" data-level="all">전체</button>
+    <button class="ar-tab" data-level="0">AR 0점대</button>
+    <button class="ar-tab" data-level="1">AR 1점대</button>
+    <button class="ar-tab" data-level="2">AR 2점대</button>
+    <button class="ar-tab" data-level="3">AR 3점대</button>
+  </div>
+
+  <div id="resultInfo" class="result-info"></div>
+  <div id="bookList"></div>
+
+  <div id="noResult" class="no-result">
+    검색 결과가 없습니다.
+  </div>
+
+</main>
+
+<footer class="bg-red-600 text-white text-center py-8">
+  <a href="teacher-guide-list.html" class="hover:opacity-80">
+    © 2026 Genius English Academy
+  </a>
+</footer>
+
+<script src="./assets/js/books.js"></script>
+<script src="./assets/js/teacher-guide.js"></script>
+
+<script>
+let currentLevel="all";
+
+const searchInput=document.getElementById("searchInput");
+const bookList=document.getElementById("bookList");
+const noResult=document.getElementById("noResult");
+const resultInfo=document.getElementById("resultInfo");
+
+function cleanPath(path){
+  if(!path) return "";
+  return path.replace(/^(\.\.\/)+/,"");
+}
+
+function arLevel(book){
+  const n=parseFloat(book.ar);
+  return isNaN(n) ? null : Math.floor(n);
+}
+
+function createCard(book){
+  const card=document.createElement("div");
+  card.className="book-card";
+
+  card.onclick=()=>{
+    location.href="teacher-guide.html?id="+encodeURIComponent(book.id);
+  };
+
+  const cover=document.createElement("div");
+  cover.className="cover";
+
+  const img=document.createElement("img");
+  img.src=cleanPath(book.image);
+  img.alt=book.title;
+
+  img.onerror=()=>{
+    cover.innerHTML='<span style="font-size:11px;color:#999">No Cover</span>';
+  };
+
+  cover.appendChild(img);
+
+  const info=document.createElement("div");
+  info.className="book-info";
+
+  info.innerHTML=`
+    <div class="book-title">${book.title}</div>
+    <div class="book-meta">
+      AR ${book.ar}<br>
+      Quiz ${book.quiz}
     </div>
+  `;
 
+  card.appendChild(cover);
+  card.appendChild(info);
 
-    <!-- =======================================
-         BOOK LIST AREA
-    ======================================== -->
+  return card;
+}
 
-    <div id="bookList"></div>
+function getFilteredBooks(){
+  const keyword=searchInput.value.trim().toLowerCase();
 
+  return books.filter(book=>{
 
-    <!-- No Result -->
-    <div
-      id="noResult"
-      class="no-result"
-    >
-      <strong>검색 결과가 없습니다.</strong>
-      책 제목 또는 AR Quiz Number를 확인해주세요.
-    </div>
-
-  </main>
-
-
-  <!-- =========================================
-       FOOTER
-  ========================================== -->
-
-  <footer class="bg-red-600 text-white text-center py-8">
-
-    <a
-      href="teacher-guide-list.html"
-      class="teacher-footer-link"
-    >
-      ©</a> 2026 Genius English Academy
-    
-
-  </footer>
-
-
-  <!-- =========================================
-       JAVASCRIPT
-  ========================================== -->
-
-  <script>
-
-    /*
-    ============================================================
-    Teacher Guide Book Database
-
-    새로운 책을 추가할 때 아래 형식으로 추가하면 됩니다.
-
-    id:
-      teacher-guide.html?id=여기에 들어가는 값
-
-    ar:
-      실제 AR 점수
-
-    quiz:
-      Renaissance AR Quiz Number
-
-    cover:
-      기존 책 표지 이미지 경로
-
-    ============================================================
-    */
-
-    const books = [
-
-      /* =========================
-         AR 0점대
-      ========================= */
-
-      {
-        id: "the-go-kart",
-        title: "The Go-kart",
-        author: "Hunt, Roderick",
-        ar: "0.3",
-        quiz: "180371",
-        wordCount: "47",
-        cover: "images/ar0/ar0_hopbunny.jpg"
-      },
-
-      {
-        id: "hop-bunny",
-        title: "Hop Bunny",
-        author: "Hunt, Roderick",
-        ar: "0.x",
-        quiz: "180xxx",
-        wordCount: "",
-        cover: "images/ar0/ar0_hopbunny.jpg"
-      },
-
-
-      /* =========================
-         AR 1점대
-      ========================= */
-
-      {
-        id: "sample-ar1-book",
-        title: "Sample AR 1 Book",
-        author: "Author Name",
-        ar: "1.2",
-        quiz: "000000",
-        wordCount: "",
-        cover: "images/ar1/sample.jpg"
-      },
-
-
-      /* =========================
-         AR 2점대
-      ========================= */
-
-      {
-        id: "sample-ar2-book",
-        title: "Sample AR 2 Book",
-        author: "Author Name",
-        ar: "2.3",
-        quiz: "000000",
-        wordCount: "",
-        cover: "images/ar2/sample.jpg"
-      },
-
-
-      /* =========================
-         AR 3점대
-      ========================= */
-
-      {
-        id: "sample-ar3-book",
-        title: "Sample AR 3 Book",
-        author: "Author Name",
-        ar: "3.0",
-        quiz: "000000",
-        wordCount: "",
-        cover: "images/ar3/sample.jpg"
-      }
-
-    ];
-
-
-    /* =========================================================
-       현재 선택된 AR
-    ========================================================= */
-
-    let currentLevel = "all";
-
-
-    /* =========================================================
-       DOM
-    ========================================================= */
-
-    const bookList =
-      document.getElementById("bookList");
-
-    const searchInput =
-      document.getElementById("searchInput");
-
-    const noResult =
-      document.getElementById("noResult");
-
-    const searchResultInfo =
-      document.getElementById("searchResultInfo");
-
-    const searchResultText =
-      document.getElementById("searchResultText");
-
-
-    /* =========================================================
-       AR Level 계산
-    ========================================================= */
-
-    function getARLevel(ar) {
-
-      const number = parseFloat(ar);
-
-      if (isNaN(number)) {
-        return null;
-      }
-
-      return Math.floor(number);
-
+    if(currentLevel!=="all" &&
+       arLevel(book)!==Number(currentLevel)){
+      return false;
     }
 
+    if(keyword){
+      const title=String(book.title||"").toLowerCase();
+      const quiz=String(book.quiz||"").toLowerCase();
 
-    /* =========================================================
-       책 카드 생성
-    ========================================================= */
-
-    function createBookCard(book) {
-
-      const card = document.createElement("div");
-
-      card.className = "book-card";
-
-      card.addEventListener("click", function() {
-
-        window.location.href =
-          "teacher-guide.html?id=" +
-          encodeURIComponent(book.id);
-
-      });
-
-
-      const coverWrap =
-        document.createElement("div");
-
-      coverWrap.className =
-        "book-cover-wrap";
-
-
-      const cover =
-        document.createElement("img");
-
-      cover.className =
-        "book-cover";
-
-      cover.src =
-        book.cover;
-
-      cover.alt =
-        book.title;
-
-      cover.onerror = function() {
-
-        this.style.display = "none";
-
-        coverWrap.innerHTML =
-          '<span style="font-size:12px;color:#999;">No Cover</span>';
-
-      };
-
-
-      coverWrap.appendChild(cover);
-
-
-      const info =
-        document.createElement("div");
-
-      info.className =
-        "book-info";
-
-
-      const title =
-        document.createElement("div");
-
-      title.className =
-        "book-title";
-
-      title.textContent =
-        book.title;
-
-
-      const meta =
-        document.createElement("div");
-
-      meta.className =
-        "book-meta";
-
-
-      meta.innerHTML =
-        `
-          <div>
-            <strong>AR</strong> ${book.ar}
-          </div>
-
-          <div>
-            <strong>Quiz</strong> ${book.quiz}
-          </div>
-        `;
-
-
-      info.appendChild(title);
-      info.appendChild(meta);
-
-      card.appendChild(coverWrap);
-      card.appendChild(info);
-
-
-      return card;
-
+      if(!title.includes(keyword) && !quiz.includes(keyword)){
+        return false;
+      }
     }
 
+    return true;
+  });
+}
 
-    /* =========================================================
-       검색어
-    ========================================================= */
+function makeSection(title,list){
+  const section=document.createElement("section");
+  section.className="level-section";
 
-    function normalizeSearchText(text) {
+  const heading=document.createElement("div");
+  heading.className="level-title";
 
-      return String(text || "")
-        .toLowerCase()
-        .trim();
+  heading.innerHTML=`
+    <h2>${title}</h2>
+    <span class="book-count">${list.length}권</span>
+  `;
 
-    }
+  const grid=document.createElement("div");
+  grid.className="book-grid";
 
+  list.forEach(book=>{
+    grid.appendChild(createCard(book));
+  });
 
-    /* =========================================================
-       책 필터링
-    ========================================================= */
+  section.appendChild(heading);
+  section.appendChild(grid);
 
-    function getFilteredBooks() {
+  return section;
+}
 
-      const search =
-        normalizeSearchText(searchInput.value);
+function render(){
 
+  const keyword=searchInput.value.trim();
+  const filtered=getFilteredBooks();
 
-      return books.filter(function(book) {
+  bookList.innerHTML="";
 
-        /* -------------------------
-           AR 필터
-        ------------------------- */
+  if(keyword){
+    resultInfo.style.display="block";
+    resultInfo.textContent=`검색 결과: "${keyword}" — ${filtered.length}권`;
+  }else{
+    resultInfo.style.display="none";
+  }
 
-        if (currentLevel !== "all") {
+  if(!filtered.length){
+    noResult.style.display="block";
+    return;
+  }
 
-          const level =
-            getARLevel(book.ar);
+  noResult.style.display="none";
 
-          if (String(level) !== String(currentLevel)) {
-            return false;
-          }
+  if(keyword){
+    bookList.appendChild(makeSection("검색 결과",filtered));
+    return;
+  }
 
-        }
+  if(currentLevel==="all"){
+    [0,1,2,3].forEach(level=>{
+      const list=filtered.filter(book=>arLevel(book)===level);
 
-
-        /* -------------------------
-           검색 필터
-        ------------------------- */
-
-        if (search !== "") {
-
-          const title =
-            normalizeSearchText(book.title);
-
-          const quiz =
-            normalizeSearchText(book.quiz);
-
-          if (
-            !title.includes(search) &&
-            !quiz.includes(search)
-          ) {
-            return false;
-          }
-
-        }
-
-
-        return true;
-
-      });
-
-    }
-
-
-    /* =========================================================
-       AR별 그룹 출력
-    ========================================================= */
-
-    function renderBooks() {
-
-      const filteredBooks =
-        getFilteredBooks();
-
-
-      bookList.innerHTML = "";
-
-
-      /* 검색 여부 */
-      const search =
-        searchInput.value.trim();
-
-
-      /* 검색 결과 안내 */
-      if (search !== "") {
-
-        searchResultInfo.style.display =
-          "block";
-
-        searchResultText.textContent =
-          `"${search}" (${filteredBooks.length}권)`;
-
-      } else {
-
-        searchResultInfo.style.display =
-          "none";
-
-      }
-
-
-      /* 검색 결과 없음 */
-      if (filteredBooks.length === 0) {
-
-        noResult.style.display =
-          "block";
-
-        return;
-
-      }
-
-
-      noResult.style.display =
-        "none";
-
-
-      /* =====================================================
-         검색어가 있으면 검색 결과만 한 번에 표시
-      ===================================================== */
-
-      if (search !== "") {
-
-        const section =
-          createLevelSection(
-            "검색 결과",
-            filteredBooks
-          );
-
-        bookList.appendChild(section);
-
-        return;
-
-      }
-
-
-      /* =====================================================
-         전체 보기
-      ===================================================== */
-
-      if (currentLevel === "all") {
-
-        const levels = [0, 1, 2, 3];
-
-        levels.forEach(function(level) {
-
-          const levelBooks =
-            filteredBooks.filter(function(book) {
-
-              return getARLevel(book.ar) === level;
-
-            });
-
-
-          if (levelBooks.length > 0) {
-
-            const section =
-              createLevelSection(
-                `AR ${level}점대`,
-                levelBooks
-              );
-
-            bookList.appendChild(section);
-
-          }
-
-        });
-
-
-        return;
-
-      }
-
-
-      /* =====================================================
-         특정 AR 보기
-      ===================================================== */
-
-      const levelBooks =
-        filteredBooks.filter(function(book) {
-
-          return getARLevel(book.ar) ===
-            Number(currentLevel);
-
-        });
-
-
-      if (levelBooks.length > 0) {
-
-        const section =
-          createLevelSection(
-            `AR ${currentLevel}점대`,
-            levelBooks
-          );
-
-        bookList.appendChild(section);
-
-      }
-
-    }
-
-
-    /* =========================================================
-       Level Section 생성
-    ========================================================= */
-
-    function createLevelSection(title, booksInLevel) {
-
-      const section =
-        document.createElement("section");
-
-      section.className =
-        "level-section";
-
-
-      const titleArea =
-        document.createElement("div");
-
-      titleArea.className =
-        "level-title";
-
-
-      const h2 =
-        document.createElement("h2");
-
-      h2.textContent =
-        title;
-
-
-      const count =
-        document.createElement("span");
-
-      count.className =
-        "book-count";
-
-      count.textContent =
-        `${booksInLevel.length}권`;
-
-
-      titleArea.appendChild(h2);
-      titleArea.appendChild(count);
-
-
-      const grid =
-        document.createElement("div");
-
-      grid.className =
-        "book-grid";
-
-
-      booksInLevel.forEach(function(book) {
-
-        grid.appendChild(
-          createBookCard(book)
+      if(list.length){
+        bookList.appendChild(
+          makeSection(`AR ${level}점대`,list)
         );
+      }
+    });
+  }else{
+    bookList.appendChild(
+      makeSection(`AR ${currentLevel}점대`,filtered)
+    );
+  }
+}
 
-      });
-
-
-      section.appendChild(titleArea);
-      section.appendChild(grid);
-
-
-      return section;
-
-    }
-
-
-    /* =========================================================
-       AR TAB 클릭
-    ========================================================= */
-
+document.querySelectorAll(".ar-tab").forEach(tab=>{
+  tab.addEventListener("click",()=>{
     document.querySelectorAll(".ar-tab")
-      .forEach(function(tab) {
+      .forEach(t=>t.classList.remove("active"));
 
-        tab.addEventListener("click", function() {
+    tab.classList.add("active");
+    currentLevel=tab.dataset.level;
+    render();
+  });
+});
 
-          document
-            .querySelectorAll(".ar-tab")
-            .forEach(function(item) {
+searchInput.addEventListener("input",render);
 
-              item.classList.remove("active");
+render();
+</script>
 
-            });
-
-
-          this.classList.add("active");
-
-
-          currentLevel =
-            this.dataset.level;
-
-
-          renderBooks();
-
-        });
-
-      });
-
-
-    /* =========================================================
-       검색
-    ========================================================= */
-
-    searchInput.addEventListener(
-      "input",
-      function() {
-
-        renderBooks();
-
-      }
-    );
-
-
-    /* =========================================================
-       ESC 누르면 검색어 삭제
-    ========================================================= */
-
-    searchInput.addEventListener(
-      "keydown",
-      function(event) {
-
-        if (event.key === "Escape") {
-
-          searchInput.value = "";
-
-          renderBooks();
-
-          searchInput.focus();
-
-        }
-
-      }
-    );
-
-
-    /* =========================================================
-       Logo 이미지 전환
-    ========================================================= */
-
-    const logos =
-      document.querySelectorAll(".logo-slide");
-
-    let currentLogo = 0;
-
-
-    setInterval(function() {
-
-      logos[currentLogo]
-        .classList.remove("show");
-
-
-      currentLogo =
-        (currentLogo + 1) % logos.length;
-
-
-      logos[currentLogo]
-        .classList.add("show");
-
-    }, 3000);
-
-
-    /* =========================================================
-       첫 화면
-    ========================================================= */
-
-    renderBooks();
-
-  </script>
+<script src="./assets/js/script.js"></script>
 
 </body>
 </html>
