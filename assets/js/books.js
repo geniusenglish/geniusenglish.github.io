@@ -6,6 +6,156 @@ const books = [
 
 
 {
+    id:"thegokart",
+    level:0,
+    ar:"0.3",
+    quiz:"180371 EN",
+    wordCount:47,
+    title:"The Go-kart",
+    series:"Oxford Reading Tree",
+    category:"Fiction",
+    image:"../images/ar0/ar0_thegokart.jpg",
+    audio:"../audio/books/ar0/ar0_thegokart.mp3",
+    author:"Hunt, Roderick",
+    summary:`Biff and Chip learn to share a go-kart and take turns riding it.
+비프와 칩이 고카트를 함께 타며 서로 차례를 지키는 이야기입니다.`
+},
+{
+    id:"thetoysparty",
+    level:0,
+    ar:"0.4",
+    quiz:"180587 EN",
+    wordCount:48,
+    title:"The Toys' Party",
+    series:"Oxford Reading Tree",
+    category:"Fiction",
+    image:"../images/ar0/ar0_thetoysparty.jpg",
+    audio:"../audio/books/ar0/ar0_thetoysparty.mp3",
+    author:"Hunt, Roderick",
+    summary:`Kipper plans a fun party for his toys.
+키퍼가 장난감 친구들을 위해 즐거운 파티를 준비하는 이야기입니다.`
+},
+{
+    id:"anewdog",
+    level:0,
+    ar:"0.4",
+    quiz:"179653 EN",
+    wordCount:52,
+    title:"A New Dog",
+    series:"Oxford Reading Tree",
+    category:"Fiction",
+    image:"../images/ar0/ar0_anewdog.jpg",
+    audio:"../audio/books/ar0/ar0_anewdog.mp3",
+    author:"Hunt, Roderick",
+    summary:`Everyone wants a new dog, but choosing the right one is not easy.
+가족 모두가 새 강아지를 원하며 강아지를 고르는 이야기입니다.`
+},
+{
+    id:"spots",
+    level:0,
+    ar:"0.5",
+    quiz:"179969 EN",
+    wordCount:54,
+    title:"Spots!",
+    series:"Oxford Reading Tree",
+    category:"Fiction",
+    image:"../images/ar0/ar0_spots.jpg",
+    audio:"../audio/books/ar0/ar0_spots.mp3",
+    author:"Hunt, Roderick",
+    summary:`Everyone discovers spots in a fun and surprising way.
+모두에게 점이 생기며 벌어지는 재미있는 이야기를 담고 있습니다.`
+},
+{
+    id:"floppysbath",
+    level:0,
+    ar:"0.5",
+    quiz:"179701 EN",
+    wordCount:55,
+    title:"Floppy's Bath",
+    series:"Oxford Reading Tree",
+    category:"Fiction",
+    image:"../images/ar0/ar0_floppysbath.jpg",
+    audio:"../audio/books/ar0/ar0_floppysbath.mp3",
+    author:"Hunt, Roderick",
+    summary:`Floppy has a bath and gets clean and fresh.
+플로피가 목욕을 하며 깨끗해지는 이야기입니다.`
+},
+{
+    id:"acatinthetree",
+    level:0,
+    ar:"0.6",
+    quiz:"179649 EN",
+    wordCount:79,
+    title:"A Cat in the Tree",
+    series:"Oxford Reading Tree",
+    category:"Fiction",
+    image:"../images/ar0/ar0_acatinthetree.jpg",
+    audio:"../audio/books/ar0/ar0_acatinthetree.mp3",
+    author:"Hunt, Roderick",
+    summary:`Wilma and her dad try to rescue a cat but end up stuck in the tree.
+윌마와 아빠가 나무에 올라간 고양이를 구하려다 함께 나무에 갇히는 이야기입니다.`
+},
+{
+    id:"nobodygotwet",
+    level:0,
+    ar:"0.6",
+    quiz:"179718 EN",
+    wordCount:97,
+    title:"Nobody Got Wet",
+    series:"Oxford Reading Tree",
+    category:"Fiction",
+    image:"../images/ar0/ar0_nobodygotwet.jpg",
+    audio:"../audio/books/ar0/ar0_nobodygotwet.mp3",
+    author:"Hunt, Roderick",
+    summary:`Everyone enjoys a picnic by the river on a fun family outing.
+가족 모두가 강가로 소풍을 가서 즐거운 시간을 보내는 이야기입니다.`
+},
+{
+    id:"onthesand",
+    level:0,
+    ar:"0.6",
+    quiz:"179721 EN",
+    wordCount:75,
+    title:"On the Sand",
+    series:"Oxford Reading Tree",
+    category:"Fiction",
+    image:"../images/ar0/ar0_onthesand.jpg",
+    audio:"../audio/books/ar0/ar0_onthesand.mp3",
+    author:"Hunt, Roderick",
+    summary:`Dad plays a funny trick on Biff and Chip at the beach.
+아빠가 해변에서 비프와 칩에게 재미있는 장난을 치는 이야기입니다.`
+},
+{
+    id:"theicerink",
+    level:0,
+    ar:"0.6",
+    quiz:"180376 EN",
+    wordCount:90,
+    title:"The Ice Rink",
+    series:"Oxford Reading Tree",
+    category:"Fiction",
+    image:"../images/ar0/ar0_theicerink.jpg",
+    audio:"../audio/books/ar0/ar0_theicerink.mp3",
+    author:"Hunt, Roderick",
+    summary:`Wilf and his dad enjoy ice-skating, but Dad has a funny slip.
+윌프와 아빠가 스케이트를 즐기다가 아빠가 재미있는 실수를 하는 이야기입니다.`
+},
+{
+    id:"thewaterfight",
+    level:0,
+    ar:"0.6",
+    quiz:"180588 EN",
+    wordCount:64,
+    title:"The Water Fight",
+    series:"Oxford Reading Tree",
+    category:"Fiction",
+    image:"../images/ar0/ar0_thewaterfight.jpg",
+    audio:"../audio/books/ar0/ar0_thewaterfight.mp3",
+    author:"Hunt, Roderick",
+    summary:`Everyone cools off with a fun and exciting water fight.
+더운 날, 모두가 물싸움을 하며 시원하고 즐거운 시간을 보내는 이야기입니다.`
+},
+{
     id:"big-egg",
     level:0,
     ar:"0.4",
