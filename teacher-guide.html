@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teacher Guide | Genius English Academy</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="assets/css/style.css">
+
+<style>
+/* =========================================================
+   TEACHER GUIDE
+   - 기존 홈페이지 Header / Footer 구조 유지
+   - 본문은 흑백의 교사용 자료 스타일
+   - 데스크톱에서 한 화면에 보이도록 구성
+========================================================= */
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    background: #f8fafc;
+}
+
+/* Header가 차지하는 높이를 제외하고 본문을 한 화면에 맞춤 */
+.teacher-guide-main {
+    height: calc(100vh - 150px);
+    min-height: 560px;
+    padding: 14px 24px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: stretch;
+}
+
+.teacher-guide-wrap {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 285px minmax(0, 1fr);
+    gap: 18px;
+}
+
+/* 왼쪽 책 정보 */
+.book-panel {
+    background: #fff;
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+.book-label {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.book-cover {
+    width: 145px;
+    height: 190px;
+    object-fit: cover;
+    border: 1px solid #c7c7c7;
+    border-radius: 6px;
+    display: block;
+    margin: 0 auto 12px;
+    filter: grayscale(100%);
+}
+
+.book-title {
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 800;
+    color: #111;
+    text-align: center;
+    margin-bottom: 13px;
+}
+
+.book-info {
+    border-top: 1px solid #ddd;
+}
+
+.book-info-row {
+    display: grid;
+    grid-template-columns: 82px 1fr;
+    gap: 8px;
+    padding: 6px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 11px;
+    line-height: 1.25;
+}
+
+.book-info-row dt {
+    color: #777;
+    font-weight: 700;
+}
+
+.book-info-row dd {
+    margin: 0;
+    color: #222;
+}
+
+/* 오른쪽 Teacher Guide */
+.guide-panel {
+    background: #fff;
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    padding: 18px 20px;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.guide-heading {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 2px solid #111;
+    padding-bottom: 9px;
+    margin-bottom: 11px;
+}
+
+.guide-heading h1 {
+    margin: 0;
+    font-size: 23px;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+    color: #111;
+}
+
+.guide-heading span {
+    font-size: 10px;
+    color: #777;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+}
+
+.guide-sections {
+    flex: 1;
+    min-height: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.82fr 1.18fr;
+    gap: 10px;
+}
+
+.guide-section {
+    border: 1px solid #cfcfcf;
+    border-radius: 8px;
+    padding: 11px 13px;
+    overflow: hidden;
+}
+
+.guide-section h2 {
+    font-size: 12px;
+    font-weight: 900;
+    margin: 0 0 7px;
+    color: #111;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.quick-summary {
+    font-size: 12px;
+    line-height: 1.55;
+    color: #333;
+}
+
+.vocab-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px 18px;
+    font-size: 11px;
+    line-height: 1.35;
+}
+
+.vocab-list strong {
+    color: #111;
+}
+
+.vocab-list span {
+    color: #666;
+}
+
+.qa {
+    display: grid;
+    gap: 6px;
+    font-size: 10.5px;
+    line-height: 1.35;
+}
+
+.qa-item {
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #ccc;
+}
+
+.qa-item:last-child {
+    border-bottom: 0;
+}
+
+.question {
+    font-weight: 800;
+    color: #111;
+}
+
+.answer {
+    color: #555;
+    margin-top: 2px;
+}
+
+.writing-box {
+    font-size: 10.5px;
+    line-height: 1.4;
+}
+
+.writing-box .instruction {
+    color: #555;
+    margin-bottom: 7px;
+}
+
+.writing-answer {
+    border: 1px solid #aaa;
+    background: #fafafa;
+    border-radius: 6px;
+    padding: 8px 10px;
+    color: #222;
+}
+
+.writing-answer p {
+    margin: 0 0 4px;
+}
+
+.writing-answer p:last-child {
+    margin-bottom: 0;
+}
+
+.sentence-label {
+    display: inline-block;
+    width: 20px;
+    font-weight: 900;
+}
+
+@media (max-width: 900px) {
+    html, body {
+        height: auto;
+    }
+
+    .teacher-guide-main {
+        height: auto;
+        min-height: 0;
+        padding: 18px;
+    }
+
+    .teacher-guide-wrap {
+        grid-template-columns: 1fr;
+    }
+
+    .book-panel {
+        display: grid;
+        grid-template-columns: 120px 1fr;
+        gap: 14px;
+        align-items: start;
+    }
+
+    .book-label {
+        grid-column: 1 / -1;
+    }
+
+    .book-cover {
+        width: 120px;
+        height: 158px;
+        margin: 0;
+        grid-row: span 2;
+    }
+
+    .book-title {
+        text-align: left;
+        margin: 0;
+    }
+
+    .book-info {
+        grid-column: 2;
+    }
+
+    .guide-sections {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+}
+</style>
+</head>
+
+<body class="bg-slate-50">
+
+<header>
+    <!-- ================= TOP ================= -->
+    <div class="header-top">
+        <div class="header-wrap">
+            <a href="index_new.html" class="logo-slider">
+                <img src="images/logo1.png" class="logo-slide show">
+                <img src="images/logo2.png" class="logo-slide">
+            </a>
+        </div>
+    </div>
+
+    <!-- ================= MENU ================= -->
+    <div class="header-menu">
+        <div class="header-wrap">
+            <nav class="main-menu">
+                <a href="academy.html">학원소개</a>
+                <a href="curriculum.html">커리큘럼</a>
+
+                <div class="dropdown">
+                    <a href="#">학습자료</a>
+                    <div class="dropdown-menu">
+                        <a href="reading.html">📚 원서 음원 듣기</a>
+                        <a href="vocabulary.html">🎧 매일 단어 듣기</a>
+                    </div>
+                </div>
+
+                <a href="https://global-zone60.renaissance-go.com/welcomeportal/rpna83al" target="_blank">
+                    <span class="pc-text">르네상스 러닝</span>
+                    <span class="mobile-text">르네상스</span>
+                </a>
+
+                <a href="notice.html">공지사항</a>
+                <a href="contact.html">상담문의</a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main class="teacher-guide-main">
+    <div class="teacher-guide-wrap">
+
+        <!-- ================= LEFT : BOOK INFO ================= -->
+        <aside class="book-panel">
+            <div class="book-label">GENIUS ENGLISH · TEACHER GUIDE</div>
+
+            <img
+                src="images/ar0/ar0_hopbunny.jpg"
+                alt="Book Cover"
+                class="book-cover"
+            >
+
+            <div>
+                <div class="book-title">The Go-kart</div>
+
+                <dl class="book-info">
+                    <div class="book-info-row">
+                        <dt>Author</dt>
+                        <dd>Hunt, Roderick</dd>
+                    </div>
+                    <div class="book-info-row">
+                        <dt>Series</dt>
+                        <dd>Oxford Reading Tree</dd>
+                    </div>
+                    <div class="book-info-row">
+                        <dt>Category</dt>
+                        <dd>Fiction</dd>
+                    </div>
+                    <div class="book-info-row">
+                        <dt>AR Level</dt>
+                        <dd>0.3</dd>
+                    </div>
+                    <div class="book-info-row">
+                        <dt>AR Quiz</dt>
+                        <dd>180371 EN</dd>
+                    </div>
+                    <div class="book-info-row">
+                        <dt>Word Count</dt>
+                        <dd>47</dd>
+                    </div>
+                </dl>
+            </div>
+        </aside>
+
+        <!-- ================= RIGHT : TEACHER GUIDE ================= -->
+        <section class="guide-panel">
+
+            <div class="guide-heading">
+                <h1>Teacher Guide</h1>
+                <span>THE GO-KART · AR 0.3</span>
+            </div>
+
+            <div class="guide-sections">
+
+                <!-- 1 -->
+                <section class="guide-section">
+                    <h2>1. Quick Summary</h2>
+                    <div class="quick-summary">
+                        Biff and Chip learn to share a go-kart and take turns riding it.
+                    </div>
+                </section>
+
+                <!-- 2 -->
+                <section class="guide-section">
+                    <h2>2. Key Vocabulary</h2>
+                    <div class="vocab-list">
+                        <div><strong>go-kart</strong><span>고카트</span></div>
+                        <div><strong>share</strong><span>함께 쓰다, 나누다</span></div>
+                        <div><strong>take turns</strong><span>차례를 지키다</span></div>
+                        <div><strong>ride</strong><span>타다</span></div>
+                    </div>
+                </section>
+
+                <!-- 3 -->
+                <section class="guide-section">
+                    <h2>3. Book Talk Questions & Answers</h2>
+                    <div class="qa">
+                        <div class="qa-item">
+                            <div class="question">Q1. What are Biff and Chip doing?</div>
+                            <div class="answer">A. They are riding a go-kart.</div>
+                        </div>
+                        <div class="qa-item">
+                            <div class="question">Q2. How do they share the go-kart?</div>
+                            <div class="answer">A. They take turns riding it.</div>
+                        </div>
+                        <div class="qa-item">
+                            <div class="question">Q3. What was your favorite part? Why?</div>
+                            <div class="answer">A. Sample: My favorite part was when they rode the go-kart because it looked fun.</div>
+                        </div>
+                        <div class="qa-item">
+                            <div class="question">Q4. Why did you like it?</div>
+                            <div class="answer">A. Sample: I liked it because Biff and Chip had fun together.</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 4 -->
+                <section class="guide-section">
+                    <h2>4. 3-Sentence Summary Writing</h2>
+                    <div class="writing-box">
+                        <div class="instruction">
+                            학생이 책의 내용을 <strong>Beginning → Middle → Ending</strong> 순서로 3문장으로 정리하도록 지도합니다.
+                        </div>
+
+                        <div class="writing-answer">
+                            <p><span class="sentence-label">1.</span>Biff and Chip have a go-kart.</p>
+                            <p><span class="sentence-label">2.</span>They learn to share it and take turns riding.</p>
+                            <p><span class="sentence-label">3.</span>They have fun riding the go-kart together.</p>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </section>
+    </div>
+</main>
+
+<footer class="bg-red-600 text-white text-center py-8">
+    © 2026 Genius English Academy
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
