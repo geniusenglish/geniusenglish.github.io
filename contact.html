@@ -73,8 +73,6 @@
 
 <!-- ================= HERO ================= -->
 
-
-
 <section class="sub-hero">
 
     <div class="container">
@@ -110,8 +108,8 @@
                 </div>
 
                 <a href="#consultForm" class="hero-btn">
-                상담 신청하기
-            </a>
+                    상담 신청하기
+                </a>
 
             </div>
 
@@ -120,6 +118,7 @@
     </div>
 
 </section>
+
 
 <!-- ===========================
      CONSULT FORM
@@ -137,7 +136,22 @@
                 아래 내용을 작성해 주세요.
             </p>
 
-            <form id="consultForm">
+
+            <form
+                id="consultForm"
+                action="https://formsubmit.co/geniusenggimpo@gmail.com"
+                method="POST">
+
+                <input
+                    type="hidden"
+                    name="_subject"
+                    value="Genius English Academy 상담 신청">
+
+                <input
+                    type="hidden"
+                    name="_template"
+                    value="table">
+
 
                 <!-- =======================
                      학생 정보
@@ -150,11 +164,15 @@
 
                 </div>
 
+
                 <div class="form-grid">
+
 
                     <div class="form-group">
 
-                        <label>학부모 연락처 <span>*</span></label>
+                        <label>
+                            학부모 연락처 <span>*</span>
+                        </label>
 
                         <input
                             type="tel"
@@ -164,9 +182,12 @@
 
                     </div>
 
+
                     <div class="form-group">
 
-                        <label>학생 이름 <span>*</span></label>
+                        <label>
+                            학생 이름 <span>*</span>
+                        </label>
 
                         <input
                             type="text"
@@ -176,37 +197,67 @@
 
                     </div>
 
+
                     <div class="form-group">
 
-                        <label>학교 <span>*</span></label>
+                        <label>
+                            학교 <span>*</span>
+                        </label>
 
                         <input
                             type="text"
                             name="school"
-                            placeholder="예) 장기초등학교">
+                            placeholder="예) 장기초등학교"
+                            required>
 
                     </div>
 
+
                     <div class="form-group">
 
-                        <label>학년 <span>*</span></label>
+                        <label>
+                            학년 <span>*</span>
+                        </label>
 
-                        <select name="grade">
+                        <select
+                            name="grade"
+                            required>
 
-                            <option value="">선택해주세요</option>
+                            <option value="">
+                                선택해주세요
+                            </option>
 
-                            <option>초등 1학년</option>
-                            <option>초등 2학년</option>
-                            <option>초등 3학년</option>
-                            <option>초등 4학년</option>
-                            <option>초등 5학년</option>
-                            <option>초등 6학년</option>
+                            <option>
+                                초등 1학년
+                            </option>
+
+                            <option>
+                                초등 2학년
+                            </option>
+
+                            <option>
+                                초등 3학년
+                            </option>
+
+                            <option>
+                                초등 4학년
+                            </option>
+
+                            <option>
+                                초등 5학년
+                            </option>
+
+                            <option>
+                                초등 6학년
+                            </option>
 
                         </select>
 
                     </div>
 
+
                 </div>
+
 
 
                 <!-- =======================
@@ -220,29 +271,54 @@
 
                 </div>
 
+
                 <div class="form-grid">
+
 
                     <div class="form-group">
 
-                        <label>영어 학습 기간 <span>*</span></label>
+                        <label>
+                            영어 학습 기간 <span>*</span>
+                        </label>
 
-                        <select name="experience">
+                        <select
+                            name="experience"
+                            required>
 
-                            <option value="">선택해주세요</option>
+                            <option value="">
+                                선택해주세요
+                            </option>
 
-                            <option>처음 시작</option>
-                            <option>1년 미만</option>
-                            <option>1~2년</option>
-                            <option>3~5년</option>
-                            <option>5년 이상</option>
+                            <option>
+                                처음 시작
+                            </option>
+
+                            <option>
+                                1년 미만
+                            </option>
+
+                            <option>
+                                1~2년
+                            </option>
+
+                            <option>
+                                3~5년
+                            </option>
+
+                            <option>
+                                5년 이상
+                            </option>
 
                         </select>
 
                     </div>
 
+
                     <div class="form-group">
 
-                        <label>이전(현재) 영어학원</label>
+                        <label>
+                            이전(현재) 영어학원
+                        </label>
 
                         <input
                             type="text"
@@ -251,7 +327,9 @@
 
                     </div>
 
+
                 </div>
+
 
 
                 <!-- =======================
@@ -265,18 +343,22 @@
 
                 </div>
 
+
                 <div class="radio-group">
+
 
                     <label>
 
                         <input
                             type="radio"
                             name="course"
-                            value="파닉스">
+                            value="파닉스"
+                            required>
 
                         파닉스
 
                     </label>
+
 
                     <label>
 
@@ -289,6 +371,7 @@
 
                     </label>
 
+
                     <label>
 
                         <input
@@ -300,166 +383,245 @@
 
                     </label>
 
+
                 </div>
 
+
+
                 <!-- =======================
-     원서 리딩 학습 정보
-======================== -->
+                     원서 리딩 학습 정보
+                ======================== -->
 
-<div id="readingSection" style="display:none;">
+                <div
+                    id="readingSection"
+                    style="display:none;">
 
-    <div class="form-title">
 
-        <i class="fa-solid fa-book"></i>
-        원서 리딩 학습 정보 <span>*</span>
+                    <div class="form-title">
 
-    </div>
+                        <i class="fa-solid fa-book"></i>
 
-    <div class="form-grid">
+                        원서 리딩 학습 정보
+                        <span>*</span>
 
-        <!-- 파닉스 경험 -->
+                    </div>
 
-        <div class="form-group">
 
-            <label>파닉스를 배운 적이 있나요? <span>*</span></label>
+                    <div class="form-grid">
 
-            <select name="phonics">
 
-                <option value="">선택해주세요</option>
+                        <!-- 파닉스 경험 -->
 
-                <option>예</option>
-                <option>아니오</option>
-                <option>잘 모르겠습니다</option>
+                        <div class="form-group">
 
-            </select>
+                            <label>
+                                파닉스를 배운 적이 있나요?
+                                <span>*</span>
+                            </label>
 
-        </div>
+                            <select
+                                name="phonics">
 
-        <!-- SR Test -->
+                                <option value="">
+                                    선택해주세요
+                                </option>
 
-        <div class="form-group">
+                                <option>
+                                    예
+                                </option>
 
-            <label>SR Test를 본 적이 있나요? <span>*</span></label>
+                                <option>
+                                    아니오
+                                </option>
 
-            <select id="srTest" name="srtest">
+                                <option>
+                                    잘 모르겠습니다
+                                </option>
 
-                <option value="">선택해주세요</option>
+                            </select>
 
-                <option value="yes">예</option>
-                <option value="no">아니오</option>
+                        </div>
 
-            </select>
 
-        </div>
+                        <!-- SR Test -->
 
-    </div>
+                        <div class="form-group">
 
-    <!-- SR 지수 -->
+                            <label>
+                                SR Test를 본 적이 있나요?
+                                <span>*</span>
+                            </label>
 
-    <div
-        class="form-group"
-        id="srLevelBox"
-        style="display:none;">
+                            <select
+                                id="srTest"
+                                name="srtest">
 
-        <label>SR 지수 <span>*</span></label>
+                                <option value="">
+                                    선택해주세요
+                                </option>
 
-        <input
-            type="text"
-            name="sr"
-            placeholder="예) 2.4">
+                                <option value="yes">
+                                    예
+                                </option>
 
-    </div>
+                                <option value="no">
+                                    아니오
+                                </option>
 
-</div>
+                            </select>
 
+                        </div>
 
-<!-- =======================
-     학원 정보
-======================== -->
 
-<div class="form-title">
+                    </div>
 
-    <i class="fa-solid fa-school"></i>
-    학원 정보
 
-</div>
+                    <!-- SR 지수 -->
 
-<div class="form-grid">
+                    <div
+                        class="form-group"
+                        id="srLevelBox"
+                        style="display:none;">
 
-    <!-- 소개받은 친구 -->
 
-    <div class="form-group">
+                        <label>
+                            SR 지수 <span>*</span>
+                        </label>
 
-        <label>소개해준 친구 (선택)</label>
 
-        <input
-            type="text"
-            name="friend"
-            placeholder="친구 이름">
+                        <input
+                            type="text"
+                            name="sr"
+                            placeholder="예) 2.4">
 
-    </div>
 
-    <!-- 알게 된 경로 -->
+                    </div>
 
-    <div class="form-group">
 
-        <label>지니어스 영어학원을 알게 된 경로 <span>*</span></label>
+                </div>
 
-        <select name="route">
 
-            <option value="">선택해주세요</option>
 
-            <option>친구 소개</option>
+                <!-- =======================
+                     학원 정보
+                ======================== -->
 
-            <option>인스타그램</option>
+                <div class="form-title">
 
-            <option>네이버 블로그</option>
+                    <i class="fa-solid fa-school"></i>
+                    학원 정보
 
-            <option>네이버 검색</option>
+                </div>
 
-            <option>지나가다가</option>
 
-            <option>전단지</option>
+                <div class="form-grid">
 
-            <option>기타</option>
 
-        </select>
+                    <!-- 소개받은 친구 -->
 
-    </div>
+                    <div class="form-group">
 
-</div>
+                        <label>
+                            소개해준 친구 (선택)
+                        </label>
 
+                        <input
+                            type="text"
+                            name="friend"
+                            placeholder="친구 이름">
 
-<!-- =======================
-     문의내용
-======================== -->
+                    </div>
 
-<div class="form-title">
 
-    <i class="fa-solid fa-comment"></i>
-    문의 내용
+                    <!-- 알게 된 경로 -->
 
-</div>
+                    <div class="form-group">
 
-<div class="form-group">
+                        <label>
+                            지니어스 영어학원을 알게 된 경로
+                            <span>*</span>
+                        </label>
 
-    <textarea
-        name="message"
-        rows="6"
-        placeholder="궁금한 점이나 상담하고 싶은 내용을 자유롭게 작성해주세요."></textarea>
+                        <select
+                            name="route"
+                            required>
 
-</div>
+                            <option value="">
+                                선택해주세요
+                            </option>
 
+                            <option>
+                                친구 소개
+                            </option>
 
-<!-- 버튼 -->
+                            <option>
+                                인스타그램
+                            </option>
 
-<button
-    type="submit"
-    class="submit-btn">
+                            <option>
+                                네이버 블로그
+                            </option>
 
-    상담 신청하기
+                            <option>
+                                네이버 검색
+                            </option>
 
-</button>
+                            <option>
+                                지나가다가
+                            </option>
+
+                            <option>
+                                전단지
+                            </option>
+
+                            <option>
+                                기타
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- =======================
+                     문의내용
+                ======================== -->
+
+                <div class="form-title">
+
+                    <i class="fa-solid fa-comment"></i>
+                    문의 내용
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <textarea
+                        name="message"
+                        rows="6"
+                        placeholder="궁금한 점이나 상담하고 싶은 내용을 자유롭게 작성해주세요."></textarea>
+
+                </div>
+
+
+
+                <!-- =======================
+                     버튼
+                ======================== -->
+
+                <button
+                    type="submit"
+                    class="submit-btn">
+
+                    상담 신청하기
+
+                </button>
+
 
             </form>
 
