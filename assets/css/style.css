@@ -4477,6 +4477,12 @@ font-size:40px;
     padding:60px 20px;
 }
 
+.consult-complete .container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
 .consult-complete-card{
     width:100%;
     max-width:650px;
