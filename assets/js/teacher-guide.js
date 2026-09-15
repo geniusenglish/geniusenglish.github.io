@@ -64,6 +64,47 @@ const teacherGuides = {
       "They share the go-kart and take turns riding it.",
       "In the end, they enjoy riding the go-kart together."
     ]
-  }
+  },
+
+  "thetoysparty": {
+
+  summary:
+    "Kipper plans a party for his toys.\n\n키퍼는 장난감들을 위해 파티를 준비합니다.\n\nHe gets ready for the party.\n\n키퍼는 파티를 준비합니다.\n\nHe has fun with his toys.\n\n키퍼는 장난감들과 즐거운 시간을 보냅니다.",
+
+  vocabulary: [
+    ["toy", "장난감"],
+    ["party", "파티, 모임"],
+    ["plan", "계획하다, 계획"],
+    ["ready", "준비된, 준비가 된"],
+    ["play", "놀다, 놀이하다"],
+    ["fun", "재미있는, 즐거움"]
+  ],
+
+  questions: [
+    [
+      "Who has a party?",
+      "Kipper has a party."
+    ],
+    [
+      "Who is the party for?",
+      "It is for his toys."
+    ],
+    [
+      "What does Kipper do with his toys?",
+      "He plays with his toys."
+    ],
+    [
+      "Did you like the book?",
+      "Yes, I did. It was fun."
+    ]
+  ],
+
+  writing: [
+    "Kipper has a party.",
+    "He plays with his toys.",
+    "He has fun."
+  ]
+
+}
 
 };
