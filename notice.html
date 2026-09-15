@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>학원소개 | Genius English Academy</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-slate-50">
+
+<header>
+
+    <!-- ================= TOP ================= -->
+
+    <div class="header-top">
+
+        <div class="header-wrap">
+
+            <a href="index.html" class="logo-slider">
+
+    <img src="images/logo1.png" class="logo-slide show">
+
+    <img src="images/logo2.png" class="logo-slide">
+
+</a>
+
+        </div>
+
+    </div>
+
+    <!-- ================= MENU ================= -->
+
+    <div class="header-menu">
+
+        <div class="header-wrap">
+
+            <nav class="main-menu">
+
+    <a href="academy.html">학원소개</a>
+    <a href="curriculum.html">커리큘럼</a>
+
+    <div class="dropdown">
+
+        <a href="#">학습자료</a>
+
+        <div class="dropdown-menu">
+            <a href="reading.html">📚 원서 음원 듣기</a>
+            <a href="vocabulary.html">🎧 매일 단어 듣기</a>
+        </div>
+
+    </div>
+
+    <a href="https://global-zone60.renaissance-go.com/welcomeportal/rpna83al" target="_blank">
+        <span class="pc-text">르네상스 러닝</span>
+        <span class="mobile-text">르네상스</span>
+    </a>
+
+    <a href="notice.html">공지사항</a>
+
+    <a href="contact.html">상담문의</a>
+
+</nav>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- ===========================
+     NOTICE
+=========================== -->
+
+<section class="notice-page">
+
+    <div class="container">
+
+        <!-- ===========================
+             PAGE TITLE
+        ============================ -->
+
+        <div class="notice-header">
+
+            <span class="notice-badge">
+                NOTICE
+            </span>
+
+            <h1>
+                공지사항
+            </h1>
+
+            <p>
+                Genius English Academy의<br>
+                새로운 소식과 안내사항을 확인하세요.
+            </p>
+
+        </div>
+
+
+        <!-- ===========================
+             NOTICE FILTER
+        ============================ -->
+
+        <div class="notice-filter">
+
+            <button
+                class="filter-btn active"
+                data-category="all">
+
+                전체
+
+            </button>
+
+            <button
+                class="filter-btn"
+                data-category="학원소식">
+
+                학원소식
+
+            </button>
+
+            <button
+                class="filter-btn"
+                data-category="수업안내">
+
+                수업안내
+
+            </button>
+
+            <button
+                class="filter-btn"
+                data-category="행사">
+
+                행사
+
+            </button>
+
+            <button
+                class="filter-btn"
+                data-category="기타">
+
+                기타
+
+            </button>
+
+        </div>
+
+
+        <!-- ===========================
+             NOTICE LIST
+        ============================ -->
+
+        <div
+            class="notice-list"
+            id="noticeList">
+
+
+            <!-- 공지사항이 notices.js에서
+                 자동으로 출력됩니다. -->
+
+
+        </div>
+
+
+        <!-- ===========================
+             EMPTY MESSAGE
+        ============================ -->
+
+        <div
+            class="notice-empty"
+            id="noticeEmpty"
+            style="display:none;">
+
+            <i class="fa-regular fa-folder-open"></i>
+
+            <p>
+                등록된 공지사항이 없습니다.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+<footer class="bg-red-600 text-white text-center py-8">
+© 2026 Genius English Academy
+</footer>
+
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>
