@@ -7,7 +7,7 @@ const notices = [
     {
         id: "notice_260908",
         date: "2026.09.08",
-        category: "학원소식",
+        category: "수업안내",
         title: "9월 그룹 라이팅 클래스 안내",
         description:
             "9월에도 원서를 활용한 그룹 라이팅 수업이 진행됩니다. Story와 Nonfiction 원서를 통해 읽기와 쓰기를 자연스럽게 연결합니다.",
