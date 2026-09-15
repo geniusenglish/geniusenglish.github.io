@@ -105,6 +105,86 @@ const teacherGuides = {
     "He has fun."
   ]
 
+},
+"a_new_dog": {
+
+  summary:
+    "Everyone wants a new dog.\n\n가족 모두가 새 강아지를 원합니다.\n\nThey look at different dogs.\n\n가족은 여러 강아지를 살펴봅니다.\n\nChoosing the right dog is not easy.\n\n알맞은 강아지를 고르는 것은 쉽지 않습니다.",
+
+  vocabulary: [
+    ["new", "새로운, 새로 나온"],
+    ["dog", "개, 강아지"],
+    ["want", "원하다, 바라다"],
+    ["choose", "고르다, 선택하다"],
+    ["right", "맞는, 알맞은"],
+    ["easy", "쉬운, 편한"]
+  ],
+
+  questions: [
+    [
+      "What does the family want?",
+      "They want a new dog."
+    ],
+    [
+      "Do they look at different dogs?",
+      "Yes, they do."
+    ],
+    [
+      "Is it easy to choose a dog?",
+      "No, it is not."
+    ],
+    [
+      "Did you like the book?",
+      "Yes, I did. I liked the dogs."
+    ]
+  ],
+
+  writing: [
+    "The family wants a new dog.",
+    "They look at different dogs.",
+    "They choose a dog."
+  ]
+
+},
+"spots": {
+
+  summary:
+    "Everyone finds spots on their bodies.\n\n모두가 몸에 점이 생긴 것을 발견합니다.\n\nThey look at the spots.\n\n모두가 점을 살펴봅니다.\n\nIt is fun and surprising.\n\n재미있고 놀라운 일이 벌어집니다.",
+
+  vocabulary: [
+    ["spot", "점, 얼룩"],
+    ["find", "찾다, 발견하다"],
+    ["body", "몸, 신체"],
+    ["look", "보다, 살펴보다"],
+    ["fun", "재미있는, 즐거움"],
+    ["surprising", "놀라운, 뜻밖의"]
+  ],
+
+  questions: [
+    [
+      "What does everyone find?",
+      "They find spots."
+    ],
+    [
+      "Where are the spots?",
+      "They are on their bodies."
+    ],
+    [
+      "Do they look at the spots?",
+      "Yes, they do."
+    ],
+    [
+      "Did you like the book?",
+      "Yes, I did. It was fun."
+    ]
+  ],
+
+  writing: [
+    "Everyone finds spots.",
+    "They look at the spots.",
+    "It is fun."
+  ]
+
 }
 
 };
