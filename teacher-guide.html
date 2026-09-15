@@ -527,11 +527,8 @@ document.getElementById("aboutBook").textContent =
 
 
     document.getElementById("writing").innerHTML=
-      (guide.writing || []).map((sentence,index)=>`
+      (guide.writing || []).map(sentence=>`
         <div class="writing">
-          <div class="writing-label">
-            Sentence ${index+1}
-          </div>
           <p style="margin:0">
             ${sentence}
           </p>
