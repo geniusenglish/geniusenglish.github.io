@@ -4008,3 +4008,82 @@ font-size:40px;
     }
 
 }
+
+/* ===========================
+   NOTICE FILTER
+=========================== */
+
+.notice-filter{
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    gap:10px;
+
+    max-width:1000px;
+
+    margin:0 auto 35px;
+
+}
+
+.filter-btn{
+
+    border:0;
+
+    background:transparent;
+
+    color:#777;
+
+    padding:10px 18px;
+
+    border-radius:30px;
+
+    font-size:14px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.filter-btn:hover{
+
+    color:#e63946;
+
+}
+
+.filter-btn.active{
+
+    background:#e63946;
+
+    color:#fff;
+
+}
+
+
+/* ===========================
+   FILTER MOBILE
+=========================== */
+
+@media (max-width:768px){
+
+    .notice-filter{
+
+        gap:5px;
+
+        flex-wrap:wrap;
+
+    }
+
+    .filter-btn{
+
+        padding:8px 13px;
+
+        font-size:13px;
+
+    }
+
+}
