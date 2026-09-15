@@ -5,6 +5,25 @@
 const notices = [
 
     {
+        id: "notice_260915",
+        date: "2026.09.15",
+        category: "학원소식",
+        title: "2026 추석 휴원 일정 안내",
+        description:
+            "2026년 추석을 맞아 학원 휴원 일정을 안내드립니다.",
+        link: "notice/notice_260915.html"
+    },
+
+    {
+        id: "notice_260914",
+        date: "2026.09.14",
+        category: "학원소식",
+        title: "9월 SR Test 기간 안내",
+        description:
+            "9월 SR Test 기간과 테스트 관련 안내사항을 확인해주세요.",
+        link: "notice/notice_260914.html"
+    },
+    {
         id: "notice_260908",
         date: "2026.09.08",
         category: "수업안내",
