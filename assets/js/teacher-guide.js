@@ -29,42 +29,45 @@ Genius English Academy - Teacher Guide Data
 const teacherGuides = {
 
   "thegokart": {
-    summary:
-      "Biff and Chip learn to share a go-kart and take turns riding it.",
 
-    vocabulary: [
-      ["go-kart", "고카트"],
-      ["ride", "타다"],
-      ["turn", "차례"],
-      ["share", "함께 사용하다"],
-      ["wait", "기다리다"]
+  summary:
+    "Biff and Chip have a go-kart. They take turns riding it. They learn to share.\n\n비프와 칩에게 고카트가 있습니다. 두 아이는 차례로 고카트를 탑니다. 두 아이는 함께 나누어 사용하는 법을 배웁니다.",
+
+  vocabulary: [
+    ["go-kart", "고카트"],
+    ["ride", "타다, 타고 가다"],
+    ["turn", "차례, 순서"],
+    ["share", "함께 사용하다, 나누다"],
+    ["wait", "기다리다"],
+    ["learn", "배우다, 알게 되다"]
+  ],
+
+  questions: [
+    [
+      "What do Biff and Chip have?",
+      "They have a go-kart."
     ],
-
-    questions: [
-      [
-        "What was your favorite part? Why?",
-        "My favorite part was when Biff and Chip rode the go-kart because it was fun."
-      ],
-      [
-        "Why did Biff and Chip need to take turns?",
-        "They needed to take turns because they were sharing the go-kart."
-      ],
-      [
-        "What did Biff and Chip do with the go-kart?",
-        "They rode the go-kart and took turns."
-      ],
-      [
-        "Did you like the book? Why?",
-        "Yes, I did. I liked it because the story was simple and funny."
-      ]
+    [
+      "What do they do with the go-kart?",
+      "They ride it."
     ],
-
-    writing: [
-      "Biff and Chip get a go-kart and want to ride it.",
-      "They share the go-kart and take turns riding it.",
-      "In the end, they enjoy riding the go-kart together."
+    [
+      "Do they take turns?",
+      "Yes, they do."
+    ],
+    [
+      "What do they learn?",
+      "They learn to share."
     ]
-  },
+  ],
+
+  writing: [
+    "First, Biff and Chip have a go-kart.",
+    "Next, they take turns riding it.",
+    "Finally, they learn to share."
+  ]
+
+},
 
   "thetoysparty": {
 
@@ -106,7 +109,7 @@ const teacherGuides = {
   ]
 
 },
-"a_new_dog": {
+"anewdog": {
 
   summary:
     "Everyone wants a new dog. They look at different dogs. Choosing the right dog is not easy.\n\n가족 모두가 새 강아지를 원합니다. 가족은 여러 강아지를 살펴봅니다. 알맞은 강아지를 고르는 것은 쉽지 않습니다.",
@@ -186,7 +189,7 @@ const teacherGuides = {
   ]
 
 },
-"floppys_bath": {
+"floppysbath": {
 
   summary:
     "Floppy has a bath. He gets clean. He feels fresh after his bath.\n\n플로피가 목욕을 합니다. 플로피가 깨끗해집니다. 플로피는 목욕을 하고 상쾌해집니다.",
