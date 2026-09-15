@@ -11,7 +11,7 @@ const notices = [
         title: "9월 그룹 라이팅 클래스 안내",
         description:
             "9월에도 원서를 활용한 그룹 라이팅 수업이 진행됩니다. Story와 Nonfiction 원서를 통해 읽기와 쓰기를 자연스럽게 연결합니다.",
-        link: "../notice/notice_260908.html"
+        link: "notice/notice_260908.html"
     }
 
 ];
