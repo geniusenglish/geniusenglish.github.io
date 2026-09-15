@@ -4464,3 +4464,128 @@ font-size:40px;
     }
 
 }
+
+/* ===========================
+   CONSULT COMPLETE
+=========================== */
+
+.consult-complete{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:60px 20px;
+}
+
+.consult-complete-card{
+    width:100%;
+    max-width:650px;
+    padding:70px 50px;
+    background:#fff;
+    border-radius:24px;
+    text-align:center;
+    box-shadow:0 10px 35px rgba(0,0,0,.06);
+}
+
+.complete-icon{
+    width:70px;
+    height:70px;
+    margin:0 auto 25px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    background:#e63946;
+    color:#fff;
+    font-size:30px;
+}
+
+.consult-complete-card h1{
+    margin:0;
+    font-size:32px;
+    font-weight:800;
+    color:#222;
+}
+
+.complete-message{
+    margin:18px 0 0;
+    font-size:17px;
+    line-height:1.8;
+    color:#666;
+}
+
+.complete-info{
+    margin:35px 0;
+    padding:28px 20px;
+    background:#fff8f8;
+    border-radius:16px;
+}
+
+.complete-info h2{
+    margin:0 0 15px;
+    font-size:19px;
+    font-weight:800;
+    color:#222;
+}
+
+.complete-info strong{
+    display:block;
+    font-size:17px;
+    color:#e63946;
+}
+
+.complete-info p{
+    margin:15px 0 0;
+    font-size:14px;
+    line-height:1.7;
+    color:#777;
+}
+
+.complete-thanks{
+    margin:0;
+    font-size:17px;
+    line-height:1.8;
+    color:#666;
+}
+
+.complete-home-btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:13px 25px;
+    border-radius:30px;
+    background:#e63946;
+    color:#fff;
+    font-size:14px;
+    font-weight:700;
+    text-decoration:none;
+    transition:.2s;
+}
+
+.complete-home-btn:hover{
+    opacity:.9;
+}
+
+@media (max-width:768px){
+
+    .consult-complete{
+        padding:40px 20px;
+    }
+
+    .consult-complete-card{
+        padding:50px 25px;
+        border-radius:20px;
+    }
+
+    .consult-complete-card h1{
+        font-size:26px;
+    }
+
+    .complete-message{
+        font-size:15px;
+    }
+
+    .complete-info strong{
+        font-size:15px;
+    }
+
+}
