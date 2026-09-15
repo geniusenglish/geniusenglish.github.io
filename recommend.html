@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>조이쌤 추천도서 | Genius English Academy</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="stylesheet" href="assets/css/style.css">
+
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+/* ===========================
+   RECOMMEND PAGE
+=========================== */
+
+body{
+    background:#f7f8fb;
+}
+
+.recommend-page{
+    padding:80px 20px 100px;
+}
+
+
+/* ===========================
+   HEADER
+=========================== */
+
+.recommend-header{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.recommend-badge{
+    display:inline-block;
+    padding:8px 18px;
+    margin-bottom:20px;
+
+    background:#e63946;
+    color:#fff;
+
+    border-radius:30px;
+
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+.recommend-header h1{
+    margin:0;
+
+    font-size:46px;
+    line-height:1.25;
+    font-weight:800;
+
+    color:#222;
+}
+
+.recommend-header p{
+    margin:18px 0 0;
+
+    font-size:17px;
+    line-height:1.7;
+
+    color:#777;
+}
+
+
+/* ===========================
+   RECOMMEND CARD
+=========================== */
+
+.recommend-card{
+    max-width:1000px;
+    margin:0 auto;
+
+    padding:60px;
+
+    display:flex;
+    align-items:center;
+
+    gap:70px;
+
+    background:#fff;
+
+    border-radius:24px;
+
+    box-shadow:0 10px 35px rgba(0,0,0,.07);
+}
+
+
+/* ===========================
+   BOOK COVER
+=========================== */
+
+.recommend-cover{
+    width:260px;
+    flex-shrink:0;
+
+    text-align:center;
+}
+
+.recommend-cover img{
+    width:100%;
+
+    border-radius:12px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+
+/* ===========================
+   CONTENT
+=========================== */
+
+.recommend-content{
+    flex:1;
+}
+
+.recommend-label{
+    display:inline-block;
+
+    margin-bottom:15px;
+
+    font-size:13px;
+    font-weight:700;
+
+    color:#e63946;
+
+    letter-spacing:.5px;
+}
+
+.recommend-content h2{
+    margin:0 0 10px;
+
+    font-size:38px;
+    line-height:1.3;
+
+    font-weight:800;
+
+    color:#222;
+}
+
+.recommend-author{
+    margin:0 0 30px;
+
+    font-size:15px;
+
+    color:#999;
+}
+
+.recommend-content p{
+    margin:0 0 20px;
+
+    font-size:16px;
+    line-height:1.9;
+
+    color:#555;
+}
+
+.recommend-reason{
+    margin-top:30px;
+    padding:25px 28px;
+
+    background:#fff8f8;
+
+    border-left:4px solid #e63946;
+
+    border-radius:10px;
+}
+
+.recommend-reason strong{
+    display:block;
+
+    margin-bottom:10px;
+
+    font-size:16px;
+
+    color:#222;
+}
+
+.recommend-reason p{
+    margin:0;
+
+    font-size:15px;
+    line-height:1.8;
+
+    color:#666;
+}
+
+
+/* ===========================
+   SERIES BOOKS
+=========================== */
+
+.series-section{
+    max-width:1000px;
+
+    margin:70px auto 0;
+}
+
+.series-title{
+    margin-bottom:30px;
+
+    text-align:center;
+}
+
+.series-title span{
+    display:block;
+
+    margin-bottom:10px;
+
+    font-size:12px;
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    color:#e63946;
+}
+
+.series-title h2{
+    margin:0;
+
+    font-size:30px;
+    font-weight:800;
+
+    color:#222;
+}
+
+.series-books{
+    display:grid;
+
+    grid-template-columns:repeat(4, 1fr);
+
+    gap:20px;
+}
+
+.series-book{
+    padding:25px 20px;
+
+    background:#fff;
+
+    border-radius:16px;
+
+    text-align:center;
+
+    box-shadow:0 6px 20px rgba(0,0,0,.06);
+
+    transition:.25s;
+}
+
+.series-book:hover{
+    transform:translateY(-4px);
+
+    box-shadow:0 12px 28px rgba(0,0,0,.1);
+}
+
+.series-book-number{
+    display:inline-flex;
+
+    width:32px;
+    height:32px;
+
+    align-items:center;
+    justify-content:center;
+
+    margin-bottom:15px;
+
+    background:#fff0f1;
+
+    border-radius:50%;
+
+    font-size:12px;
+    font-weight:700;
+
+    color:#e63946;
+}
+
+.series-book h3{
+    margin:0;
+
+    font-size:16px;
+    line-height:1.5;
+
+    font-weight:700;
+
+    color:#333;
+}
+
+
+/* ===========================
+   BOTTOM
+=========================== */
+
+.recommend-bottom{
+    margin-top:60px;
+
+    text-align:center;
+}
+
+.recommend-bottom p{
+    margin:0 0 20px;
+
+    font-size:15px;
+
+    color:#888;
+}
+
+.recommend-back{
+    display:inline-block;
+
+    padding:12px 24px;
+
+    background:#e63946;
+
+    color:#fff;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    font-size:14px;
+    font-weight:700;
+
+    transition:.2s;
+}
+
+.recommend-back:hover{
+    background:#c62828;
+}
+
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width:768px){
+
+    .recommend-page{
+        padding:60px 20px 80px;
+    }
+
+    .recommend-header{
+        margin-bottom:40px;
+    }
+
+    .recommend-header h1{
+        font-size:36px;
+    }
+
+    .recommend-header p{
+        font-size:15px;
+    }
+
+    .recommend-card{
+        flex-direction:column;
+
+        padding:40px 25px;
+
+        gap:35px;
+
+        text-align:center;
+    }
+
+    .recommend-cover{
+        width:190px;
+    }
+
+    .recommend-content h2{
+        font-size:30px;
+    }
+
+    .recommend-reason{
+        text-align:left;
+    }
+
+    .series-section{
+        margin-top:50px;
+    }
+
+    .series-title h2{
+        font-size:25px;
+    }
+
+    .series-books{
+        grid-template-columns:repeat(2, 1fr);
+
+        gap:15px;
+    }
+
+    .series-book{
+        padding:20px 12px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<!-- ===========================
+     HEADER
+=========================== -->
+
+<header>
+
+    <div class="header-top">
+
+        <div class="header-wrap">
+
+            <a href="index.html" class="logo-slider">
+
+                <img
+                    src="images/logo1.png"
+                    class="logo-slide show">
+
+                <img
+                    src="images/logo2.png"
+                    class="logo-slide">
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="header-menu">
+
+        <div class="header-wrap">
+
+            <nav class="main-menu">
+
+                <a href="academy.html">
+                    학원소개
+                </a>
+
+                <a href="curriculum.html">
+                    커리큘럼
+                </a>
+
+
+                <div class="dropdown">
+
+                    <a href="#">
+                        학습자료
+                    </a>
+
+                    <div class="dropdown-menu">
+
+                        <a href="reading.html">
+                            📚 원서 음원 듣기
+                        </a>
+
+                        <a href="vocabulary.html">
+                            🎧 매일 단어 듣기
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <a
+                    href="https://global-zone60.renaissance-go.com/welcomeportal/rpna83al"
+                    target="_blank">
+
+                    <span class="pc-text">
+                        르네상스 러닝
+                    </span>
+
+                    <span class="mobile-text">
+                        르네상스
+                    </span>
+
+                </a>
+
+
+                <a href="notice.html">
+                    공지사항
+                </a>
+
+
+                <a href="contact.html">
+                    상담문의
+                </a>
+
+            </nav>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- ===========================
+     RECOMMEND PAGE
+=========================== -->
+
+<section class="recommend-page">
+
+    <div class="recommend-header">
+
+        <span class="recommend-badge">
+            JOY'S PICK
+        </span>
+
+        <h1>
+            조이쌤 추천도서
+        </h1>
+
+        <p>
+            지니어스 아이들에게<br>
+            조이쌤이 추천하는 원서 시리즈를 소개합니다.
+        </p>
+
+    </div>
+
+
+    <!-- ===========================
+         CURRENT RECOMMENDATION
+    =========================== -->
+
+    <div class="recommend-card">
+
+
+        <div class="recommend-cover">
+
+            <img
+                src="images/mrputter.jpg"
+                alt="Mr. Putter & Tabby">
+
+        </div>
+
+
+        <div class="recommend-content">
+
+            <span class="recommend-label">
+                CURRENT RECOMMENDATION
+            </span>
+
+            <h2>
+                Mr. Putter & Tabby
+            </h2>
+
+            <p class="recommend-author">
+                by Cynthia Rylant
+            </p>
+
+
+            <p>
+                Mr. Putter와 고양이 Tabby의
+                따뜻하고 유쾌한 일상을 담은
+                사랑스러운 원서 시리즈입니다.
+            </p>
+
+            <p>
+                부담스럽지 않은 분량과 자연스러운 문장으로
+                영어 원서를 꾸준히 읽고 싶은 아이들에게
+                추천합니다.
+            </p>
+
+
+            <div class="recommend-reason">
+
+                <strong>
+                    💡 조이쌤이 추천하는 이유
+                </strong>
+
+                <p>
+                    재미있는 이야기와 반복해서 읽기 좋은 문장,
+                    그리고 따뜻한 캐릭터들이 매력적인 시리즈예요.
+                    한 권씩 읽다 보면 자연스럽게
+                    원서 읽는 재미를 느낄 수 있어요.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ===========================
+         SERIES
+    =========================== -->
+
+    <div class="series-section">
+
+        <div class="series-title">
+
+            <span>
+                RECOMMENDED SERIES
+            </span>
+
+            <h2>
+                Mr. Putter & Tabby Series
+            </h2>
+
+        </div>
+
+
+        <div class="series-books">
+
+
+            <div class="series-book">
+
+                <span class="series-book-number">
+                    01
+                </span>
+
+                <h3>
+                    Mr. Putter & Tabby<br>
+                    Pour the Tea
+                </h3>
+
+            </div>
+
+
+            <div class="series-book">
+
+                <span class="series-book-number">
+                    02
+                </span>
+
+                <h3>
+                    Mr. Putter & Tabby<br>
+                    Pick the Pears
+                </h3>
+
+            </div>
+
+
+            <div class="series-book">
+
+                <span class="series-book-number">
+                    03
+                </span>
+
+                <h3>
+                    Mr. Putter & Tabby<br>
+                    Bake the Cake
+                </h3>
+
+            </div>
+
+
+            <div class="series-book">
+
+                <span class="series-book-number">
+                    04
+                </span>
+
+                <h3>
+                    Mr. Putter & Tabby<br>
+                    Row the Boat
+                </h3>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- ===========================
+         BACK
+    =========================== -->
+
+    <div class="recommend-bottom">
+
+        <p>
+            재미있는 원서를 만나보세요. 📚
+        </p>
+
+        <a
+            href="reading.html"
+            class="recommend-back">
+
+            <i class="fa-solid fa-book-open"></i>
+            원서 음원 듣기
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ===========================
+     FOOTER
+=========================== -->
+
+<footer class="bg-red-600 text-white text-center py-8">
+
+    © 2026 Genius English Academy
+
+</footer>
+
+
+<script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
