@@ -4087,3 +4087,380 @@ font-size:40px;
     }
 
 }
+/* ===========================
+   NOTICE DETAIL
+=========================== */
+
+.notice-detail{
+
+    max-width:900px;
+
+    margin:0 auto;
+
+    background:#fff;
+
+    border-radius:24px;
+
+    padding:60px 70px;
+
+    box-shadow:0 10px 35px rgba(0,0,0,.06);
+
+}
+
+
+/* ===========================
+   DETAIL HEADER
+=========================== */
+
+.notice-detail-header{
+
+    padding-bottom:35px;
+
+    border-bottom:1px solid #e5e5e5;
+
+}
+
+.notice-detail-header .notice-category{
+
+    display:inline-block;
+
+    margin-bottom:15px;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    color:#e63946;
+
+}
+
+.notice-detail-header h1{
+
+    margin:0;
+
+    font-size:36px;
+
+    line-height:1.35;
+
+    font-weight:800;
+
+    color:#222;
+
+}
+
+.notice-detail-date{
+
+    margin-top:15px;
+
+    font-size:14px;
+
+    color:#999;
+
+}
+
+
+/* ===========================
+   DETAIL CONTENT
+=========================== */
+
+.notice-detail-content{
+
+    padding-top:40px;
+
+    font-size:16px;
+
+    line-height:1.9;
+
+    color:#444;
+
+}
+
+.notice-detail-content p{
+
+    margin:0 0 20px;
+
+}
+
+.notice-detail-content hr{
+
+    margin:45px 0;
+
+    border:0;
+
+    border-top:1px solid #e5e5e5;
+
+}
+
+.notice-detail-content h2{
+
+    margin:0 0 20px;
+
+    font-size:24px;
+
+    line-height:1.4;
+
+    font-weight:800;
+
+    color:#222;
+
+}
+
+.notice-detail-content h3{
+
+    margin:0 0 15px;
+
+    font-size:19px;
+
+    line-height:1.5;
+
+    font-weight:700;
+
+    color:#222;
+
+}
+
+
+/* ===========================
+   LIST
+=========================== */
+
+.notice-detail-content ul{
+
+    margin:10px 0 25px;
+
+    padding-left:22px;
+
+}
+
+.notice-detail-content li{
+
+    margin-bottom:8px;
+
+}
+
+
+/* ===========================
+   COURSE
+=========================== */
+
+.notice-course{
+
+    padding:28px 30px;
+
+    background:#fafafa;
+
+    border-radius:16px;
+
+    margin-top:25px;
+
+}
+
+.notice-week{
+
+    margin-top:25px;
+
+}
+
+.notice-week strong{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    font-size:17px;
+
+    color:#e63946;
+
+}
+
+
+/* ===========================
+   BOOK
+=========================== */
+
+.notice-book{
+
+    padding:28px 30px;
+
+    margin-top:20px;
+
+    background:#fafafa;
+
+    border-radius:16px;
+
+    border:1px solid #eee;
+
+}
+
+.notice-book h3{
+
+    margin-bottom:10px;
+
+}
+
+.book-type{
+
+    display:inline-block;
+
+    padding:5px 12px;
+
+    margin-bottom:15px;
+
+    border-radius:20px;
+
+    background:#fff0f1;
+
+    color:#e63946;
+
+    font-size:12px;
+
+    font-weight:700;
+
+}
+
+.notice-book p{
+
+    margin-bottom:12px;
+
+}
+
+
+/* ===========================
+   CHECK LIST
+=========================== */
+
+.notice-check-list{
+
+    list-style:none;
+
+    padding:0 !important;
+
+    margin:0 !important;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:10px 30px;
+
+}
+
+.notice-check-list li{
+
+    margin:0;
+
+    padding:12px 15px;
+
+    background:#fafafa;
+
+    border-radius:10px;
+
+}
+
+
+/* ===========================
+   IMPORTANT
+=========================== */
+
+.notice-important{
+
+    margin-top:35px;
+
+    padding:25px 28px;
+
+    background:#fff8f8;
+
+    border-left:4px solid #e63946;
+
+    border-radius:10px;
+
+}
+
+.notice-important p{
+
+    margin:0 0 8px;
+
+    font-size:14px;
+
+    line-height:1.7;
+
+    color:#666;
+
+}
+
+.notice-important p:last-child{
+
+    margin-bottom:0;
+
+}
+
+
+/* ===========================
+   DETAIL BOTTOM
+=========================== */
+
+.notice-detail-bottom{
+
+    max-width:900px;
+
+    margin:30px auto 0;
+
+}
+
+.notice-detail-bottom .back-btn{
+
+    margin-bottom:0;
+
+}
+
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width:768px){
+
+    .notice-detail{
+
+        padding:35px 25px;
+
+        border-radius:18px;
+
+    }
+
+    .notice-detail-header h1{
+
+        font-size:28px;
+
+    }
+
+    .notice-detail-content{
+
+        padding-top:30px;
+
+        font-size:15px;
+
+        line-height:1.8;
+
+    }
+
+    .notice-detail-content h2{
+
+        font-size:21px;
+
+    }
+
+    .notice-course,
+    .notice-book{
+
+        padding:22px 20px;
+
+    }
+
+    .notice-check-list{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
