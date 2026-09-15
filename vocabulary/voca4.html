@@ -266,6 +266,29 @@ audio{
 const folder = "voca4";
 const totalDays = 40;
 
+// 음원이 없는 DAY
+const skipDays = [5, 10, 15, 20, 25, 30, 35];
+
+const list = document.getElementById("dayList");
+
+for (let i = 1; i <= totalDays; i++) {
+
+    // 음원이 없는 DAY는 건너뛰기
+    if (skipDays.includes(i)) continue;
+
+    const day = i.toString().padStart(2, "0");
+
+    list.innerHTML += `
+        <div class="day-card">
+            <div class="day-title">DAY ${day}</div>
+
+            <audio controls preload="none">
+                <source src="../audio/${folder}/day${i}.mp3" type="audio/mpeg">
+                브라우저가 오디오를 지원하지 않습니다.
+            </audio>
+        </div>
+    `;
+}
 </script>
 </body>
 
