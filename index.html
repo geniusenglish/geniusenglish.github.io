@@ -130,21 +130,24 @@ class="border border-gray-300 hover:border-red-600 hover:text-red-600 px-8 py-4 
 
 
 <!-- Right -->
-<div class="hidden lg:flex justify-center">
+<div class="hero-image">
 
-    <div class="relative">
+    <div class="hero-photo-slider">
 
-        <!-- 배경 원 -->
-        <div class="absolute -left-10 top-12 w-[420px] h-[420px] bg-red-50 rounded-full"></div>
+        <img
+            src="images/teacher-book.png"
+            class="hero-photo active"
+            alt="원어민 선생님과 원서">
 
-        <!-- 사진 -->
-        <div class="relative w-[420px] h-[420px] rounded-full overflow-hidden shadow-2xl border-8 border-white">
+        <img
+            src="images/teacher-talk.jpg"
+            class="hero-photo"
+            alt="원어민 선생님과 학생의 Book Talk">
 
-            <img src="images/heroimg.png"
-                 alt="Reading Student"
-                 class="w-full h-full object-cover hover:scale-105 transition duration-700">
-
-        </div>
+        <img
+            src="images/teacher-class.jpg"
+            class="hero-photo"
+            alt="원어민 선생님과 학생의 1:1 수업">
 
     </div>
 
@@ -642,6 +645,26 @@ Writing 실력을 키웁니다.
 </footer>
 
 <script src="assets/js/script.js"></script>
+<script>
 
+const heroPhotos = document.querySelectorAll(".hero-photo");
+
+let heroPhotoIndex = 0;
+
+setInterval(() => {
+
+    heroPhotos[heroPhotoIndex].classList.remove("active");
+
+    heroPhotoIndex++;
+
+    if(heroPhotoIndex >= heroPhotos.length){
+        heroPhotoIndex = 0;
+    }
+
+    heroPhotos[heroPhotoIndex].classList.add("active");
+
+}, 4000);
+
+</script>
 </body>
 </html>
