@@ -1,230 +1,477 @@
+
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>브릭스     음원 듣기 | Genius English Academy</title>
+
+<title>Bricks Reading 음원 듣기 | Genius English</title>
+
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="assets/css/style.css">
+
+<style>
+body{
+    background:#f7f8fb;
+}
+
+/* HERO */
+.bricks-hero{
+    max-width:1100px;
+    margin:60px auto 45px;
+    padding:55px 30px;
+    text-align:center;
+    background:#fff;
+    border-radius:22px;
+    box-shadow:0 8px 25px rgba(0,0,0,.06);
+}
+
+.bricks-label{
+    display:inline-block;
+    padding:8px 18px;
+    margin-bottom:18px;
+    background:#8f2028;
+    color:#fff;
+    border-radius:30px;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:1.5px;
+}
+
+.bricks-hero h1{
+    margin:0;
+    color:#222;
+    font-size:42px;
+    font-weight:800;
+}
+
+.bricks-hero p{
+    margin:15px 0 0;
+    color:#777;
+    font-size:16px;
+    line-height:1.8;
+}
+
+/* LEVEL */
+.bricks-container{
+    max-width:1100px;
+    margin:0 auto 90px;
+    padding:0 20px;
+}
+
+.level-title{
+    margin-bottom:22px;
+    font-size:21px;
+    font-weight:800;
+    color:#333;
+}
+
+.level-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:14px;
+}
+
+.level-btn{
+    padding:20px 10px;
+    border:1px solid #e8e8e8;
+    border-radius:14px;
+    background:#fff;
+    color:#444;
+    font-size:20px;
+    font-weight:800;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.level-btn:hover{
+    border-color:#8f2028;
+    color:#8f2028;
+}
+
+.level-btn.active{
+    background:#8f2028;
+    border-color:#8f2028;
+    color:#fff;
+}
+
+/* BOOKS */
+.book-section{
+    margin-top:45px;
+}
+
+.section-heading{
+    margin-bottom:20px;
+    font-size:21px;
+    font-weight:800;
+    color:#333;
+}
+
+.book-list{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.book-btn{
+    padding:12px 22px;
+    border:1px solid #e5e5e5;
+    border-radius:30px;
+    background:#fff;
+    color:#666;
+    font-size:15px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.book-btn:hover{
+    border-color:#8f2028;
+    color:#8f2028;
+}
+
+.book-btn.active{
+    background:#f8e9ea;
+    border-color:#8f2028;
+    color:#8f2028;
+}
+
+/* AUDIO */
+.audio-section{
+    margin-top:40px;
+}
+
+.audio-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.audio-header h2{
+    margin:0;
+    font-size:24px;
+    font-weight:800;
+    color:#222;
+}
+
+.audio-list{
+    border-top:2px solid #333;
+}
+
+.audio-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    padding:20px;
+    background:#fff;
+    border-bottom:1px solid #e8e8e8;
+}
+
+.unit-title{
+    font-size:17px;
+    font-weight:700;
+    color:#333;
+    min-width:100px;
+}
+
+.audio-item audio{
+    width:350px;
+    max-width:100%;
+}
+
+.audio-empty{
+    padding:45px 20px;
+    text-align:center;
+    color:#999;
+    background:#fff;
+    border-bottom:1px solid #eee;
+}
+
+.back-link{
+    display:block;
+    width:max-content;
+    margin:35px auto 0;
+    padding:12px 25px;
+    border-radius:30px;
+    background:#8f2028;
+    color:#fff;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:700;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+    .bricks-hero{
+        margin:35px 15px;
+        padding:40px 20px;
+    }
+
+    .bricks-hero h1{
+        font-size:32px;
+    }
+
+    .bricks-hero p{
+        font-size:14px;
+    }
+
+    .level-grid{
+        grid-template-columns:repeat(3,1fr);
+        gap:9px;
+    }
+
+    .level-btn{
+        padding:16px 5px;
+        font-size:17px;
+    }
+
+    .audio-header h2{
+        font-size:20px;
+    }
+
+    .audio-item{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:12px;
+        padding:18px 15px;
+    }
+
+    .audio-item audio{
+        width:100%;
+    }
+
+}
+</style>
 </head>
-<body class="bg-slate-50">
 
+<body>
+
+<!-- HEADER -->
 <header>
-
-    <!-- ================= TOP ================= -->
-
     <div class="header-top">
-
         <div class="header-wrap">
-
             <a href="index.html" class="logo-slider">
-
-    <img src="images/logo1.png" class="logo-slide show">
-
-    <img src="images/logo2.png" class="logo-slide">
-
-</a>
-
+                <img src="images/logo1.png" class="logo-slide show">
+                <img src="images/logo2.png" class="logo-slide">
+            </a>
         </div>
-
     </div>
-
-    <!-- ================= MENU ================= -->
 
     <div class="header-menu">
-
         <div class="header-wrap">
-
             <nav class="main-menu">
+                <div class="dropdown">
+                    <a href="academy.html">학원소개</a>
+                </div>
 
-    <a href="academy.html">학원소개</a>
-    <a href="curriculum.html">커리큘럼</a>
+                <a href="curriculum.html">커리큘럼</a>
 
-    <div class="dropdown">
+                <div class="dropdown">
+                    <a href="#">학습자료</a>
+                    <div class="dropdown-menu">
+                        <a href="reading.html">📚 원서 음원 듣기</a>
+                        <a href="vocabulary.html">🎧 매일 단어 듣기</a>
+                        <a href="bricks-audio.html">📖 브릭스 음원 듣기</a>
+                    </div>
+                </div>
 
-        <a href="#">학습자료</a>
+                <a href="https://global-zone60.renaissance-go.com/welcomeportal/rpna83al" target="_blank">
+                    <span class="pc-text">르네상스 러닝</span>
+                    <span class="mobile-text">르네상스</span>
+                </a>
 
-        <div class="dropdown-menu">
-            <a href="reading.html">📚 원서 음원 듣기</a>
-            <a href="vocabulary.html">🎧 매일 단어 듣기</a>
-            <a href="bricks-audio.html">📖 브릭스 음원 듣기</a>
+                <a href="notice.html">공지사항</a>
+                <a href="contact.html">상담문의</a>
+            </nav>
         </div>
-
     </div>
-
-    <a href="https://global-zone60.renaissance-go.com/welcomeportal/rpna83al" target="_blank">
-        <span class="pc-text">르네상스 러닝</span>
-        <span class="mobile-text">르네상스</span>
-    </a>
-
-    <a href="notice.html">공지사항</a>
-
-    <a href="contact.html">상담문의</a>
-
-</nav>
-
-        </div>
-
-    </div>
-
 </header>
 
-
-<!-- ================= HERO ================= -->
-
-
-
-<section class="sub-hero">
-
-    <div class="container">
-
-        <div class="voca-hero-content">
-
-            <div class="sub-badge">
-                📚 ORIGINAL BOOK AUDIO
-            </div>
-
-            <h1>
-                원서 음원 듣기
-            </h1>
-
-            <p>
-                원하는 원서를 쉽게 찾아보세요.<br>
-        책 제목, 시리즈명 또는 AR Quiz 번호로 검색할 수 있습니다.
-            </p>
-
-            <!-- 검색 -->
-
-            <div class="search-box">
-
-            <input
-            type="text"
-            id="bookSearch"
-            placeholder="책 제목 · 시리즈 · AR Quiz No. 검색">
-
-        <button>
-            🔍
-        </button>
-
-            </div>
-
-        </div>
-
-    </div>
-
+<!-- HERO -->
+<section class="bricks-hero">
+    <span class="bricks-label">BRICKS READING AUDIO</span>
+    <h1>브릭스 음원 듣기</h1>
+    <p>
+        교재와 Unit을 선택하고<br>
+        음원을 들으며 반복해서 학습해 보세요.
+    </p>
 </section>
 
-<!-- ================= QUICK CATEGORY ================= -->
+<!-- CONTENT -->
+<section class="bricks-container">
 
-<section class="voca-category">
+    <h2 class="level-title">LEVEL 선택</h2>
 
-    <div class="container">
+    <div class="level-grid" id="levelGrid"></div>
 
-        <a href="reading/ar0.html">AR 0점대</a>
-
-        <a href="reading/ar1.html">AR 1점대</a>
-
-        <a href="reading/ar2.html">AR 2점대</a>
-
-        <a href="reading/ar3.html">AR 3점대</a>
-
-        <a href="reading/ar4.html">AR 4점대</a>
-
-        <a href="reading/ar5.html">AR 5점대+</a>
-
+    <div class="book-section">
+        <h2 class="section-heading">교재 선택</h2>
+        <div class="book-list" id="bookList"></div>
     </div>
 
-</section>
-
-<!-- ================= AR LEVEL ================= -->
-
-<section class="reading-level">
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <h2>📚 AR 레벨별 원서</h2>
-
-            <p>
-                자신의 AR 레벨에 맞는 원서를 선택해 보세요.
-            </p>
-
+    <div class="audio-section">
+        <div class="audio-header">
+            <h2 id="audioTitle">교재를 선택해주세요.</h2>
         </div>
 
-        <div class="level-grid">
-
-            <a href="reading/ar0.html" class="level-card ar0">
-
-                <div class="level-icon">🌱</div>
-
-                <h3>AR 0점대</h3>
-
-                <span>Picture Books</span>
-
-            </a>
-
-            <a href="reading/ar1.html" class="level-card ar1">
-
-                <div class="level-icon">📖</div>
-
-                <h3>AR 1점대</h3>
-
-                <span>Easy Readers</span>
-
-            </a>
-
-            <a href="reading/ar2.html" class="level-card ar2">
-
-                <div class="level-icon">🚀</div>
-
-                <h3>AR 2점대</h3>
-
-                <span>Early Readers</span>
-
-            </a>
-
-            <a href="reading/ar3.html" class="level-card ar3">
-
-                <div class="level-icon">⭐</div>
-
-                <h3>AR 3점대</h3>
-
-                <span>Chapter Books</span>
-
-            </a>
-
-            <a href="reading/ar4.html" class="level-card ar4">
-
-                <div class="level-icon">💎</div>
-
-                <h3>AR 4점대</h3>
-
-                <span>Advanced Readers</span>
-
-            </a>
-
-            <a href="reading/ar5.html" class="level-card ar5">
-
-                <div class="level-icon">👑</div>
-
-                <h3>AR 5점대+</h3>
-
-                <span>Upper Readers</span>
-
-            </a>
-
+        <div class="audio-list" id="audioList">
+            <div class="audio-empty">
+                먼저 레벨과 교재를 선택해주세요.
+            </div>
         </div>
-
     </div>
+
+    <a href="vocabulary.html" class="back-link">
+        ← 학습자료 목록
+    </a>
 
 </section>
 
 <footer class="bg-red-600 text-white text-center py-8">
-© 2026 Genius English Academy
+    © 2026 Genius English Academy
 </footer>
 
 <script src="assets/js/script.js"></script>
+
+<script>
+/*
+    음원 폴더 구조 예시
+
+    audio/
+      bricks/
+        170-1/
+          unit1.mp3
+          unit2.mp3
+        170-2/
+          unit1.mp3
+          unit2.mp3
+
+    각 교재의 unitCount를 실제 음원 수에 맞게 수정하세요.
+*/
+
+const textbooks = {
+    "30": [
+        { name:"30-1", folder:"30-1", unitCount:16 },
+        { name:"30-2", folder:"30-2", unitCount:16 }
+    ],
+    "50": [
+        { name:"50-1", folder:"50-1", unitCount:16 },
+        { name:"50-2", folder:"50-2", unitCount:16 }
+    ],
+    "80": [
+        { name:"80-1", folder:"80-1", unitCount:16 },
+        { name:"80-2", folder:"80-2", unitCount:16 }
+    ],
+    "100": [
+        { name:"100-1", folder:"100-1", unitCount:16 },
+        { name:"100-2", folder:"100-2", unitCount:16 }
+    ],
+    "120": [
+        { name:"120-1", folder:"120-1", unitCount:16 },
+        { name:"120-2", folder:"120-2", unitCount:16 }
+    ],
+    "170": [
+        { name:"170-1", folder:"170-1", unitCount:16 },
+        { name:"170-2", folder:"170-2", unitCount:16 }
+    ],
+    "240": [
+        { name:"240-1", folder:"240-1", unitCount:16 },
+        { name:"240-2", folder:"240-2", unitCount:16 }
+    ]
+};
+
+const levels = ["30","50","80","100","120","170","240"];
+
+const levelGrid = document.getElementById("levelGrid");
+const bookList = document.getElementById("bookList");
+const audioList = document.getElementById("audioList");
+const audioTitle = document.getElementById("audioTitle");
+
+let selectedLevel = null;
+let selectedBook = null;
+
+/* LEVEL BUTTONS */
+levels.forEach(level => {
+    const button = document.createElement("button");
+    button.className = "level-btn";
+    button.textContent = level;
+    button.onclick = () => selectLevel(level, button);
+    levelGrid.appendChild(button);
+});
+
+/* SELECT LEVEL */
+function selectLevel(level, button){
+
+    selectedLevel = level;
+    selectedBook = null;
+
+    document.querySelectorAll(".level-btn")
+        .forEach(btn => btn.classList.remove("active"));
+
+    button.classList.add("active");
+
+    bookList.innerHTML = "";
+
+    textbooks[level].forEach(book => {
+
+        const bookButton = document.createElement("button");
+        bookButton.className = "book-btn";
+        bookButton.textContent = book.name;
+
+        bookButton.onclick = () => selectBook(book, bookButton);
+
+        bookList.appendChild(bookButton);
+    });
+
+    audioTitle.textContent = "교재를 선택해주세요.";
+    audioList.innerHTML =
+        '<div class="audio-empty">교재를 선택해주세요.</div>';
+}
+
+/* SELECT BOOK */
+function selectBook(book, button){
+
+    selectedBook = book;
+
+    document.querySelectorAll(".book-btn")
+        .forEach(btn => btn.classList.remove("active"));
+
+    button.classList.add("active");
+
+    audioTitle.textContent = "Bricks Reading " + book.name;
+
+    audioList.innerHTML = "";
+
+    for(let i = 1; i <= book.unitCount; i++){
+
+        const unit = i.toString().padStart(2,"0");
+
+        const item = document.createElement("div");
+        item.className = "audio-item";
+
+        item.innerHTML = `
+            <div class="unit-title">UNIT ${unit}</div>
+
+            <audio controls preload="none">
+                <source
+                    src="audio/bricks/${book.folder}/unit${i}.mp3"
+                    type="audio/mpeg">
+                브라우저가 오디오를 지원하지 않습니다.
+            </audio>
+        `;
+
+        audioList.appendChild(item);
+    }
+}
+
+/* INITIAL VIEW */
+audioTitle.textContent = "LEVEL을 선택해주세요.";
+</script>
 
 </body>
 </html>
