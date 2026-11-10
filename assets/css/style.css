@@ -4622,3 +4622,42 @@ font-size:40px;
     }
 
 }
+
+/* TOP BUTTON */
+.top-btn {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 999;
+
+    width: 55px;
+    height: 55px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #8F2028;
+    color: #fff;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,.15);
+
+    transition: .25s;
+}
+
+.top-btn:hover {
+    background: #741A22;
+    transform: translateY(-4px);
+}
+
+@media (max-width: 768px) {
+    .top-btn {
+        right: 18px;
+        bottom: 20px;
+        width: 48px;
+        height: 48px;
+    }
+}
