@@ -1642,7 +1642,7 @@ font-size:40px;
 }
 
 .search-box input:focus{
-    border-color:#e63946;
+    border-color:#8F2028;
 }
 
 .book-section{
@@ -1682,7 +1682,7 @@ font-size:40px;
 
 .book-ar{
     padding:16px 16px 0;
-    color:#e63946;
+    color:#8F2028;
     font-size:15px;
     font-weight:700;
 }
@@ -1776,14 +1776,14 @@ font-size:40px;
 
 .ar-level-nav a:hover{
 
-    background:#e63946;
+    background:#8F2028;
     color:#fff;
 
 }
 
 .ar-level-nav a.active{
 
-    background:#e63946;
+    background:#8F2028;
     color:#fff;
 
 }
@@ -1821,7 +1821,7 @@ font-size:40px;
 
 .ar-hero .hero-badge{
     display:inline-block;
-    background:#e63946;
+    background:#8F2028;
     color:#ffffff !important;
     padding:8px 18px;
     border-radius:30px;
@@ -1892,13 +1892,13 @@ font-size:40px;
 }
 
 .ar-level-menu a:hover{
-    background:#e63946;
+    background:#8F2028;
     color:#fff;
     transform:translateY(-2px);
 }
 
 .ar-level-menu a.active{
-    background:#e63946;
+    background:#8F2028;
     color:#fff;
 }
 
@@ -1970,7 +1970,7 @@ font-size:40px;
 
 .back-btn:hover{
 
-    color:#e63946;
+    color:#8F2028;
 
 }
 
@@ -2019,7 +2019,7 @@ font-size:40px;
 
     display:inline-block;
 
-    background:#e63946;
+    background:#8F2028;
     color:#fff;
 
     padding:8px 16px;
@@ -2819,7 +2819,7 @@ font-size:40px;
 
     background:#fdecec;
 
-    color:#e63946;
+    color:#8F2028;
 
     font-size:14px;
 
@@ -3053,7 +3053,7 @@ font-size:40px;
 
     border-radius:50%;
 
-    background:#e63946;
+    background:#8F2028;
 
     color:#fff;
 
@@ -3208,7 +3208,7 @@ font-size:40px;
 
     background:#ffe8ea;
 
-    color:#e63946;
+    color:#8F2028;
 
     font-size:14px;
     font-weight:700;
@@ -3339,7 +3339,7 @@ font-size:40px;
 
 .flow-number{
 
-    color:#e63946;
+    color:#8F2028;
 
     font-weight:700;
 
@@ -3375,7 +3375,7 @@ font-size:40px;
 
     font-size:34px;
 
-    color:#e63946;
+    color:#8F2028;
 
     font-weight:bold;
 
@@ -3479,7 +3479,7 @@ font-size:40px;
 
     border-radius:50%;
 
-    background:#e63946;
+    background:#8F2028;
 
     color:white;
 
@@ -3511,7 +3511,7 @@ font-size:40px;
 
     display:inline-block;
 
-    color:#e63946;
+    color:#8F2028;
 
     font-weight:bold;
 
@@ -3565,7 +3565,7 @@ font-size:40px;
 
     background:#fff7f7;
 
-    border-left:4px solid #e63946;
+    border-left:4px solid #8F2028;
 
     padding:18px;
 
@@ -3581,7 +3581,7 @@ font-size:40px;
 
     height:60px;
 
-    background:#e63946;
+    background:#8F2028;
 
     margin:0 43px 0;
 
@@ -3665,7 +3665,7 @@ font-size:40px;
 
     display:inline-block;
 
-    background:#e63946;
+    background:#8F2028;
 
     color:white;
 
@@ -3701,7 +3701,7 @@ font-size:40px;
 
     font-size:34px;
 
-    color:#e63946;
+    color:#8F2028;
 
     font-weight:bold;
 
@@ -3750,7 +3750,7 @@ font-size:40px;
 
     display:inline-block;
 
-    background:#e63946;
+    background:#8F2028;
     color:#fff;
 
     padding:8px 18px;
@@ -3880,7 +3880,7 @@ font-size:40px;
 
     font-weight:700;
 
-    color:#e63946;
+    color:#8F2028;
 
 }
 
@@ -3927,7 +3927,7 @@ font-size:40px;
 
 .notice-item:hover .notice-arrow{
 
-    color:#e63946;
+    color:#8F2028;
 
     transform:translateX(3px);
 
@@ -4078,13 +4078,13 @@ font-size:40px;
 
 .filter-btn:hover{
 
-    color:#e63946;
+    color:#8F2028;
 
 }
 
 .filter-btn.active{
 
-    background:#e63946;
+    background:#8F2028;
 
     color:#fff;
 
@@ -4157,7 +4157,7 @@ font-size:40px;
 
     font-weight:700;
 
-    color:#e63946;
+    color:#8F2028;
 
 }
 
@@ -4296,7 +4296,7 @@ font-size:40px;
 
     font-size:17px;
 
-    color:#e63946;
+    color:#8F2028;
 
 }
 
@@ -4337,7 +4337,7 @@ font-size:40px;
 
     background:#fff0f1;
 
-    color:#e63946;
+    color:#8F2028;
 
     font-size:12px;
 
@@ -4397,7 +4397,7 @@ font-size:40px;
 
     background:#fff8f8;
 
-    border-left:4px solid #e63946;
+    border-left:4px solid #8F2028;
 
     border-radius:10px;
 
@@ -4528,7 +4528,7 @@ font-size:40px;
     align-items:center;
     justify-content:center;
     border-radius:50%;
-    background:#e63946;
+    background:#8F2028;
     color:#fff;
     font-size:30px;
 }
@@ -4564,7 +4564,7 @@ font-size:40px;
 .complete-info strong{
     display:block;
     font-size:17px;
-    color:#e63946;
+    color:#8F2028;
 }
 
 .complete-info p{
@@ -4586,7 +4586,7 @@ font-size:40px;
     margin-top:30px;
     padding:13px 25px;
     border-radius:30px;
-    background:#e63946;
+    background:#8F2028;
     color:#fff;
     font-size:14px;
     font-weight:700;
