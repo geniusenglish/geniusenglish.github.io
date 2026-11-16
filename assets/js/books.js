@@ -1975,7 +1975,7 @@ const books = [
 },
 
 {
-    id:"thesandcastlecontest",
+    id:"dannyandthedinosaurandthesandcastlecontest",
     level:2,
     ar:"2.3",
     quiz:"196905 EN",
@@ -1983,8 +1983,8 @@ const books = [
     title:"Danny and the Dinosaur and the Sand Castle Contest",
     series:"Syd Hoff",
     category:"Fiction",
-    image:"../images/ar2/ar2_thesandcastlecontest.jpg",
-    audio:"../audio/books/ar2/ar2_thesandcastlecontest.mp3",
+    image:"../images/ar2/ar2_dannyandthedinosaurandthesandcastlecontest.jpg",
+    audio:"../audio/books/ar2/ar2_dannyandthedinosaurandthesandcastlecontest.mp3",
     author:"Hoff, Syd",
     summary:`Danny and the dinosaur build a sandcastle together and learn that kindness is more important than winning.
     대니와 공룡은 모래성 대회에 참가하며, 승리보다 서로를 돕는 마음이 더 소중하다는 것을 배우는 이야기입니다.`
@@ -2068,6 +2068,175 @@ const books = [
     summary: `Splat the Cat is excited for the snowstorm, but when he becomes tired of waiting, he decides to make it snow. Based on the series created by Rob Scotton.`
 },
 
+/* ===========================
+   AR 3
+=========================== */
+
+{
+    id:"smellysocks",
+    level:3,
+    ar:"3.2",
+    quiz:"79376 EN",
+    wordCount:839,
+    title:"Smelly Socks",
+    series:"Robert N. Munsch",
+    category:"Fiction",
+    image:"../images/ar2/ar3_smellysocks.jpg",
+    audio:"../audio/books/ar2/ar3_smellysocks.mp3",
+    author:"Robert N. Munsch",
+    summary: `Tina loves her new socks so much that she refuses to take them off, even when they get smelly!
+새 양말을 너무 좋아해 벗지 않으려는 티나와 냄새나는 양말 때문에 벌어지는 재미있는 이야기입니다.`
+},
+{
+    id:"ribbonrescue",
+    level:3,
+    ar:"3.0",
+    quiz:"58881 EN",
+    wordCount:765,
+    title:"Ribbon Rescue",
+    series:"Robert N. Munsch",
+    category:"Fiction",
+    image:"../images/ar2/ar3_ribbonrescue.jpg",
+    audio:"../audio/books/ar2/ar3_ribbonrescue.mp3",
+    author:"Robert N. Munsch",
+    summary: `Jillian uses the ribbons on her dress to help people get to a wedding on time.
+질리언은 드레스에 달린 리본을 활용해 결혼식에 늦을 뻔한 사람들을 도와주는 이야기입니다.`
+},
+{
+    id:"playhouse",
+    level:3,
+    ar:"3.1",
+    quiz:"65918 EN",
+    wordCount:764,
+    title:"Playhouse",
+    series:"Robert N. Munsch",
+    category:"Fiction",
+    image:"../images/ar2/ar3_playhouse.jpg",
+    audio:"../audio/books/ar2/ar3_playhouse.mp3",
+    author:"Robert N. Munsch",
+    summary: `Rene's father builds her a wonderful playhouse, but she has even bigger plans!
+아빠가 멋진 놀이집을 만들어 주지만, 르네는 그보다 더 많은 것을 원하며 새로운 일을 벌이는 이야기입니다.`
+},
+{
+    id:"morepies",
+    level:3,
+    ar:"3.2",
+    quiz:"65917 EN",
+    wordCount:565,
+    title:"More Pies!",
+    series:"Robert N. Munsch",
+    category:"Fiction",
+    image:"../images/ar2/ar3_morepies.jpg",
+    audio:"../audio/books/ar2/ar3_morepies.mp3",
+    author:"Robert N. Munsch",
+    summary: `Still hungry after breakfast, Samuel enters a pie-eating contest and surprises everyone by winning!
+아침을 많이 먹고도 배고픈 새뮤얼이 세 명의 어른과 파이 먹기 대결을 벌여 우승하는 유쾌한 이야기입니다.`
+},
+{
+    id:"makeupmess",
+    level:3,
+    ar:"3.4",
+    quiz:"65018 EN",
+    wordCount:665,
+    title:"Makeup Mess",
+    series:"Robert N. Munsch",
+    category:"Fiction",
+    image:"../images/ar2/ar3_makeupmess.jpg",
+    audio:"../audio/books/ar2/ar3_makeupmess.mp3",
+    author:"Robert N. Munsch",
+    summary: `Julie buys lots of makeup to look like a movie star, but learns that true beauty comes from being herself.
+줄리는 영화배우처럼 예뻐 보이려고 화장품을 잔뜩 사지만, 있는 그대로의 자신이 아름답다는 것을 깨닫는 이야기입니다.`
+},
+{
+    id:"lighthouse",
+    level:3,
+    ar:"3.5",
+    quiz:"70135 EN",
+    wordCount:549,
+    title:"Lighthouse: A Story of Remembrance",
+    series:"Robert N. Munsch",
+    category:"Fiction",
+    image:"../images/ar2/ar3_lighthouse.jpg",
+    audio:"../audio/books/ar2/ar3_lighthouse.mp3",
+    author:"Robert N. Munsch",
+    summary: `After her grandpa's funeral, Sarah visits his favorite lighthouse with her dad and shares precious memories.
+할아버지를 떠나보낸 사라는 아빠와 함께 할아버지의 추억이 담긴 등대를 찾아가 소중한 기억을 되새기는 이야기입니다.`
+},
+{
+    id:"justonegoal",
+    level:3,
+    ar:"3.1",
+    quiz:"134396 EN",
+    wordCount:694,
+    title:"Just One Goal!",
+    series:"Robert N. Munsch",
+    category:"Fiction",
+    image:"../images/ar2/ar3_justonegoal.jpg",
+    audio:"../audio/books/ar2/ar3_justonegoal.mp3",
+    author:"Robert N. Munsch",
+    summary: `Ciara creates a hockey rink on the frozen river in her backyard for her team.
+시아라는 자신의 하키팀을 위해 뒷마당의 얼어붙은 강에 직접 아이스링크를 만드는 이야기입니다.`
+},
+{
+    id:"classclown",
+    level:3,
+    ar:"3.1",
+    quiz:"140941 EN",
+    wordCount:635,
+    title:"Class Clown",
+    series:"Robert N. Munsch",
+    category:"Fiction",
+    image:"../images/ar2/ar3_classclown.jpg",
+    audio:"../audio/books/ar2/ar3_classclown.mp3",
+    author:"Robert N. Munsch",
+    summary: `Leonardo tries to stop making his classmates laugh, but being funny comes naturally to him.
+레오나르도는 반 친구들을 웃기지 않으려 노력하지만, 타고난 장난기로 계속 웃음을 주는 이야기입니다.`
+},
+{
+    id:"boo",
+    level:3,
+    ar:"3.3",
+    quiz:"82636 EN",
+    wordCount:923,
+    title:"Boo!",
+    series:"Robert N. Munsch",
+    category:"Fiction",
+    image:"../images/ar2/ar3_boo.jpg",
+    audio:"../audio/books/ar2/ar3_boo.mp3",
+    author:"Robert N. Munsch",
+    summary: `Lance paints a terrifying Halloween face that makes his father fall over in fright!
+랜스는 할로윈을 맞아 아빠가 깜짝 놀라 넘어질 만큼 무서운 얼굴로 분장하는 이야기입니다.`
+},
+{
+    id:"alligatorbaby",
+    level:3,
+    ar:"3.3",
+    quiz:"19934 EN",
+    wordCount:889,
+    title:"Alligator Baby",
+    series:"Robert N. Munsch",
+    category:"Fiction",
+    image:"../images/ar2/ar3_alligatorbaby.jpg",
+    audio:"../audio/books/ar2/ar3_alligatorbaby.mp3",
+    author:"Robert N. Munsch",
+    summary: `A little girl takes matters into her own hands when her parents keep bringing home the wrong baby.
+동물원에서 태어난 남동생 대신 부모님이 자꾸 엉뚱한 아기를 데려오자, 소녀가 직접 문제를 해결하려 나서는 유쾌한 이야기입니다.`
+},
+{
+    id:"froggygoestothelibrary",
+    level:3,
+    ar:"3.0",
+    quiz:"182068 EN",
+    wordCount:636,
+    title:"Froggy Goes to the Library",
+    series:"Froggy",
+    category:"Fiction",
+    image:"../images/ar2/ar3_froggygoestothelibrary.jpg",
+    audio:"../audio/books/ar2/ar3_froggygoestothelibrary.mp3",
+    author:"Jonathan London",
+    summary: `Froggy gets excited about borrowing books at the library and forgets his manners.
+프로기는 도서관에서 책을 빌릴 생각에 신이 나서 예절을 잊어버리는 이야기입니다.`
+}
 
 
 
