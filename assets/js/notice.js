@@ -5,22 +5,50 @@
 const notices = [
 
     {
+        id: "notice_261117",
+        date: "2026.11.17",
+        category: "수업안내",
+        title: "12월 그룹 라이팅 수업 안내",
+        description:
+            "12월부터 그룹 라이팅 수업은 Write Right 1 교재를 활용하여 진행됩니다.",
+        link: "notice/notice_261117.html"
+    },
+    {
         id: "notice_261116",
         date: "2026.11.16",
-        category: "학원소식",
+        category: "수업안내",
         title: "11월 SR Test 기간 안내",
         description:
             "11월 SR Test 기간과 테스트 관련 안내사항을 확인해주세요.",
         link: "notice/notice_261116.html"
     },
     {
+        id: "notice_261101",
+        date: "2026.11.01",
+        category: "수업안내",
+        title: "11월 그룹 라이팅 클래스 안내",
+        description:
+            "11월에도 원서를 활용한 그룹 라이팅 수업이 진행됩니다.",
+        link: "notice/notice_261101.html"
+    },
+    
+    {
         id: "notice_261015",
         date: "2026.10.15",
-        category: "학원소식",
+        category: "수업안내",
         title: "10월 SR Test 기간 안내",
         description:
             "10월 SR Test 기간과 테스트 관련 안내사항을 확인해주세요.",
         link: "notice/notice_261015.html"
+    },
+    {
+        id: "notice_261001",
+        date: "2026.10.01",
+        category: "수업안내",
+        title: "10월 그룹 라이팅 클래스 안내",
+        description:
+            "10월에도 원서를 활용한 그룹 라이팅 수업이 진행됩니다.",
+        link: "notice/notice_261001.html"
     },
     {
         id: "notice_260915",
@@ -35,7 +63,7 @@ const notices = [
     {
         id: "notice_260914",
         date: "2026.09.14",
-        category: "학원소식",
+        category: "수업안내",
         title: "9월 SR Test 기간 안내",
         description:
             "9월 SR Test 기간과 테스트 관련 안내사항을 확인해주세요.",
