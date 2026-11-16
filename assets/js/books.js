@@ -2278,7 +2278,7 @@ const books = [
 다양한 새들의 모습과 특징을 알록달록한 사진과 쉬운 설명으로 알아보는 논픽션입니다.`
 },
 {
-    id:"lightening",
+    id:"lightning",
     level:2,
     ar:"2.7",
     quiz:"152636 EN",
@@ -2286,8 +2286,8 @@ const books = [
     title:"Lightning!",
     series:"Science Vocabulary Readers",
     category:"Nonfiction",
-    image:"../images/ar2/ar2_lightening.jpg",
-    audio:"../audio/books/ar2/ar2_lightening.mp3",
+    image:"../images/ar2/ar2_lightning.jpg",
+    audio:"../audio/books/ar2/ar2_lightning.mp3",
     author:"Jeff Bauer",
     summary: `Learn basic facts about lightning through informative photographs and simple text.
 사진과 쉬운 설명을 통해 번개의 기본적인 특징과 현상을 알아보는 논픽션입니다.`
