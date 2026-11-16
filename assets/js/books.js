@@ -2067,6 +2067,37 @@ const books = [
     author:"Hsu Lin, Amy",
     summary: `Splat the Cat is excited for the snowstorm, but when he becomes tired of waiting, he decides to make it snow. Based on the series created by Rob Scotton.`
 },
+{
+    id:"weshareeverything",
+    level:2,
+    ar:"2.4",
+    quiz:"51687 EN",
+    wordCount:457,
+    title:"We Share Everything!",
+    series:"Robert N. Munsch",
+    category:"Fiction",
+    image:"../images/ar2/ar3_weshareeverything.jpg",
+    audio:"../audio/books/ar2/ar3_weshareeverything.mp3",
+    author:"Robert N. Munsch",
+    summary: `Amanda and Jeremiah learn to share toys on their first day of kindergarten.
+유치원 첫날, 같은 장난감을 갖고 싶어 하는 아만다와 제러마이어가 나누어 쓰는 법을 배우는 이야기입니다.`
+},
+{
+    id:"zoom",
+    level:2,
+    ar:"2.7",
+    quiz:"69651 EN",
+    wordCount:845,
+    title:"Zoom!",
+    series:"Robert N. Munsch",
+    category:"Fiction",
+    image:"../images/ar2/ar2_zoom.jpg",
+    audio:"../audio/books/ar2/ar2_zoom.mp3",
+    author:"Robert N. Munsch",
+    summary: `Lauretta takes her super-fast wheelchair for a wild ride, gets a speeding ticket, and helps her brother.
+로레타는 초고속 휠체어를 타고 신나게 달리다 과속 딱지를 받지만, 오빠를 도와주는 이야기입니다.`
+},
+
 
 /* ===========================
    AR 3
@@ -2081,8 +2112,8 @@ const books = [
     title:"Smelly Socks",
     series:"Robert N. Munsch",
     category:"Fiction",
-    image:"../images/ar2/ar3_smellysocks.jpg",
-    audio:"../audio/books/ar2/ar3_smellysocks.mp3",
+    image:"../images/ar3/ar3_smellysocks.jpg",
+    audio:"../audio/books/ar3/ar3_smellysocks.mp3",
     author:"Robert N. Munsch",
     summary: `Tina loves her new socks so much that she refuses to take them off, even when they get smelly!
 새 양말을 너무 좋아해 벗지 않으려는 티나와 냄새나는 양말 때문에 벌어지는 재미있는 이야기입니다.`
@@ -2096,8 +2127,8 @@ const books = [
     title:"Ribbon Rescue",
     series:"Robert N. Munsch",
     category:"Fiction",
-    image:"../images/ar2/ar3_ribbonrescue.jpg",
-    audio:"../audio/books/ar2/ar3_ribbonrescue.mp3",
+    image:"../images/ar3/ar3_ribbonrescue.jpg",
+    audio:"../audio/books/ar3/ar3_ribbonrescue.mp3",
     author:"Robert N. Munsch",
     summary: `Jillian uses the ribbons on her dress to help people get to a wedding on time.
 질리언은 드레스에 달린 리본을 활용해 결혼식에 늦을 뻔한 사람들을 도와주는 이야기입니다.`
@@ -2111,8 +2142,8 @@ const books = [
     title:"Playhouse",
     series:"Robert N. Munsch",
     category:"Fiction",
-    image:"../images/ar2/ar3_playhouse.jpg",
-    audio:"../audio/books/ar2/ar3_playhouse.mp3",
+    image:"../images/ar3/ar3_playhouse.jpg",
+    audio:"../audio/books/ar3/ar3_playhouse.mp3",
     author:"Robert N. Munsch",
     summary: `Rene's father builds her a wonderful playhouse, but she has even bigger plans!
 아빠가 멋진 놀이집을 만들어 주지만, 르네는 그보다 더 많은 것을 원하며 새로운 일을 벌이는 이야기입니다.`
@@ -2126,8 +2157,8 @@ const books = [
     title:"More Pies!",
     series:"Robert N. Munsch",
     category:"Fiction",
-    image:"../images/ar2/ar3_morepies.jpg",
-    audio:"../audio/books/ar2/ar3_morepies.mp3",
+    image:"../images/ar3/ar3_morepies.jpg",
+    audio:"../audio/books/ar3/ar3_morepies.mp3",
     author:"Robert N. Munsch",
     summary: `Still hungry after breakfast, Samuel enters a pie-eating contest and surprises everyone by winning!
 아침을 많이 먹고도 배고픈 새뮤얼이 세 명의 어른과 파이 먹기 대결을 벌여 우승하는 유쾌한 이야기입니다.`
@@ -2141,8 +2172,8 @@ const books = [
     title:"Makeup Mess",
     series:"Robert N. Munsch",
     category:"Fiction",
-    image:"../images/ar2/ar3_makeupmess.jpg",
-    audio:"../audio/books/ar2/ar3_makeupmess.mp3",
+    image:"../images/ar3/ar3_makeupmess.jpg",
+    audio:"../audio/books/ar3/ar3_makeupmess.mp3",
     author:"Robert N. Munsch",
     summary: `Julie buys lots of makeup to look like a movie star, but learns that true beauty comes from being herself.
 줄리는 영화배우처럼 예뻐 보이려고 화장품을 잔뜩 사지만, 있는 그대로의 자신이 아름답다는 것을 깨닫는 이야기입니다.`
@@ -2156,8 +2187,8 @@ const books = [
     title:"Lighthouse: A Story of Remembrance",
     series:"Robert N. Munsch",
     category:"Fiction",
-    image:"../images/ar2/ar3_lighthouse.jpg",
-    audio:"../audio/books/ar2/ar3_lighthouse.mp3",
+    image:"../images/ar3/ar3_lighthouse.jpg",
+    audio:"../audio/books/ar3/ar3_lighthouse.mp3",
     author:"Robert N. Munsch",
     summary: `After her grandpa's funeral, Sarah visits his favorite lighthouse with her dad and shares precious memories.
 할아버지를 떠나보낸 사라는 아빠와 함께 할아버지의 추억이 담긴 등대를 찾아가 소중한 기억을 되새기는 이야기입니다.`
@@ -2171,8 +2202,8 @@ const books = [
     title:"Just One Goal!",
     series:"Robert N. Munsch",
     category:"Fiction",
-    image:"../images/ar2/ar3_justonegoal.jpg",
-    audio:"../audio/books/ar2/ar3_justonegoal.mp3",
+    image:"../images/ar3/ar3_justonegoal.jpg",
+    audio:"../audio/books/ar3/ar3_justonegoal.mp3",
     author:"Robert N. Munsch",
     summary: `Ciara creates a hockey rink on the frozen river in her backyard for her team.
 시아라는 자신의 하키팀을 위해 뒷마당의 얼어붙은 강에 직접 아이스링크를 만드는 이야기입니다.`
@@ -2186,8 +2217,8 @@ const books = [
     title:"Class Clown",
     series:"Robert N. Munsch",
     category:"Fiction",
-    image:"../images/ar2/ar3_classclown.jpg",
-    audio:"../audio/books/ar2/ar3_classclown.mp3",
+    image:"../images/ar3/ar3_classclown.jpg",
+    audio:"../audio/books/ar3/ar3_classclown.mp3",
     author:"Robert N. Munsch",
     summary: `Leonardo tries to stop making his classmates laugh, but being funny comes naturally to him.
 레오나르도는 반 친구들을 웃기지 않으려 노력하지만, 타고난 장난기로 계속 웃음을 주는 이야기입니다.`
@@ -2201,8 +2232,8 @@ const books = [
     title:"Boo!",
     series:"Robert N. Munsch",
     category:"Fiction",
-    image:"../images/ar2/ar3_boo.jpg",
-    audio:"../audio/books/ar2/ar3_boo.mp3",
+    image:"../images/ar3/ar3_boo.jpg",
+    audio:"../audio/books/ar3/ar3_boo.mp3",
     author:"Robert N. Munsch",
     summary: `Lance paints a terrifying Halloween face that makes his father fall over in fright!
 랜스는 할로윈을 맞아 아빠가 깜짝 놀라 넘어질 만큼 무서운 얼굴로 분장하는 이야기입니다.`
@@ -2216,8 +2247,8 @@ const books = [
     title:"Alligator Baby",
     series:"Robert N. Munsch",
     category:"Fiction",
-    image:"../images/ar2/ar3_alligatorbaby.jpg",
-    audio:"../audio/books/ar2/ar3_alligatorbaby.mp3",
+    image:"../images/ar3/ar3_alligatorbaby.jpg",
+    audio:"../audio/books/ar3/ar3_alligatorbaby.mp3",
     author:"Robert N. Munsch",
     summary: `A little girl takes matters into her own hands when her parents keep bringing home the wrong baby.
 동물원에서 태어난 남동생 대신 부모님이 자꾸 엉뚱한 아기를 데려오자, 소녀가 직접 문제를 해결하려 나서는 유쾌한 이야기입니다.`
@@ -2231,8 +2262,8 @@ const books = [
     title:"Froggy Goes to the Library",
     series:"Froggy",
     category:"Fiction",
-    image:"../images/ar2/ar3_froggygoestothelibrary.jpg",
-    audio:"../audio/books/ar2/ar3_froggygoestothelibrary.mp3",
+    image:"../images/ar3/ar3_froggygoestothelibrary.jpg",
+    audio:"../audio/books/ar3/ar3_froggygoestothelibrary.mp3",
     author:"Jonathan London",
     summary: `Froggy gets excited about borrowing books at the library and forgets his manners.
 프로기는 도서관에서 책을 빌릴 생각에 신이 나서 예절을 잊어버리는 이야기입니다.`
