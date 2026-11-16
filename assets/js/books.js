@@ -2805,8 +2805,8 @@ const books = [
     title:"Butterfly Life Cycle",
     series:"Science Vocabulary Readers",
     category:"Nonfiction",
-    image:"../images/ar2/ar2_butterflylifecycle.jpg",
-    audio:"../audio/books/ar2/ar2_butterflylifecycle.mp3",
+    image:"../images/ar3/ar3_butterflylifecycle.jpg",
+    audio:"../audio/books/ar3/ar3_butterflylifecycle.mp3",
     author:"Jeff Bauer",
     summary: `Learn how a caterpillar transforms into a beautiful butterfly through its life cycle.
 애벌레가 성장 과정을 거쳐 아름다운 나비로 변하는 과정을 알아보는 논픽션입니다.`
