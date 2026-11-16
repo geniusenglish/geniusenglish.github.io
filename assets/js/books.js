@@ -2097,6 +2097,156 @@ const books = [
     summary: `Lauretta takes her super-fast wheelchair for a wild ride, gets a speeding ticket, and helps her brother.
 로레타는 초고속 휠체어를 타고 신나게 달리다 과속 딱지를 받지만, 오빠를 도와주는 이야기입니다.`
 },
+{
+    id:"upupdown",
+    level:2,
+    ar:"2.1",
+    quiz:"51685 EN",
+    wordCount:468,
+    title:"Up, Up, Down",
+    series:"Robert N. Munsch",
+    category:"Fiction",
+    image:"../images/ar2/ar2_upupdown.jpg",
+    audio:"../audio/books/ar2/ar2_upupdown.mp3",
+    author:"Robert N. Munsch",
+    summary: `Anna loves climbing everything, even when her parents warn her to stop.
+부모님의 만류에도 불구하고 높은 곳에 오르기를 좋아하는 안나의 엉뚱하고 유쾌한 이야기입니다.`
+},
+{
+    id:"putmeinabook",
+    level:2,
+    ar:"2.9",
+    quiz:"139885 EN",
+    wordCount:628,
+    title:"Put Me in a Book!",
+    series:"Robert N. Munsch",
+    category:"Fiction",
+    image:"../images/ar2/ar2_putmeinabook.jpg",
+    audio:"../audio/books/ar2/ar2_putmeinabook.mp3",
+    author:"Robert N. Munsch",
+    summary: `Hailey volunteers to become a character in a book but discovers that being stuck inside its pages isn't fun.
+헤일리는 책 속 주인공이 되기를 자청하지만, 책 속에 갇혀 지내는 일이 즐겁지만은 않다는 것을 깨닫는 이야기입니다.`
+},
+{
+    id:"nocleanclothes",
+    level:2,
+    ar:"2.6",
+    quiz:"120513 EN",
+    wordCount:706,
+    title:"No Clean Clothes",
+    series:"Robert N. Munsch",
+    category:"Fiction",
+    image:"../images/ar2/ar2_nocleanclothes.jpg",
+    audio:"../audio/books/ar2/ar2_nocleanclothes.mp3",
+    author:"Robert N. Munsch",
+    summary: `Lacey reluctantly wears her grandma's funny shirt to school and gets a surprising reaction.
+레이시는 할머니가 준 재미있는 문구의 티셔츠를 마지못해 입고 학교에 갔다가 뜻밖의 반응을 경험하는 이야기입니다.`
+},
+{
+    id:"mmmcookies",
+    level:2,
+    ar:"2.4",
+    quiz:"84417 EN",
+    wordCount:492,
+    title:"Mmm, Cookies!",
+    series:"Robert N. Munsch",
+    category:"Fiction",
+    image:"../images/ar2/ar2_mmmcookies.jpg",
+    audio:"../audio/books/ar2/ar2_mmmcookies.mp3",
+    author:"Robert N. Munsch",
+    summary: `Christopher tricks his parents with clay cookies, but they come up with a clever way to get even.
+크리스토퍼는 점토로 만든 쿠키로 부모님을 속이지만, 부모님도 기발한 방법으로 되갚아 주는 유쾌한 이야기입니다.`
+},
+{
+    id:"lookatme",
+    level:2,
+    ar:"2.4",
+    quiz:"127386 EN",
+    wordCount:575,
+    title:"Look at Me!",
+    series:"Robert N. Munsch",
+    category:"Fiction",
+    image:"../images/ar2/ar2_lookatme.jpg",
+    audio:"../audio/books/ar2/ar2_lookatme.mp3",
+    author:"Robert N. Munsch",
+    summary: `Madison gets a real rose painted on her face, but it unexpectedly begins to grow!
+매디슨은 얼굴에 진짜 장미를 그려 넣지만, 장미가 실제로 자라기 시작하면서 벌어지는 신기하고 유쾌한 이야기입니다.`
+},
+{
+    id:"imsoembarrassed",
+    level:2,
+    ar:"2.5",
+    quiz:"106650 EN",
+    wordCount:698,
+    title:"I'm So Embarrassed!",
+    series:"Robert N. Munsch",
+    category:"Fiction",
+    image:"../images/ar2/ar2_imsoembarrassed.jpg",
+    audio:"../audio/books/ar2/ar2_imsoembarrassed.mp3",
+    author:"Robert N. Munsch",
+    summary: `Andrew's mom keeps embarrassing him at the mall until he finds a funny way to get even.
+엄마가 쇼핑몰에서 자꾸 자신을 창피하게 만들자, 앤드루가 기발한 방법으로 되갚아 주는 유쾌한 이야기입니다.`
+},
+{
+    id:"getoutofbed",
+    level:2,
+    ar:"2.7",
+    quiz:"63240 EN",
+    wordCount:616,
+    title:"Get out of Bed!",
+    series:"Robert N. Munsch",
+    category:"Fiction",
+    image:"../images/ar2/ar2_getoutofbed.jpg",
+    audio:"../audio/books/ar2/ar2_getoutofbed.mp3",
+    author:"Robert N. Munsch",
+    summary: `Amy refuses to get out of bed until her brother comes up with a crazy plan.
+침대에서 나오기를 거부하는 에이미를 깨우기 위해 오빠가 엉뚱하고 기발한 방법을 생각해 내는 이야기입니다.`
+},
+{
+    id:"downthedrain",
+    level:2,
+    ar:"2.3",
+    quiz:"132449 EN",
+    wordCount:881,
+    title:"Down the Drain!",
+    series:"Robert N. Munsch",
+    category:"Fiction",
+    image:"../images/ar2/ar2_downthedrain.jpg",
+    audio:"../audio/books/ar2/ar2_downthedrain.mp3",
+    author:"Robert N. Munsch",
+    summary: `After Adam gets covered in ashes, something extraordinary happens while he is taking a bath.
+재투성이가 된 애덤이 목욕을 하던 중 아빠가 잠시 자리를 비운 사이 놀라운 일이 벌어지는 이야기입니다.`
+},
+{
+    id:"andrewsloosetooth",
+    level:2,
+    ar:"2.8",
+    quiz:"49476 EN",
+    wordCount:702,
+    title:"Andrew's Loose Tooth",
+    series:"Robert N. Munsch",
+    category:"Fiction",
+    image:"../images/ar2/ar2_andrewsloosetooth.jpg",
+    audio:"../audio/books/ar2/ar2_andrewsloosetooth.mp3",
+    author:"Robert N. Munsch",
+    summary: `Andrew's family, dentist, friend, and even the Tooth Fairy try funny ways to pull his loose tooth.
+앤드루의 흔들리는 이를 빼기 위해 가족과 치과 의사, 친구, 이빨 요정까지 엉뚱하고 재미있는 방법을 동원하는 이야기입니다.`
+},
+{
+    id:"aaronshair",
+    level:2,
+    ar:"2.4",
+    quiz:"51654 EN",
+    wordCount:710,
+    title:"Aaron's Hair",
+    series:"Robert N. Munsch",
+    category:"Fiction",
+    image:"../images/ar2/ar2_aaronshair.jpg",
+    audio:"../audio/books/ar2/ar2_aaronshair.mp3",
+    author:"Robert N. Munsch",
+    summary: `Aaron's hair runs away after he says he hates it, causing hilarious trouble wherever it goes.
+자신의 머리카락이 싫다고 말한 애런에게 화가 난 머리카락이 도망치면서 곳곳에서 소동을 벌이는 이야기입니다.`
+},
 
 
 /* ===========================
