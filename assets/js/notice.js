@@ -5,6 +5,24 @@
 const notices = [
 
     {
+        id: "notice_261116",
+        date: "2026.11.16",
+        category: "학원소식",
+        title: "11월 SR Test 기간 안내",
+        description:
+            "11월 SR Test 기간과 테스트 관련 안내사항을 확인해주세요.",
+        link: "notice/notice_261116.html"
+    },
+    {
+        id: "notice_261015",
+        date: "2026.10.15",
+        category: "학원소식",
+        title: "10월 SR Test 기간 안내",
+        description:
+            "10월 SR Test 기간과 테스트 관련 안내사항을 확인해주세요.",
+        link: "notice/notice_261015.html"
+    },
+    {
         id: "notice_260915",
         date: "2026.09.15",
         category: "학원소식",
