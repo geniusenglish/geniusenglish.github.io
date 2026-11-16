@@ -2247,6 +2247,384 @@ const books = [
     summary: `Aaron's hair runs away after he says he hates it, causing hilarious trouble wherever it goes.
 자신의 머리카락이 싫다고 말한 애런에게 화가 난 머리카락이 도망치면서 곳곳에서 소동을 벌이는 이야기입니다.`
 },
+{
+    id:"froggygoestocamp",
+    level:2,
+    ar:"2.5",
+    quiz:"122341 EN",
+    wordCount:667,
+    title:"Froggy Goes to Camp",
+    series:"Froggy",
+    category:"Fiction",
+    image:"../images/ar2/ar2_froggygoestocamp.jpg",
+    audio:"../audio/books/ar2/ar2_froggygoestocamp.mp3",
+    author:"Jonathan London",
+    summary: `Froggy enjoys a sleep-away camp adventure, but his playful antics keep causing trouble for the camp director.
+프로기는 캠프에서 신나게 놀지만, 엉뚱한 장난으로 캠프 책임자에게 계속 소동을 일으키는 이야기입니다.`
+},
+{
+    id:"beautifulbirds",
+    level:2,
+    ar:"2.3",
+    quiz:"146060 EN",
+    wordCount:388,
+    title:"Beautiful Birds",
+    series:"Science Vocabulary Readers",
+    category:"Nonfiction",
+    image:"../images/ar2/ar2_beautifulbirds.jpg",
+    audio:"../audio/books/ar2/ar2_beautifulbirds.mp3",
+    author:"Justin McCory Martin",
+    summary: `Learn about different kinds of birds through colorful photographs and simple facts.
+다양한 새들의 모습과 특징을 알록달록한 사진과 쉬운 설명으로 알아보는 논픽션입니다.`
+},
+{
+    id:"lightening",
+    level:2,
+    ar:"2.7",
+    quiz:"152636 EN",
+    wordCount:423,
+    title:"Lightning!",
+    series:"Science Vocabulary Readers",
+    category:"Nonfiction",
+    image:"../images/ar2/ar2_lightening.jpg",
+    audio:"../audio/books/ar2/ar2_lightening.mp3",
+    author:"Jeff Bauer",
+    summary: `Learn basic facts about lightning through informative photographs and simple text.
+사진과 쉬운 설명을 통해 번개의 기본적인 특징과 현상을 알아보는 논픽션입니다.`
+},
+{
+    id:"starsandconstellations",
+    level:2,
+    ar:"2.4",
+    quiz:"163236 EN",
+    wordCount:404,
+    title:"Stars and Constellations",
+    series:"Science Vocabulary Readers",
+    category:"Nonfiction",
+    image:"../images/ar2/ar2_starsandconstellations.jpg",
+    audio:"../audio/books/ar2/ar2_starsandconstellations.mp3",
+    author:"Elizabeth Bennett",
+    summary: `Learn about stars and constellations visible in the night sky through diagrams and simple text.
+그림과 쉬운 설명을 통해 밤하늘에서 볼 수 있는 별과 별자리에 대해 알아보는 논픽션입니다.`
+},
+{
+    id:"thecatinthemoon",
+    level:2,
+    ar:"2.0",
+    quiz:"514264 EN",
+    wordCount:374,
+    title:"Splat the Cat and the Cat in the Moon",
+    series:"Splat the Cat",
+    category:"Fiction",
+    image:"../images/ar2/ar2_thecatinthemoon.jpg",
+    audio:"../audio/books/ar2/ar2_thecatinthemoon.mp3",
+    author:"Laura Driscoll",
+    summary: `Splat tries to prove to Plank that there really is a cat in the moon.
+달 속에 고양이가 있다고 믿지 않는 플랭크에게 스플랫이 자신의 생각을 증명하려는 이야기입니다.`
+},
+{
+    id:"froggyssleepover",
+    level:2,
+    ar:"2.2",
+    quiz:"86410 EN",
+    wordCount:630,
+    title:"Froggy's Sleepover",
+    series:"Froggy",
+    category:"Fiction",
+    image:"../images/ar2/ar2_froggyssleepover.jpg",
+    audio:"../audio/books/ar2/ar2_froggyssleepover.mp3",
+    author:"Jonathan London",
+    summary: `Froggy's first sleepover with Max turns into a funny adventure as they keep moving between their houses.
+맥스와 처음으로 함께 자는 프로기는 여러 가지 소동으로 두 집을 오가며 밤늦도록 잠들지 못하는 이야기입니다.`
+},
+{
+    id:"froggysfirstkiss",
+    level:2,
+    ar:"2.6",
+    quiz:"19844 EN",
+    wordCount:516,
+    title:"Froggy's First Kiss",
+    series:"Froggy",
+    category:"Fiction",
+    image:"../images/ar2/ar2_froggysfirstkiss.jpg",
+    audio:"../audio/books/ar2/ar2_froggysfirstkiss.mp3",
+    author:"Jonathan London",
+    summary: `Froggy thinks he's falling in love with a new girl in class, but his feelings change after their first kiss.
+발렌타인데이를 앞두고 새로 온 여자아이를 좋아하게 된 프로기가 첫 뽀뽀를 한 뒤 마음이 달라지는 이야기입니다.`
+},
+{
+    id:"froggysdaywithdad",
+    level:2,
+    ar:"2.2",
+    quiz:"78935 EN",
+    wordCount:636,
+    title:"Froggy's Day with Dad",
+    series:"Froggy",
+    category:"Fiction",
+    image:"../images/ar2/ar2_froggysdaywithdad.jpg",
+    audio:"../audio/books/ar2/ar2_froggysdaywithdad.mp3",
+    author:"Jonathan London",
+    summary: `Froggy and his dad celebrate Father's Day with fun activities, including a game of miniature golf.
+프로기와 아빠가 미니 골프를 비롯한 여러 가지 활동을 하며 아버지의 날을 즐겁게 보내는 이야기입니다.`
+},
+{
+    id:"froggyshalloween",
+    level:2,
+    ar:"2.7",
+    quiz:"34586 EN",
+    wordCount:561,
+    title:"Froggy's Halloween",
+    series:"Froggy",
+    category:"Fiction",
+    image:"../images/ar2/ar2_froggyshalloween.jpg",
+    audio:"../audio/books/ar2/ar2_froggyshalloween.mp3",
+    author:"Jonathan London",
+    summary: `Froggy searches for the perfect Halloween costume and enjoys trick-or-treating despite unexpected surprises.
+완벽한 할로윈 의상을 찾던 프로기가 예상치 못한 일들을 겪으면서도 즐겁게 사탕을 받으러 다니는 이야기입니다.`
+},
+{
+    id:"froggygoestothedoctor",
+    level:2,
+    ar:"2.5",
+    quiz:"64173 EN",
+    wordCount:641,
+    title:"Froggy Goes to the Doctor",
+    series:"Froggy",
+    category:"Fiction",
+    image:"../images/ar2/ar2_froggygoestothedoctor.jpg",
+    audio:"../audio/books/ar2/ar2_froggygoestothedoctor.mp3",
+    author:"Jonathan London",
+    summary: `Froggy dreads his check-up, but his playful behavior makes the doctor nervous about his next visit.
+건강검진을 받기 싫어하는 프로기가 병원에서 엉뚱한 행동을 벌여 의사 선생님까지 다음 방문을 걱정하게 만드는 이야기입니다.`
+},
+{
+    id:"froggyplayssoccer",
+    level:2,
+    ar:"2.2",
+    quiz:"32246 EN",
+    wordCount:590,
+    title:"Froggy Plays Soccer",
+    series:"Froggy",
+    category:"Fiction",
+    image:"../images/ar2/ar2_froggyplayssoccer.jpg",
+    audio:"../audio/books/ar2/ar2_froggyplayssoccer.mp3",
+    author:"Jonathan London",
+    summary: `Froggy gets excited about the city soccer championships but makes a mistake that nearly costs his team the game.
+시 축구 선수권 대회에 출전해 신이 난 프로기가 경기 중 실수를 저질러 팀을 패배 위기에 빠뜨리는 이야기입니다.`
+},
+{
+    id:"froggygoestoschool",
+    level:2,
+    ar:"2.4",
+    quiz:"15805 EN",
+    wordCount:589,
+    title:"Froggy Goes to School",
+    series:"Froggy",
+    category:"Fiction",
+    image:"../images/ar2/ar2_froggygoestoschool.jpg",
+    audio:"../audio/books/ar2/ar2_froggygoestoschool.mp3",
+    author:"Jonathan London",
+    summary: `Froggy feels nervous on his first day of school but soon has a wonderful time despite his restlessness.
+학교 첫날 긴장한 프로기는 가만히 앉아 있기 힘들지만, 즐거운 하루를 보내는 이야기입니다.`
+},
+{
+    id:"froggysbestchristmas",
+    level:2,
+    ar:"2.4",
+    quiz:"53912 EN",
+    wordCount:655,
+    title:"Froggy's Best Christmas",
+    series:"Froggy",
+    category:"Fiction",
+    image:"../images/ar2/ar2_froggysbestchristmas.jpg",
+    audio:"../audio/books/ar2/ar2_froggysbestchristmas.mp3",
+    author:"Jonathan London",
+    summary: `Froggy celebrates his very first Christmas with his friends and family.
+프로기가 친구들과 가족과 함께 처음 맞이하는 크리스마스를 즐겁게 보내는 이야기입니다.`
+},
+{
+    id:"froggyeatsout",
+    level:2,
+    ar:"2.5",
+    quiz:"53911 EN",
+    wordCount:640,
+    title:"Froggy Eats Out",
+    series:"Froggy",
+    category:"Fiction",
+    image:"../images/ar2/ar2_froggyeatsout.jpg",
+    audio:"../audio/books/ar2/ar2_froggyeatsout.mp3",
+    author:"Jonathan London",
+    summary: `Froggy misbehaves at a fancy restaurant, so his parents take him to a fast-food restaurant instead.
+고급 레스토랑에서 말썽을 부린 프로기가 부모님과 함께 패스트푸드점에 가게 되는 유쾌한 이야기입니다.`
+},
+{
+    id:"froggyridesabike",
+    level:2,
+    ar:"2.1",
+    quiz:"107353 EN",
+    wordCount:580,
+    title:"Froggy Rides a Bike",
+    series:"Froggy",
+    category:"Fiction",
+    image:"../images/ar2/ar2_froggyridesabike.jpg",
+    audio:"../audio/books/ar2/ar2_froggyridesabike.mp3",
+    author:"Jonathan London",
+    summary: `With help from his friends and family, Froggy learns to ride his new bike.
+친구들과 가족의 응원과 도움을 받으며 새 자전거 타는 법을 배우는 프로기의 이야기입니다.`
+},
+{
+    id:"froggyplaysintheband",
+    level:2,
+    ar:"2.2",
+    quiz:"57166 EN",
+    wordCount:563,
+    title:"Froggy Plays in the Band",
+    series:"Froggy",
+    category:"Fiction",
+    image:"../images/ar2/ar2_froggyplaysintheband.jpg",
+    audio:"../audio/books/ar2/ar2_froggyplaysintheband.mp3",
+    author:"Jonathan London",
+    summary: `Froggy and his friends enter the Apple Blossom Parade, hoping to win the big prize with their new band.
+아직 함께 연주한 지 얼마 되지 않은 프로기와 친구들이 사과꽃 축제 퍼레이드에서 큰 상을 받기 위해 밴드를 결성해 도전하는 이야기입니다.`
+},
+{
+    id:"froggylearnstoswim",
+    level:2,
+    ar:"2.0",
+    quiz:"53534 EN",
+    wordCount:530,
+    title:"Froggy Learns to Swim",
+    series:"Froggy",
+    category:"Fiction",
+    image:"../images/ar2/ar2_froggylearnstoswim.jpg",
+    audio:"../audio/books/ar2/ar2_froggylearnstoswim.mp3",
+    author:"Jonathan London",
+    summary: `Froggy is afraid of the water, but his mother helps him learn to swim.
+물을 무서워하던 프로기가 엄마의 도움으로 수영하는 법을 배우는 이야기입니다.`
+},
+{
+    id:"froggyslemonadestand",
+    level:2,
+    ar:"2.8",
+    quiz:"196713 EN",
+    wordCount:688,
+    title:"Froggy's Lemonade Stand",
+    series:"Froggy",
+    category:"Fiction",
+    image:"../images/ar2/ar2_froggyslemonadestand.jpg",
+    audio:"../audio/books/ar2/ar2_froggyslemonadestand.mp3",
+    author:"Jonathan London",
+    summary: `Froggy drinks all the lemonade he planned to sell, but his friends help him find a solution.
+레모네이드 가게를 열어 돈을 벌 계획이었던 프로기가 레모네이드를 모두 마셔 버리지만, 친구들의 도움으로 문제를 해결하는 이야기입니다.`
+},
+{
+    id:"froggygetsadoggy",
+    level:2,
+    ar:"2.5",
+    quiz:"165582 EN",
+    wordCount:679,
+    title:"Froggy Gets a Doggy",
+    series:"Froggy",
+    category:"Fiction",
+    image:"../images/ar2/ar2_froggygetsadoggy.jpg",
+    audio:"../audio/books/ar2/ar2_froggygetsadoggy.mp3",
+    author:"Jonathan London",
+    summary: `Froggy and his little sister Polly get a dog, but training him is harder than Froggy expected.
+프로기와 여동생 폴리가 강아지를 키우게 되지만, 강아지를 훈련시키는 일이 생각보다 쉽지 않은 이야기입니다.`
+},
+{
+    id:"froggysworstplaydate",
+    level:2,
+    ar:"2.1",
+    quiz:"157315 EN",
+    wordCount:647,
+    title:"Froggy's Worst Playdate",
+    series:"Froggy",
+    category:"Fiction",
+    image:"../images/ar2/ar2_froggysworstplaydate.jpg",
+    audio:"../audio/books/ar2/ar2_froggysworstplaydate.mp3",
+    author:"Jonathan London",
+    summary: `When his friends are away, Froggy reluctantly goes to the movies with Frogilina.
+토요일에 친구들이 모두 집에 없자, 프로기는 내키지 않지만 프로길리나와 함께 영화를 보러 가는 이야기입니다.`
+},
+{
+    id:"froggysbirthdaywish",
+    level:2,
+    ar:"2.2",
+    quiz:"173969 EN",
+    wordCount:680,
+    title:"Froggy's Birthday Wish",
+    series:"Froggy",
+    category:"Fiction",
+    image:"../images/ar2/ar2_froggysbirthdaywish.jpg",
+    audio:"../audio/books/ar2/ar2_froggysbirthdaywish.mp3",
+    author:"Jonathan London",
+    summary: `Froggy worries that everyone has forgotten his birthday when no one seems to remember his special day.
+아무도 생일을 기억하지 못하는 것 같아 혼자 생일을 보내게 될까 걱정하는 프로기의 이야기입니다.`
+},
+{
+    id:"froggygoestograndmas",
+    level:2,
+    ar:"2.7",
+    quiz:"190662 EN",
+    wordCount:624,
+    title:"Froggy Goes to Grandma's",
+    series:"Froggy",
+    category:"Fiction",
+    image:"../images/ar2/ar2_froggygoestograndmas.jpg",
+    audio:"../audio/books/ar2/ar2_froggygoestograndmas.mp3",
+    author:"Jonathan London",
+    summary: `Froggy and his family enjoy a fun-filled visit with Grandma.
+프로기와 가족이 할머니 댁을 방문해 함께 즐겁고 신나는 시간을 보내는 이야기입니다.`
+},
+{
+    id:"froggybuildsatreehouse",
+    level:2,
+    ar:"2.2",
+    quiz:"147514 EN",
+    wordCount:582,
+    title:"Froggy Builds a Tree House",
+    series:"Froggy",
+    category:"Fiction",
+    image:"../images/ar2/ar2_froggybuildsatreehouse.jpg",
+    audio:"../audio/books/ar2/ar2_froggybuildsatreehouse.mp3",
+    author:"Jonathan London",
+    summary: `Froggy and his friends build a tree house while trying to keep his little sister Frogilina away.
+프로기와 친구들이 여동생 프로길리나의 도움을 피하면서 나무 위에 멋진 놀이집을 만드는 이야기입니다.`
+},
+{
+    id:"froggygoestohawaii",
+    level:2,
+    ar:"2.3",
+    quiz:"146229 EN",
+    wordCount:603,
+    title:"Froggy Goes to Hawaii",
+    series:"Froggy",
+    category:"Fiction",
+    image:"../images/ar2/ar2_froggygoestohawaii.jpg",
+    audio:"../audio/books/ar2/ar2_froggygoestohawaii.mp3",
+    author:"Jonathan London",
+    summary: `Froggy gets so excited about his vacation in Hawaii that he barely listens to his parents.
+하와이로 휴가를 떠난 프로기가 신나는 마음에 부모님의 말씀도 제대로 듣지 못하는 이야기입니다.`
+},
+{
+    id:"froggysbestbabysitter",
+    level:2,
+    ar:"2.5",
+    quiz:"130164 EN",
+    wordCount:669,
+    title:"Froggy's Best Babysitter",
+    series:"Froggy",
+    category:"Fiction",
+    image:"../images/ar2/ar2_froggysbestbabysitter.jpg",
+    audio:"../audio/books/ar2/ar2_froggysbestbabysitter.mp3",
+    author:"Jonathan London",
+    summary: `Froggy causes all kinds of trouble when a new babysitter stays overnight with him and his little sister.
+새로운 베이비시터가 자신과 여동생 폴리워길리나를 돌보러 하룻밤 함께 지내게 되자, 프로기가 온갖 소동을 벌이는 이야기입니다.`
+},
+
+
+
 
 
 /* ===========================
@@ -2417,6 +2795,21 @@ const books = [
     author:"Jonathan London",
     summary: `Froggy gets excited about borrowing books at the library and forgets his manners.
 프로기는 도서관에서 책을 빌릴 생각에 신이 나서 예절을 잊어버리는 이야기입니다.`
+},
+{
+    id:"butterflylifecycle",
+    level:3,
+    ar:"3.2",
+    quiz:"122250 EN",
+    wordCount:566,
+    title:"Butterfly Life Cycle",
+    series:"Science Vocabulary Readers",
+    category:"Nonfiction",
+    image:"../images/ar2/ar2_butterflylifecycle.jpg",
+    audio:"../audio/books/ar2/ar2_butterflylifecycle.mp3",
+    author:"Jeff Bauer",
+    summary: `Learn how a caterpillar transforms into a beautiful butterfly through its life cycle.
+애벌레가 성장 과정을 거쳐 아름다운 나비로 변하는 과정을 알아보는 논픽션입니다.`
 }
 
 
